@@ -16,7 +16,7 @@ This endpoint allows you to fetch a token that can be then used to access all en
 The username of the user
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="pwhash" type="boolean" %}
+{% api-method-parameter name="pwhash" type="boolean" required=true %}
 The pwhash of the user
 {% endapi-method-parameter %}
 {% endapi-method-query-parameters %}

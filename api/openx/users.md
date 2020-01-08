@@ -1,7 +1,3 @@
----
-description: This page contains a list of all the user related endpoints in openx.
----
-
 # Users
 
 {% api-method method="post" host="https://apidocs.openx.solar" path="/token" %}
@@ -10,9 +6,7 @@ Get Access Token
 {% endapi-method-summary %}
 
 {% api-method-description %}
-This endpoint allows you to fetch a token that can be then used to access all endpoints  
-  
-**curl -X POST -H "Content-Type: application/x-www-form-urlencoded" -H "Origin: localhost" -d 'username=admin&pwhash=e9a75486736a550af4fea861e2378305c4a555a05094dee1dca2f68afea49cc3a50e8de6ea131ea521311f4d6fb054a146e8282f8e35ff2e6368c1a62e909716' "https://localhost:8081/token"**
+This endpoint allows you to fetch a token that can be then used to access all endpoints
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -166,6 +160,8 @@ The authentication token belonging to the user
 {% endapi-method-spec %}
 {% endapi-method %}
 
+
+
 {% api-method method="get" host="https://apidocs.openx.solar" path="/user/balances" %}
 {% api-method-summary %}
 Get User Balances
@@ -209,6 +205,8 @@ The authentication token belonging to the user
 {% endapi-method-spec %}
 {% endapi-method %}
 
+
+
 {% api-method method="get" host="https://apidocs.openx.solar" path="/user/balances/xlm" %}
 {% api-method-summary %}
 Get XLM Balance
@@ -244,6 +242,8 @@ The authentication token belonging to the user
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
+
+
 
 {% api-method method="get" host="https://apidocs.openx.solar" path="/user/balance/asset" %}
 {% api-method-summary %}
@@ -285,6 +285,8 @@ The authentication token belonging to the user
 {% endapi-method-spec %}
 {% endapi-method %}
 
+
+
 {% api-method method="get" host="https://apidocs.openx.solar" path="/ipfs/getdata" %}
 {% api-method-summary %}
 Get IPFS hash
@@ -324,6 +326,8 @@ The authentication token belonging to the user
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
+
+
 
 {% api-method method="get" host="https://apidocs.openx.solar" path="/user/kyc" %}
 {% api-method-summary %}
@@ -480,7 +484,7 @@ The authentication token belonging to the user
 
 {% endapi-method-response-example-description %}
 
-```text
+```
 
 ```
 {% endapi-method-response-example %}
@@ -1942,6 +1946,8 @@ The authentication token belonging to the user
 {% endapi-method-spec %}
 {% endapi-method %}
 
+
+
 {% api-method method="get" host="https://apidocs.openx.solar" path="/user/sweepasset" %}
 {% api-method-summary %}
 Sweep Asset
@@ -3269,4 +3275,3 @@ The authentication token belonging to the user
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
-

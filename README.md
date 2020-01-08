@@ -1,2 +1,2 @@
-# Openx Wiki
+# Initial page
 

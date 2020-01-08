@@ -1,4 +1,4 @@
-# Particle
+# ParticleIO
 
 {% api-method method="get" host="https://api.openx.solar" path="/particle/devices" %}
 {% api-method-summary %}

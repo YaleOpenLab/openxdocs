@@ -1,9 +1,9 @@
 # Table of contents
 
 * [Openx Wiki](README.md)
-* [API documentation](api/README.md)
+* [API](api/README.md)
   * [Opensolar](api/opensolar/README.md)
-    * [ParticleIO](api/opensolar/particleio.md)
+    * [Particle](api/opensolar/particleio.md)
     * [Stages](api/opensolar/stages.md)
     * [Projects](api/opensolar/untitled.md)
     * [Recipients](api/opensolar/recipients.md)
@@ -16,6 +16,4 @@
     * [Platform](api/openx/platform.md)
     * [Stablecoin](api/openx/stablecoin.md)
     * [Users](api/openx/users.md)
-* [Old API documentation](old-api-documentation/README.md)
-  * [Users](old-api-documentation/users.md)
 

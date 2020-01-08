@@ -1,8 +1,8 @@
-# Errors
+---
+description: A description of all the error codes supported by openx
+---
 
-| Error Code | Meaning |
-| :--- | :--- |
-|  |  |
+# Errors
 
 | Error Code | Meaning |
 | :--- | :--- |

@@ -1,5 +1,5 @@
 # Table of contents
 
-* [Initial page](README.md)
+* [Openx Wiki](README.md)
 * [API documentation](api.md)
 

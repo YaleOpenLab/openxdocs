@@ -2,7 +2,7 @@
 
 {% api-method method="post" host="https://apidocs.openx.solar" path="/token" %}
 {% api-method-summary %}
-The Get Access Token
+Get Access Token
 {% endapi-method-summary %}
 
 {% api-method-description %}
@@ -25,7 +25,7 @@ The pwhash of the user
 {% api-method-response %}
 {% api-method-response-example httpCode=200 %}
 {% api-method-response-example-description %}
-Cake successfully retrieved.
+
 {% endapi-method-response-example-description %}
 
 ```text
@@ -63,7 +63,7 @@ The authentication token belonging to the user
 {% api-method-response %}
 {% api-method-response-example httpCode=200 %}
 {% api-method-response-example-description %}
-Cake successfully retrieved.
+
 {% endapi-method-response-example-description %}
 
 ```text
@@ -168,7 +168,7 @@ Get User Balances
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Validates a specific struct and returns it
+Fetches all the user balacnes form the backend and returns it
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -187,7 +187,7 @@ The authentication token belonging to the user
 {% api-method-response %}
 {% api-method-response-example httpCode=200 %}
 {% api-method-response-example-description %}
-Cake successfully retrieved.
+
 {% endapi-method-response-example-description %}
 
 ```text
@@ -213,7 +213,7 @@ Get XLM Balance
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Validates a specific struct and returns it
+Get the XLM balance of hte user from the Stellar blockchain
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -232,7 +232,7 @@ The authentication token belonging to the user
 {% api-method-response %}
 {% api-method-response-example httpCode=200 %}
 {% api-method-response-example-description %}
-Cake successfully retrieved.
+
 {% endapi-method-response-example-description %}
 
 ```text
@@ -251,7 +251,7 @@ Get Asset Balance
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Validates a specific struct and returns it
+Get the asset blaance of a specific user
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -274,7 +274,7 @@ The authentication token belonging to the user
 {% api-method-response %}
 {% api-method-response-example httpCode=200 %}
 {% api-method-response-example-description %}
-Cake successfully retrieved.
+
 {% endapi-method-response-example-description %}
 
 ```text
@@ -293,7 +293,7 @@ Get IPFS hash
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Validates a specific struct and returns it
+Get the data pertaining to a specific IPFS hash
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -316,7 +316,7 @@ The authentication token belonging to the user
 {% api-method-response %}
 {% api-method-response-example httpCode=200 %}
 {% api-method-response-example-description %}
-Cake successfully retrieved.
+
 {% endapi-method-response-example-description %}
 
 ```text
@@ -335,7 +335,7 @@ Set KYC flag to true
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Validates a specific struct and returns it
+Sets a user's KYC flag to true. Can only be called by specific entities in the system.
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -358,7 +358,7 @@ The authentication token belonging to the user
 {% api-method-response %}
 {% api-method-response-example httpCode=200 %}
 {% api-method-response-example-description %}
-Cake successfully retrieved.
+
 {% endapi-method-response-example-description %}
 
 ```text
@@ -372,15 +372,13 @@ Cake successfully retrieved.
 {% endapi-method-spec %}
 {% endapi-method %}
 
-
-
 {% api-method method="get" host="https://apidocs.openx.solar" path="/user/sendxlm" %}
 {% api-method-summary %}
 Send XLM to another user
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Validates a specific struct and returns it
+Sends XLM form one account to a destiantion address
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -422,15 +420,13 @@ The authentication token belonging to the user
 {% endapi-method-spec %}
 {% endapi-method %}
 
-
-
 {% api-method method="get" host="https://apidocs.openx.solar" path="/user/notkycview" %}
 {% api-method-summary %}
 View all users without kyc
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Validates a specific struct and returns it
+Retrieves a list of all the users without KYC. Can only be called by admins and certain entities.
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -459,8 +455,6 @@ The authentication token belonging to the user
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
-
-
 
 {% api-method method="get" host="https://apidocs.openx.solar" path="/user/kycview" %}
 {% api-method-summary %}
@@ -468,7 +462,7 @@ View all users with kyc
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Validates a specific struct and returns it
+Returns a list of all the users who have gone through KYC
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -490,15 +484,13 @@ The authentication token belonging to the user
 
 {% endapi-method-response-example-description %}
 
-```text
+```
 
 ```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
-
-
 
 {% api-method method="get" host="https://apidocs.openx.solar" path="/user/askxlm" %}
 {% api-method-summary %}
@@ -506,7 +498,7 @@ Get XLM from testnet faucet
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Validates a specific struct and returns it
+Gets testnet XLM from the Stellar Foudnation faucet.
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -536,15 +528,13 @@ The authentication token belonging to the user
 {% endapi-method-spec %}
 {% endapi-method %}
 
-
-
 {% api-method method="get" host="https://apidocs.openx.solar" path="/user/trustasset" %}
 {% api-method-summary %}
 Trust Asset
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Validates a specific struct and returns it
+Trust an issuer for a specific asset
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -575,7 +565,7 @@ The authentication token belonging to the user
 {% api-method-response %}
 {% api-method-response-example httpCode=200 %}
 {% api-method-response-example-description %}
-Cake successfully retrieved.
+
 {% endapi-method-response-example-description %}
 
 ```text
@@ -672,15 +662,13 @@ Cake successfully retrieved.
 {% endapi-method-spec %}
 {% endapi-method %}
 
-
-
 {% api-method method="post" host="https://apidocs.openx.solar" path="/upload" %}
 {% api-method-summary %}
 Upload File
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Validates a specific struct and returns it
+Upload a file to the platform to be stored against a specific userID
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -703,7 +691,7 @@ The username of the user
 {% api-method-response %}
 {% api-method-response-example httpCode=200 %}
 {% api-method-response-example-description %}
-Cake successfully retrieved.
+
 {% endapi-method-response-example-description %}
 
 ```text
@@ -799,8 +787,6 @@ Cake successfully retrieved.
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
-
-
 
 {% api-method method="get" host="https://apidocs.openx.solar" path="/platformemail" %}
 {% api-method-summary %}
@@ -808,7 +794,7 @@ Get Platform Email
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Validates a specific struct and returns it
+Gets the email address associated with the platform
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -827,7 +813,7 @@ The authentication token belonging to the user
 {% api-method-response %}
 {% api-method-response-example httpCode=200 %}
 {% api-method-response-example-description %}
-Cake successfully retrieved.
+
 {% endapi-method-response-example-description %}
 
 ```text
@@ -923,8 +909,6 @@ Cake successfully retrieved.
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
-
-
 
 {% api-method method="get" host="https://apidocs.openx.solar" path="/tellerping" %}
 {% api-method-summary %}
@@ -932,7 +916,7 @@ Ping the teller
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Validates a specific struct and returns it
+Pings the teller associated with the pilot and checks whether its up. Also available on the teller side.
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -951,7 +935,7 @@ The authentication token belonging to the user
 {% api-method-response %}
 {% api-method-response-example httpCode=200 %}
 {% api-method-response-example-description %}
-Cake successfully retrieved.
+
 {% endapi-method-response-example-description %}
 
 ```text
@@ -1048,15 +1032,13 @@ Cake successfully retrieved.
 {% endapi-method-spec %}
 {% endapi-method %}
 
-
-
 {% api-method method="get" host="https://apidocs.openx.solar" path="/user/increasetrustlimit" %}
 {% api-method-summary %}
 Increase Trust Limit
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Validates a specific struct and returns it
+Increases the trust limit associated with a particular asset.
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -1083,7 +1065,7 @@ The authentication token belonging to the user
 {% api-method-response %}
 {% api-method-response-example httpCode=200 %}
 {% api-method-response-example-description %}
-Cake successfully retrieved.
+
 {% endapi-method-response-example-description %}
 
 ```text
@@ -1180,15 +1162,13 @@ Cake successfully retrieved.
 {% endapi-method-spec %}
 {% endapi-method %}
 
-
-
 {% api-method method="get" host="https://apidocs.openx.solar" path="/user/sendrecovery" %}
 {% api-method-summary %}
 Send Recovery Secrets
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Validates a specific struct and returns it
+Sends recovery secrets to the list of emails pased to the endpoint
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -1219,7 +1199,7 @@ The authentication token belonging to the user
 {% api-method-response %}
 {% api-method-response-example httpCode=200 %}
 {% api-method-response-example-description %}
-Cake successfully retrieved.
+
 {% endapi-method-response-example-description %}
 
 ```text
@@ -1322,7 +1302,7 @@ Recovery Seed from secrets
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Validates a specific struct and returns it
+Reconstructs the seed from two shares retrieved from entities.
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -1446,15 +1426,13 @@ Cake successfully retrieved.
 {% endapi-method-spec %}
 {% endapi-method %}
 
-
-
 {% api-method method="get" host="https://apidocs.openx.solar" path="/user/newsecrets" %}
 {% api-method-summary %}
 Generate New Secrets
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Validates a specific struct and returns it
+Generates a new set of shares to be distributed among the emails passed
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -1586,15 +1564,13 @@ Cake successfully retrieved.
 {% endapi-method-spec %}
 {% endapi-method %}
 
-
-
 {% api-method method="get" host="https://apidocs.openx.solar" path="/user/resetpwd" %}
 {% api-method-summary %}
 Reset Password
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Validates a specific struct and returns it
+Create a request to reset the password used to logon to the openx platform.
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -1710,15 +1686,13 @@ Cake successfully retrieved.
 {% endapi-method-spec %}
 {% endapi-method %}
 
-
-
 {% api-method method="get" host="https://apidocs.openx.solar" path="/user/pwdreset" %}
 {% api-method-summary %}
 Set New Password
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Validates a specific struct and returns it
+Sets a new password for the user. Requires the previous endpoint to be called before.
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -1842,15 +1816,13 @@ Cake successfully retrieved.
 {% endapi-method-spec %}
 {% endapi-method %}
 
-
-
 {% api-method method="get" host="https://apidocs.openx.solar" path="/user/sweep" %}
 {% api-method-summary %}
 Sweep XLM
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Validates a specific struct and returns it
+Sweeps XLM from one account to the other
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -1982,7 +1954,7 @@ Sweep Asset
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Validates a specific struct and returns it
+Sweeps a specific asset from one account to the other.
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -2114,15 +2086,13 @@ Cake successfully retrieved.
 {% endapi-method-spec %}
 {% endapi-method %}
 
-
-
 {% api-method method="get" host="https://apidocs.openx.solar" path="/user/verifykyc" %}
 {% api-method-summary %}
 VerifyKYC
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Validates a specific struct and returns it
+Old endpoint which was assumed to be called after calling the ComplyAdvantage endpoints.
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -2242,15 +2212,13 @@ Cake successfully retrieved.
 {% endapi-method-spec %}
 {% endapi-method %}
 
-
-
 {% api-method method="get" host="https://apidocs.openx.solar" path="/user/giverating" %}
 {% api-method-summary %}
 Give Rating
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Validates a specific struct and returns it
+Give a rating towards a user after a project is complete.
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -2373,8 +2341,6 @@ Cake successfully retrieved.
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
-
-
 
 {% api-method method="get" host="https://apidocs.openx.solar" path="/user/2fa/generate" %}
 {% api-method-summary %}
@@ -2382,7 +2348,7 @@ Generate 2FA Code
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Validates a specific struct and returns it
+Generates a new two factor authentication \(2FA\) code
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -2506,15 +2472,13 @@ Cake successfully retrieved.
 {% endapi-method-spec %}
 {% endapi-method %}
 
-
-
 {% api-method method="get" host="https://apidocs.openx.solar" path="/user/2fa/authenticate" %}
 {% api-method-summary %}
 Authenticate 2FA Code
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Validates a specific struct and returns it
+Authenticates a specific 2FA code \(which is generated by a third party app\)
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -2634,15 +2598,13 @@ Cake successfully retrieved.
 {% endapi-method-spec %}
 {% endapi-method %}
 
-
-
 {% api-method method="get" host="https://apidocs.openx.solar" path="/user/reputation" %}
 {% api-method-summary %}
 Change reputation
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Validates a specific struct and returns it
+Change the reputation associated with a specific user
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -2762,15 +2724,13 @@ Cake successfully retrieved.
 {% endapi-method-spec %}
 {% endapi-method %}
 
-
-
 {% api-method method="get" host="https://apidocs.openx.solar" path="/user/addseed" %}
 {% api-method-summary %}
 Add Seed
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Validates a specific struct and returns it
+Adds a user generated seed to the platform.
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -2898,15 +2858,13 @@ Cake successfully retrieved.
 {% endapi-method-spec %}
 {% endapi-method %}
 
-
-
 {% api-method method="get" host="https://apidocs.openx.solar" path="/user/latestblockhash" %}
 {% api-method-summary %}
 Get Latest Blockhash
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Validates a specific struct and returns it
+Retrieves the latest blockhash from the Stellar blockchain.
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -3021,8 +2979,6 @@ Cake successfully retrieved.
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
-
-
 
 {% api-method method="get" host="https://apidocs.openx.solar" path="/ipfs/putdata" %}
 {% api-method-summary %}
@@ -3030,7 +2986,7 @@ IPFS Store Data
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Validates a specific struct and returns it
+Stores some data on ipfs
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -3146,15 +3102,13 @@ Cake successfully retrieved.
 {% endapi-method-spec %}
 {% endapi-method %}
 
-
-
 {% api-method method="get" host="https://apidocs.openx.solar" path="/user/anchorusd/kyc" %}
 {% api-method-summary %}
 Add AnchorKYC Info
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Validates a specific struct and returns it
+Adds anchorUSD KYC info to the platform.
 {% endapi-method-description %}
 
 {% api-method-spec %}

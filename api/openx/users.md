@@ -1,4 +1,4 @@
-# index
+# Users
 
 {% api-method method="post" host="https://apidocs.openx.solar" path="/token" %}
 {% api-method-summary %}

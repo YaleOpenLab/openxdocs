@@ -10,7 +10,9 @@ Get Access Token
 {% endapi-method-summary %}
 
 {% api-method-description %}
-This endpoint allows you to fetch a token that can be then used to access all endpoints
+This endpoint allows you to fetch a token that can be then used to access all endpoints  
+  
+`curl -X POST -H "Content-Type: application/x-www-form-urlencoded" -H "Origin: localhost" -d 'username=admin&pwhash=e9a75486736a550af4fea861e2378305c4a555a05094dee1dca2f68afea49cc3a50e8de6ea131ea521311f4d6fb054a146e8282f8e35ff2e6368c1a62e909716' "https://localhost:8081/token"`
 {% endapi-method-description %}
 
 {% api-method-spec %}

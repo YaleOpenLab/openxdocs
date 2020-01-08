@@ -1,3 +1,7 @@
+---
+description: This page contains a list of all the user related endpoints in openx.
+---
+
 # Users
 
 {% api-method method="post" host="https://apidocs.openx.solar" path="/token" %}
@@ -160,8 +164,6 @@ The authentication token belonging to the user
 {% endapi-method-spec %}
 {% endapi-method %}
 
-
-
 {% api-method method="get" host="https://apidocs.openx.solar" path="/user/balances" %}
 {% api-method-summary %}
 Get User Balances
@@ -205,8 +207,6 @@ The authentication token belonging to the user
 {% endapi-method-spec %}
 {% endapi-method %}
 
-
-
 {% api-method method="get" host="https://apidocs.openx.solar" path="/user/balances/xlm" %}
 {% api-method-summary %}
 Get XLM Balance
@@ -242,8 +242,6 @@ The authentication token belonging to the user
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
-
-
 
 {% api-method method="get" host="https://apidocs.openx.solar" path="/user/balance/asset" %}
 {% api-method-summary %}
@@ -285,8 +283,6 @@ The authentication token belonging to the user
 {% endapi-method-spec %}
 {% endapi-method %}
 
-
-
 {% api-method method="get" host="https://apidocs.openx.solar" path="/ipfs/getdata" %}
 {% api-method-summary %}
 Get IPFS hash
@@ -326,8 +322,6 @@ The authentication token belonging to the user
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
-
-
 
 {% api-method method="get" host="https://apidocs.openx.solar" path="/user/kyc" %}
 {% api-method-summary %}
@@ -484,7 +478,7 @@ The authentication token belonging to the user
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 
 ```
 {% endapi-method-response-example %}
@@ -1946,8 +1940,6 @@ The authentication token belonging to the user
 {% endapi-method-spec %}
 {% endapi-method %}
 
-
-
 {% api-method method="get" host="https://apidocs.openx.solar" path="/user/sweepasset" %}
 {% api-method-summary %}
 Sweep Asset
@@ -3275,3 +3267,4 @@ The authentication token belonging to the user
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
+

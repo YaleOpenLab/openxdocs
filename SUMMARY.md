@@ -1,6 +1,7 @@
 # Table of contents
 
 * [Openx Wiki](README.md)
+* [Repositories](repositories.md)
 * [FAQ](faq.md)
 * [People](people.md)
 * [Projects](projects.md)

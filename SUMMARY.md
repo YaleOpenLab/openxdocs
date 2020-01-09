@@ -1,6 +1,10 @@
 # Table of contents
 
 * [Openx Wiki](README.md)
+* [FAQ](faq.md)
+* [People](people.md)
+* [Projects](projects.md)
+* [Architecture](architecture.md)
 * [API](api/README.md)
   * [Opensolar](api/opensolar/README.md)
     * [Particle](api/opensolar/particleio.md)

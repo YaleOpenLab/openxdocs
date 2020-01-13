@@ -16,5 +16,7 @@ The teller is an executable that interfaces with the opensolar platform to const
 
 The IoT devices that are linked to the solar panels transmit data using the MQTT protocol. The MQTT protocol requires a transmitter \(in this case the IoT devices linked to the solar panel\), a broker to broadcast the messages received from the transmitter, and a receiver which can connect to the broker and subscribe to messages from the transmitter. The broker can either be run alongside the platform or can be run on the IoT Hub, depending on the energy specifications of the IoT Hub and its capabilities. Opensolar runs an MQTT broker at mqtt.openx.solar which acts as the broker for projects on the opensolar platform.
 
+### Platform Infrastructure
 
+The opensolar platform and the openx instance associated with it are hosted on separate AWS instances. They communicate with each oteher through the platform-platform API defined by openx. The platform communicates with the broker, IPFS and other parts that are required in order for opensolar to work as expected.
 

@@ -2,7 +2,7 @@
 
 ### Introduction
 
-Opensolar is a platform built on top of openx and the Stellar blockchain that enables investments in solar infrastructure. Opensolar's initial pilots are targeted at Puerto Rico, a territory that has been ferquently subject to hurricanes, earthquakes and more, preventing access to energy for prolonged period of time. Opensolar aims to automate the entire process of energy production, billing and asset ownership for the recipient and the process of returns for the investor. This is done by monitoring energy production using IoT devices, storing the data on a distributed database, and paying for energy consumption over a pre-defined period \(two weeks / a month\) by fetchin g energy prices from an oracle. The entire workflow is implemented as a series of contracts designed to be run on the platform instance.
+Opensolar is a platform built on top of openx and the Stellar blockchain that enables investments in solar infrastructure. Opensolar's initial pilots are targeted at Puerto Rico, a territory that has been frequently subject to hurricanes, earthquakes and more, preventing access to energy for prolonged periods of time. Opensolar aims to automate the entire process of energy production, billing, and asset ownership for the recipient and the process of returns for the investor. This is done by monitoring energy production using IoT devices, storing the data on a distributed database, and paying for energy consumption over a pre-defined period \(two weeks / a month\) by fetchin g energy prices from an oracle. The entire workflow is implemented as a series of contracts designed to be run on the platform instance.
 
 ### Solar Infrastructure
 
@@ -40,7 +40,13 @@ AnchorUSD requires KYC to be done through its portal. TODO
 
 ### Project Stages
 
+The platform is comprised into 9 distinct stages:
+
+TODO
+
 ### Investment Models
+
+Opensolar aims to support multiple investment models during its development phase but right now, only one kind of investment \(munibond\) is supported on the platform.
 
 ### Platform Infrastructure
 

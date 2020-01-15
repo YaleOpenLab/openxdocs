@@ -10,7 +10,8 @@ Ping the platform
 {% endapi-method-summary %}
 
 {% api-method-description %}
-
+  
+**curl -X GET "https://api.openx.solar/ping"**
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -23,7 +24,10 @@ Ping the platform
 {% endapi-method-response-example-description %}
 
 ```
-
+{
+  "Code": 200,
+  "Status": "OK"
+}
 ```
 {% endapi-method-response-example %}
 {% endapi-method-response %}

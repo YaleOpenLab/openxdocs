@@ -9,12 +9,12 @@
 ## Openx
 
 * [API](openx/api/README.md)
-  * [Users](openx/api/users.md)
-  * [Stablecoin](api/openx/stablecoin.md)
+  * [Users](api/openx/users.md)
+  * [Stablecoin](openx/api/stablecoin.md)
   * [Platform](api/openx/platform.md)
   * [Admin](api/openx/admin.md)
   * [Public](api/openx/public.md)
-  * [Ping](api/openx/ping.md)
+  * [Ping](openx/api/ping.md)
   * [Errors](api/openx/errors.md)
 * [FAQ](openx/faq.md)
 * [Architecture](openx/architecture.md)
@@ -22,11 +22,11 @@
 ## Opensolar
 
 * [API](api/README.md)
-  * [Investors](api/opensolar/investors.md)
-  * [Recipients](api/opensolar/recipients.md)
-  * [Projects](api/opensolar/untitled.md)
-  * [Stages](api/opensolar/stages.md)
-  * [Particle](api/opensolar/particleio.md)
+  * [Investors](opensolar/api/investors.md)
+  * [Recipients](opensolar/api/recipients.md)
+  * [Projects](opensolar/api/untitled.md)
+  * [Stages](opensolar/api/stages.md)
+  * [Particle](opensolar/api/particleio.md)
 * [FAQ](faq.md)
 * [Architecture](opensolar/architecture.md)
 

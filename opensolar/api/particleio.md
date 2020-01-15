@@ -6,7 +6,8 @@ Get all devices
 {% endapi-method-summary %}
 
 {% api-method-description %}
-
+  
+**curl -X GET "http://localhost:8080/particle/devices?username=john&token=pmkjMEnyeUpdTyhdHElkBExEKeLIlYft&accessToken=blah&productInfo=blah"**
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -46,7 +47,8 @@ Get Product Info
 {% endapi-method-summary %}
 
 {% api-method-description %}
-
+  
+**curl -X GET "http://localhost:8080/particle/productinfo?username=john&token=pmkjMEnyeUpdTyhdHElkBExEKeLIlYft&accessToken=blah&productInfo=blah"**
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -118,7 +120,8 @@ Ping Device
 {% endapi-method-summary %}
 
 {% api-method-description %}
-
+  
+**curl -X GET "http://localhost:8080/particle/deviceping?username=john&token=pmkjMEnyeUpdTyhdHElkBExEKeLIlYft&accessToken=blah&deviceId=blah"**
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -154,7 +157,8 @@ Signal Device
 {% endapi-method-summary %}
 
 {% api-method-description %}
-
+  
+**curl -X GET "http://localhost:8080/particle/devicesignal?username=john&token=pmkjMEnyeUpdTyhdHElkBExEKeLIlYft&accessToken=blah&deviceId=blah&signal=on"**
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -190,7 +194,8 @@ Get Device ID
 {% endapi-method-summary %}
 
 {% api-method-description %}
-
+  
+**curl -X GET "http://localhost:8080/particle/getdeviceid?username=john&token=pmkjMEnyeUpdTyhdHElkBExEKeLIlYft&accessToken=blah&serialNumber=blah"**
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -226,7 +231,8 @@ Get last diagnostic
 {% endapi-method-summary %}
 
 {% api-method-description %}
-
+  
+**curl -X GET "http://localhost:8080/particle/diag/last?username=john&token=pmkjMEnyeUpdTyhdHElkBExEKeLIlYft&accessToken=blah&deviceId=blah"**
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -262,7 +268,8 @@ Get all diagnostics
 {% endapi-method-summary %}
 
 {% api-method-description %}
-
+  
+**curl -X GET "http://localhost:8080/particle/diag/all?username=john&token=pmkjMEnyeUpdTyhdHElkBExEKeLIlYft&accessToken=blah&deviceId=blah"**
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -298,7 +305,8 @@ Get User Info
 {% endapi-method-summary %}
 
 {% api-method-description %}
-
+  
+**curl -X GET "http://localhost:8080/particle/user/info?username=john&token=pmkjMEnyeUpdTyhdHElkBExEKeLIlYft&accessToken=blah"**
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -330,7 +338,8 @@ Get sim card info
 {% endapi-method-summary %}
 
 {% api-method-description %}
-
+  
+**curl -X GET"http://localhost:8080/particle/sims?username=john&token=pmkjMEnyeUpdTyhdHElkBExEKeLIlYft&accessToken=blah"**
 {% endapi-method-description %}
 
 {% api-method-spec %}

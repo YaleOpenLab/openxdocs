@@ -6,7 +6,8 @@ Get all recipients
 {% endapi-method-summary %}
 
 {% api-method-description %}
-
+  
+**curl -X GET -H "Content-Type: application/x-www-form-urlencoded" -H "Origin: localhost" "http://localhost:8080/recipient/all"**
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -86,7 +87,8 @@ Validate Recipient
 {% endapi-method-summary %}
 
 {% api-method-description %}
-
+  
+**curl -X GET "http://localhost:8080/recipient/validate?username=martin&token=pmkjMEnyeUpdTyhdHElkBExEKeLIlYft"**
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -294,7 +296,8 @@ Choose blind auction
 {% endapi-method-summary %}
 
 {% api-method-description %}
-
+  
+**curl -X GET "http://localhost:8080/recipient/auction/choose/blind?username=martin&token=pmkjMEnyeUpdTyhdHElkBExEKeLIlYft"**
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -330,7 +333,8 @@ Choose vickrey auction
 {% endapi-method-summary %}
 
 {% api-method-description %}
-
+  
+**curl -X GET "http://localhost:8080/recipient/auction/choose/vickrey?username=martin&token=pmkjMEnyeUpdTyhdHElkBExEKeLIlYft"**
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -366,7 +370,8 @@ Choose time auction
 {% endapi-method-summary %}
 
 {% api-method-description %}
-
+  
+**curl -X GET "http://localhost:8080/recipient/auction/choose/time?username=martin&token=pmkjMEnyeUpdTyhdHElkBExEKeLIlYft"**
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -566,7 +571,8 @@ Get Asset Trust Limit
 {% endapi-method-summary %}
 
 {% api-method-description %}
-
+  
+**curl -X GET -H "Content-Type: application/x-www-form-urlencoded" -H "Origin: localhost" "http://localhost:8080/user/increasetrustlimit?username=john&token=pmkjMEnyeUpdTyhdHElkBExEKeLIlYft&trust=10&seedpwd=x"**
 {% endapi-method-description %}
 
 {% api-method-spec %}

@@ -3,6 +3,7 @@
 * [Welcome](README.md)
 * [People](people.md)
 * [Projects](projects.md)
+* [License](license.md)
 * [Repositories](repositories.md)
 
 ## Openx
@@ -16,7 +17,7 @@
   * [Ping](api/openx/ping.md)
   * [Errors](api/openx/errors.md)
 * [FAQ](openx/faq.md)
-* [Architecture](architecture.md)
+* [Architecture](openx/architecture.md)
 
 ## Opensolar
 

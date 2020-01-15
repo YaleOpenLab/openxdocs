@@ -9,7 +9,7 @@
 ## Openx
 
 * [API](openx/api/README.md)
-  * [Users](api/openx/users.md)
+  * [Users](openx/api/users.md)
   * [Stablecoin](api/openx/stablecoin.md)
   * [Platform](api/openx/platform.md)
   * [Admin](api/openx/admin.md)

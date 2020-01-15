@@ -99,7 +99,7 @@ Platforms do not handle wallets and similar infrastructure. All wallet related c
 
 Stablecoins are digital representations of fiat currencies. Common examples are Tether, USDCoin and more. Stablecoins are usually based off Bitcoin or Ethereum but since openx builds on top of Stellar, it uses a stablecoin called AnchorUSD.
 
-AnchorUSD is an "asset" on Stellar provided by the AnchorUSD team. If a user wishes to buy AnchorUSD, they must undergo the checks required by Anchor, transfer money to Anchor, and receive AnchorUSD in their account. They can also purchase AnchorUSD using the Stellar DEX. AnchorUSD, denoted by the ticker USD on Stellar can be used to invest in projects that platforms advertise for funding.
+USDx is an "asset" on Stellar provided by AnchorUSD. If a user wishes to buy USDx, they must undergo the checks required by AnchorUSD, transfer money to AnchorUSD, and receive USDx in their account. They can also purchase USDx using the Stellar DEX. USDx can be used to invest in projects that platforms advertise for funding, like opensolar.
 
 ### CI
 

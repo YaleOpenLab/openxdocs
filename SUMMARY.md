@@ -16,7 +16,7 @@
   * [Ping](api/openx/ping.md)
   * [Errors](api/openx/errors.md)
 * [FAQ](openx/faq.md)
-* [Architecture](architecture.md)
+* [Architecture](openx/architecture.md)
 
 ## Opensolar
 

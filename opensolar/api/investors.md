@@ -52,7 +52,7 @@ Validate Investor
 
 {% api-method-description %}
   
-**curl -X GET "http://localhost:8080/investor/validate?username=john&token=pmkjMEnyeUpdTyhdHElkBExEKeLIlYft"**
+**curl -X GET "http://api2.openx.solar/investor/validate?username=john&token=pmkjMEnyeUpdTyhdHElkBExEKeLIlYft"**
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -89,7 +89,7 @@ Get all Investors
 
 {% api-method-description %}
   
-**curl -X GET -H "Content-Type: application/x-www-form-urlencoded" -H "Origin: localhost" "http://localhost:8080/investor/all"**
+**curl -X GET -H "Content-Type: application/x-www-form-urlencoded" -H "Origin: localhost" "http://api2.openx.solar/investor/all"**
 {% endapi-method-description %}
 
 {% api-method-spec %}

@@ -12,7 +12,7 @@ Get Stablecoin
 {% api-method-description %}
 This endpoint fetches test stablecoin  
   
-**curl -X GET "http://localhost:8080/stablecoin/get?seed=SA5DXUTRWHQXOHPISTRLPH55NIUOSV2GB5NDTOSZ7H33KOK2TYYU556O&amount=1&token=pmkjMEnyeUpdTyhdHElkBExEKeLIlYft&username=john"**
+**curl -X GET "http://api2.openx.solar/stablecoin/get?seed=SA5DXUTRWHQXOHPISTRLPH55NIUOSV2GB5NDTOSZ7H33KOK2TYYU556O&amount=1&token=pmkjMEnyeUpdTyhdHElkBExEKeLIlYft&username=john"**
 {% endapi-method-description %}
 
 {% api-method-spec %}

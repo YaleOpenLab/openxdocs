@@ -7,7 +7,7 @@ Get all devices
 
 {% api-method-description %}
   
-**curl -X GET "http://localhost:8080/particle/devices?username=john&token=pmkjMEnyeUpdTyhdHElkBExEKeLIlYft&accessToken=blah&productInfo=blah"**
+**curl -X GET "http://api2.openx.solar/particle/devices?username=john&token=pmkjMEnyeUpdTyhdHElkBExEKeLIlYft&accessToken=blah&productInfo=blah"**
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -48,7 +48,7 @@ Get Product Info
 
 {% api-method-description %}
   
-**curl -X GET "http://localhost:8080/particle/productinfo?username=john&token=pmkjMEnyeUpdTyhdHElkBExEKeLIlYft&accessToken=blah&productInfo=blah"**
+**curl -X GET "http://api2.openx.solar/particle/productinfo?username=john&token=pmkjMEnyeUpdTyhdHElkBExEKeLIlYft&accessToken=blah&productInfo=blah"**
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -121,7 +121,7 @@ Ping Device
 
 {% api-method-description %}
   
-**curl -X GET "http://localhost:8080/particle/deviceping?username=john&token=pmkjMEnyeUpdTyhdHElkBExEKeLIlYft&accessToken=blah&deviceId=blah"**
+**curl -X GET "http://api2.openx.solar/particle/deviceping?username=john&token=pmkjMEnyeUpdTyhdHElkBExEKeLIlYft&accessToken=blah&deviceId=blah"**
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -158,7 +158,7 @@ Signal Device
 
 {% api-method-description %}
   
-**curl -X GET "http://localhost:8080/particle/devicesignal?username=john&token=pmkjMEnyeUpdTyhdHElkBExEKeLIlYft&accessToken=blah&deviceId=blah&signal=on"**
+**curl -X GET "http://api2.openx.solar/particle/devicesignal?username=john&token=pmkjMEnyeUpdTyhdHElkBExEKeLIlYft&accessToken=blah&deviceId=blah&signal=on"**
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -195,7 +195,7 @@ Get Device ID
 
 {% api-method-description %}
   
-**curl -X GET "http://localhost:8080/particle/getdeviceid?username=john&token=pmkjMEnyeUpdTyhdHElkBExEKeLIlYft&accessToken=blah&serialNumber=blah"**
+**curl -X GET "http://api2.openx.solar/particle/getdeviceid?username=john&token=pmkjMEnyeUpdTyhdHElkBExEKeLIlYft&accessToken=blah&serialNumber=blah"**
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -232,7 +232,7 @@ Get last diagnostic
 
 {% api-method-description %}
   
-**curl -X GET "http://localhost:8080/particle/diag/last?username=john&token=pmkjMEnyeUpdTyhdHElkBExEKeLIlYft&accessToken=blah&deviceId=blah"**
+**curl -X GET "http://api2.openx.solar/particle/diag/last?username=john&token=pmkjMEnyeUpdTyhdHElkBExEKeLIlYft&accessToken=blah&deviceId=blah"**
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -269,7 +269,7 @@ Get all diagnostics
 
 {% api-method-description %}
   
-**curl -X GET "http://localhost:8080/particle/diag/all?username=john&token=pmkjMEnyeUpdTyhdHElkBExEKeLIlYft&accessToken=blah&deviceId=blah"**
+**curl -X GET "http://api2.openx.solar/particle/diag/all?username=john&token=pmkjMEnyeUpdTyhdHElkBExEKeLIlYft&accessToken=blah&deviceId=blah"**
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -306,7 +306,7 @@ Get User Info
 
 {% api-method-description %}
   
-**curl -X GET "http://localhost:8080/particle/user/info?username=john&token=pmkjMEnyeUpdTyhdHElkBExEKeLIlYft&accessToken=blah"**
+**curl -X GET "http://api2.openx.solar/particle/user/info?username=john&token=pmkjMEnyeUpdTyhdHElkBExEKeLIlYft&accessToken=blah"**
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -339,7 +339,7 @@ Get sim card info
 
 {% api-method-description %}
   
-**curl -X GET"http://localhost:8080/particle/sims?username=john&token=pmkjMEnyeUpdTyhdHElkBExEKeLIlYft&accessToken=blah"**
+**curl -X GET"http://api2.openx.solar/particle/sims?username=john&token=pmkjMEnyeUpdTyhdHElkBExEKeLIlYft&accessToken=blah"**
 {% endapi-method-description %}
 
 {% api-method-spec %}

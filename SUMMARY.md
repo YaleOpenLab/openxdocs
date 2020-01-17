@@ -29,4 +29,6 @@
   * [Particle](opensolar/api/particleio.md)
 * [FAQ](faq.md)
 * [Architecture](opensolar/architecture.md)
+* [Openx-Opensolar](opensolar/openx-opensolar.md)
+* [Frontend](opensolar/frontend.md)
 

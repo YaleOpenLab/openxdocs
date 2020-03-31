@@ -158,50 +158,46 @@ Given these disadavantages, it is useful to explore alternatives that may addres
 
 ### Goals
 
-The platform has a set of blockchain oriented goals which can be used to evaluate each alternative:
+The platform has a set of goals which can be used to compare different blockchain ecosystems:
 
 * **Trustless:** The platform must minimize trust in itself to avoid attack vectors centred around it.
 * **Secure and Decentralised:** The platform must be backed by a secure blockchain without the possibility of attacks either by a coordinated hash power or by a small group of attackers.
 * **Robust in functions:** The platform must be able to perform its intended set of functions in an easy, fast and secure manner without compromising on provided functions.
 * **Good partner ecosystem:** Users must be able to get on the platform as easily as possible with minimal steps required.
 
-More steps along with ratings are outlined here \([https://docs.google.com/spreadsheets/d/1H6HwnCwCMZ1yMZqEkVnr2Pw777mmAwhBQHiX1vnC9VM/edit?usp=sharing](https://docs.google.com/spreadsheets/d/1H6HwnCwCMZ1yMZqEkVnr2Pw777mmAwhBQHiX1vnC9VM/edit?usp=sharing)\).
+More steps along with sample ratings are outlined at [https://docs.google.com/spreadsheets/d/1H6HwnCwCMZ1yMZqEkVnr2Pw777mmAwhBQHiX1vnC9VM/edit?usp=sharing](https://docs.google.com/spreadsheets/d/1H6HwnCwCMZ1yMZqEkVnr2Pw777mmAwhBQHiX1vnC9VM/edit?usp=sharing).
 
-We note here that we omit contentious blockchains like Bitcoin Cash and Bitcoin SV whose development is highly volatile and centralised to a limited number of people in the ecosystem. We also omit blockchains like Tron, Ripple, and EOS whose development and funding goals aren't clearly defined.
+In this document, contentious blockchains like Bitcoin Cash and Bitcoin SV whose development is highly volatile and centralised to a limited number of people in the ecosystem are omitted. Blockchains like Tron, Ripple, and EOS whose development and funding goals aren't clearly defined are also omitted.
 
 ## Bitcoin
 
-Bitcoin uses an unspent transaction output \(utxo\) model. A transition to this model would require a fundamental change to the platform architecture. The platform should also maintain internal wallets that handle utxo selection, change outputs and similar which are common to an utxo model.
-
-Bitcoin's list of opcodes is more expansive than Stellar and Bitcoin development in the future holds lots of potential for improvements and optimisations.
+Bitcoin is the oldest cryptocurrency, powered by a Proof of Work consensus mechanism. Bitcoin uses an unspent transaction output \(utxo\) model and individual utxos are transferred between multiple addresses. Bitcoin possesses a native scripting language called Bitcoin Script which can be used to model different functions on Bitcoin.
 
 ### Layer 2
 
-Layer 2 \(L2\) is a term used to describe improvements that don't occur on the main blockchain. L2 can be imagined of as a layer parallel to the main blockchain which commits to the main blockchain at certain intervals or when certain criteria are fulfilled.
+Layer 2 \(L2\) is a term used to describe scalability and functional improvements that occur parallel to the main blockchain. L2 based solutions often commit to the main blockchain at certain intervals or when certain criteria are fulfilled.
 
 Popular L2 improvements on top of Bitcoin are the Lightning Network and Sidechains. Popular L2 improvements on top of Ethereum are Sharding and Plasma.
 
 ### Lightning Network
 
-The Lightning Network \(LN\) is a peer-peer L2 payments layer. It offers fast and trust minimised payments that can be adapted to a variety of applications by changing the way the system is architected.
+The Lightning Network \(LN\) is a peer-peer L2 payments layer. It offers fast and trust minimised payments that can be adapted to a variety of applications by changing the architecture of the system.
 
-Each "peer" \(or "node"\) in Lightning is a user who either runs their own node or communicates with one. Each peer is required to have atleast one channel with another peer in order to pay others on the lightning network. The lightning network also has a Sphinx based routing protocol which can route payments from one peer to another.
+Each "peer" \(or "node"\) in Lightning is a user who either runs their own node or communicates with one. Each peer is required to have atleast one channel with another peer to pay others on the lightning network. The lightning network also has a native routing protocol which can route payments from one peer to another.
 
-Payments take place through peer to peer channels. Each peer has a balance associated with each of its channels, and the net balance of the channel is the sum of both peers' balances. Channels can be one or two way depending on the balance of each peer at each side of the channel. The ability of a given peer to pay another peer depends on the balances of all peers in between, or dependent on the liquidity of the route.
+Payments are facilitated by peer to peer channels. Each peer has a balance associated with each of its channels, and the net balance of the channel is the sum of both peers' balances. Channels can be one or two way depending on the balance of each peer at each side of the channel. The ability of a given peer to pay another peer depends on the balances of peers in between, also referred to as the "liquidity" of a given route.
 
-The lightning network requires liquidity from both participants in order to be effective. For a given peer, there are two types of liquidity - inbound liquidity and outbound liquidity.
+The lightning network requires liquidity from both peers in order to be effective. For a given peer, there are two types of liquidity - inbound liquidity and outbound liquidity. 
 
-Inbound liquidity is the capacity with which a given peer can be paid by other peers. The net inbound liquidity which is the sum of all individual inbound liquidities is the maximum amount a peer can be paid through lightning.
+Inbound liquidity is the capacity with which a peer can be paid by other peers. The net inbound liquidity which is the sum of all individual inbound liquidities is the maximum amount a peer can be paid through lightning.
 
-Outbound liquidity is the capacity with which a given peer can pay other peers. The net inbound liquidity which is the sum of all individual inbound liquidities is the maximum amount a given peer can pay other peers through lightning.
+Outbound liquidity is the capacity with which a peer can pay other peers. The net outbound liquidity which is the sum of all individual outbound liquidities is the maximum amount a given peer can pay other peers through lightning.
 
-For a given peer, depending upon their role \(merchant, customer, payment processor, etc\), they can optimise their outbound liquidity. For inbound liquidity, they would have to form networks with other peers on the network in order to be reachable by other nodes.
+Depending upon their role, a peer \(merchant, customer, payment processor, etc\), can optimise their outbound liquidity. To have inbound liquidity and to be reachable by other nodes, they would have to form networks with other peers on the network.
 
-Peers can create invoices in the form of QR codes or text messages. An invoice communicates to the payee the details of the requester, and once fulfilled, finds a route to the requester. Peers can also send text messages using the lightning network by paying all intermediary nodes to route the message for them.
+Peers can create invoices in the form of QR codes or text messages. An invoice communicates to the payee the details of the requester. An invoice can be fulfilled by any peer as long as they can find a route to the requester. Peers can also send text messages using the lightning network by paying nodes to route the messages.
 
-A state in lightning is the balance on each peer's side in a given channel. This acts as proof \(in the event either peer acts malicious\) of the channel's balance, and doesn't allow any peer to claim other balances \(if they do so, the other peer can publish this proof to the blockchain and claim all the funds in the channnel\).
-
-In opensolar's context, the platform can act as a central provider of outbound liquidity \(ie\) the platform has capacity to pay all entities on the platform. Investors must create inbound liquidity if they want to invest in projects while receivers and developers don't have to do so \(unless they want to donate to the platform or invest in a project\). Investors could also put in a default amount of money in a lightning channel once they sign up in order to be able to invest in projects immediately.
+A state in lightning is a cryptographic proof reflecting each peer's balance in a channel. In the event a peer acts maliciously, this proof can be published on Bitcoin-L1, and the malicious peer loses all their funds in the channel.
 
 ### LN Hub and Spoke Model
 

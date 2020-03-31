@@ -10,46 +10,47 @@ Recommended previous reading: [https://gist.github.com/Varunram/b8c0da7b9d553fb0
 
 ## Introduction
 
-Opensolar is a platform for investments in solar energy projects. Opensolar's initial prototype was in Ethereum, and is built on the Stellar blockchain. Through working with Stellar over the course of the past year, we have come to identify key advantages and disadvantages to using Stellar. In this document, we will explore these, along with other alternative technologies that Opensolar could potentially migrate to.
+Opensolar is a platform for investments in solar energy projects. Opensolar's initial prototype was in Ethereum, and currently uses the Stellar blockchain. In this document, we will explore key advantages and disadvantages of using Stellar, along with other alternative blockchain ecosystems that Opensolar could potentially use.
 
-Opensolar is designed to be modular, with different parts intended to be used in other systems. The core opensolar platform is built on top of openx, a broader "platform of platforms" architecture which can be used for a wide range of investments. Openx provides a base set of JSON-RPC endpoints, a user structure for different users on the platform, optional Know Your Customer \(KYC\) functionality, and other features that are useful for constructing a skeletal platform. Openx platform skeletons can be easily created using the CLI based tool create-openx-app, or can be forked from the main opensolar repository.
+Opensolar is designed to be modular and each standalone part can be used in a different application. The core opensolar platform is built on top of openx, a broader "platform of platforms" architecture which can be used for a wide range of investment types. Openx provides a base set of JSON-RPC endpoints, a user structure for different users on the platform, optional Know Your Customer \(KYC\) functionality, and other features that are useful for constructing a skeletal platform. Openx platform skeletons can be easily created using the CLI based tool create-openx-app, or can be forked from the main opensolar repository.
 
-Openx's \(and Opensolar's\) architecture is not dependent upon any single blockchain. It is designed to be used with any blockchain as long as there is a contract to interact with and retrieve data from the blockchain. Openx right now supports only Stellar, but adding support for new blockchains is as easy as adding the required handlers. A platform based on Openx has the following parts:
+Openx's \(and Opensolar's\) architecture is not dependent upon any single blockchain. It is designed to be used with any blockchain as long as there is a contract to interact with a blockchain. Openx right now supports only Stellar but adding support for new blockchains is easy, only requiring the addition of handlers that communicate with other openx fragments. A platform based on Openx has the following parts:
 
-1. A Smart Contract for performing the core functions of the platform 
-2. A JSON-RPC interface through which the frontend \(and other pieces of software like the "teller"\) can interact with the backend.
-3. Auxiliary packages for handling functions like KYC, Stablecoins, different Investment models, etc
+1. A Smart Contract that performs the core functions of the platform 
+2. A JSON-RPC interface through which the frontend and other pieces of software can interact with the backend.
+3. Auxiliary packages that handle functions like KYC, Stablecoins, different Investment models, etc
 
-The functionality associated with each modular package is exposed through a JSON-RPC API which follows a token based authentication scheme which callers can invoke.
+The functionality associated with each package within the platform is exposed through a JSON-RPC API. This API follows a token based authentication scheme which callers can invoke.
 
 ## Opensolar
 
-Opensolar is a platform built on top of the Stellar blockchain for investments in solar energy projects. Opensolar advertises projects of a specific capacity in which investors can invest, and the receivers of a specific project pay back the investors in a specific period of time.
-
-### Entities
+Opensolar is a platform built using the Stellar blockchain for investments in solar energy projects. Opensolar enables people to advertise projects in which investors can invest, and the receivers of a project pay the investors back through the course of time.
 
 ### Openx
 
-There is one kind of entity on the openx platform that is to be used by all platforms importing openx: The User entity. The user entity contains commonly used fieds that are needed for maintaining compatibility with openx. The entity also contains handlers for all cryptocurrencies supported by openx, and it is highly recommended for platforms to import this functionality from openx and not deal with handling cryptocurrencies by themselves \(because openx's code is easier to audit, follows code standards, etc.\). Openx also contains other pieces relevant for a user entity such as KYC registration, stablecoin support, etc. However, as a rule, cryptocurrency operations and handling must take place within the openx package \(if platforms would like to add support for other cryptocurrencies, they are requested to make a Pull Request to the openx repository\)
+There is one entity on the openx platform that acts as a parent entity for all entities on other platforms - the "User" entity. This entity contains fields that are required for maintaining cross-compatibility with other openx based platforms. It also contains handlers for all cryptocurrencies supported by openx, and platforms are highly recommended to import this functionality from openx. The entity also contains other pieces relevant for a user such as KYC registration and stablecoin support.
+
+As a rule, cryptocurrency operations and handling must take place within the parent openx platform. If platforms would like to add support for other cryptocurrencies, such functionality must be added to the openx repository to enable cross openx platform investments.
+
+Openx uses boltDB, a key value pair database for its internal storage, in order to store user credentials, encrypted user seed, and more.
 
 ### Opensolar
 
-Opensolar builds on top of openx, so it imports the user entity within the entities that it defines on the platform. There are different entities on Opensolar playing different roles on the platform:
+Opensolar builds on top of openx and imports the user entity as a parent entity to the entities that it defines. There are different entities on Opensolar such as:
 
-* Investors: Investors invest in projects listed on the platform
-* Recipients / Receivers: Receivers with the help of originators list projects that need investment on the platform
-* Originators: Originators propose projects that might be useful to receivers
-* Contractors: Contractors give a quote to the receiver based on the requirements specified by the receiver and originator
-* Developers: Developers install services for the receiver
-* Guarantors: Guarantors provide a failsafe for receivers who might default on payments.
+* **Investors**: Investors invest in projects listed on the platform. Investors can vote on projects they like and on changes to be done after their investment is finalised.
+* **Recipients / Receivers**: Receivers with the help of originators list projects that need investment on the platform. Receivers are the beneficiaries of projects listed on Opensolar.
+* **Originators**: Originators propose projects that might add value to receivers. They work with receivers to prepare a preliminary project plan that contractors can bid on.
+* **Contractors**: Contractors bid on projects within opensolar and give a quote to the receiver based on the requirements specified by the receiver and originator.
+* **Developers**: Developers install and maintain projects for the receiver. Developers are paid according to the level of support they can give and the amount of time it takes to install a project.
+* **Guarantors**: Guarantors provide a failsafe guarantee for investors against receivers who default on payments.
+* **Platform Administrators**: Admins review the listings made on the platform and act as arbiters in case of conflict
 
-Apart from these, there are platform administrators who review the listings made on the platform, and who act as arbiters in case of conflict between a set of investors and receivers.
+Investors and Receivers on Opensolar need to perform KYC to be able to invest in and partake in projects listed on Opensolar. Developers and Contractors need to store key details related to their company on the platform to get approval from investors and receivers. Guarantors need to store their details and sufficient proof of funding to act as a guarantor. If entities need to handle Stablecoin \(AnchorUSD\) through the platform, they need to perform KYC on AnchorUSD's website.
 
-Investors on Opensolar would need to pass KYC regulations in order to invest in projects. Receivers go through a similar check in order to ensure that the project they are requesting funding for is legitimate. Developers, Contractors, etc. need to store key details related to their company on the platform, in order to get approval from investors. If they choose to handle Stablecoin via the platform, they must pass KYC regulations as required by the stablecoin provider.
+Each project has a set of stages and each entity has a specific stage where they are most needed \(for example, investors are needed at stage 4\). Stage data associated with a stage must reference associated entities' actions \(in the case of investors, the stage data is on the blockchain\). Stage progression is trigerred by a combination of manual and automatic events, the stage data is stored on IPFS \(Inter Planetary File System\), and the IPFS hash is stored on the platform for future reference.
 
-Each project has stages through which it progresses and each entity has a specific stage where they are most needed \(for example, investors are needed at stage 4\) and the stage data associated with this stage must reference their actions \(in the case of investors, the stage data is on the blockchain\). Stage progression is trigerred by a combination of manual and automatic events, and the documents in stage data are stored on IPFS \(Inter Planetary File System\).
-
-Other storage requirements on Opensolar like Investor details that don't need to be proven to others are stored in a boltDB, a key-value pair database. In the future, once Opensolar expands to have more entities and relations, we could move to a SQL based database like postgreSQL.
+Opensolar uses boltDB to store opensolar specific details like investor name, receiver name and project details. Once there are more relations between different user entities on Opensolar, a SQL database like postgreSQL is more ideal.
 
 ### Stages
 

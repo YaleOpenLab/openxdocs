@@ -48,66 +48,78 @@ Opensolar builds on top of openx and imports the user entity as a parent entity 
 
 Investors and Receivers on Opensolar need to perform KYC to be able to invest in and partake in projects listed on Opensolar. Developers and Contractors need to store key details related to their company on the platform to get approval from investors and receivers. Guarantors need to store their details and sufficient proof of funding to act as a guarantor. If entities need to handle Stablecoin \(AnchorUSD\) through the platform, they need to perform KYC on AnchorUSD's website.
 
-Each project has a set of stages and each entity has a specific stage where they are most needed \(for example, investors are needed at stage 4\). Stage data associated with a stage must reference associated entities' actions \(in the case of investors, the stage data is on the blockchain\). Stage progression is trigerred by a combination of manual and automatic events, the stage data is stored on IPFS \(Inter Planetary File System\), and the IPFS hash is stored on the platform for future reference.
+Each project has a set of stages and each entity has a specific stage where they are most needed \(for example, investors are needed at stage 4\). Data associated with a stage \("Stage Data"\) must reference associated entities' actions \(in the case of investors, the stage data is on the blockchain\). Stage progression is trigerred by a combination of manual and automatic events, the stage data is stored on IPFS \(Inter Planetary File System\), and the IPFS hash is stored on the platform for future reference.
 
 Opensolar uses boltDB to store opensolar specific details like investor name, receiver name and project details. Once there are more relations between different user entities on Opensolar, a SQL database like postgreSQL is more ideal.
 
+Some data is determined by the appropriate entities \(an example is receivers attesting that the project was installed by taking photos on location\) or by oracles who attest to specific statements \(an example is neighbours atteting that the energy rate charged for the month is the same as the receiver claims it is\). This data is combined with other data associated with the stage and committed to IPFS.
+
 ### Stages
 
-An opensolar project is divided into 9 stages ordered chronologically and numerically:
+An opensolar project is divided into 9 stages ordered chronologically:
 
-Stage 1: Engagement  
-Stage 2: Quotes  
-Stage 3: Signing  
-Stage 4: Investment  
-Stage 5: Construction  
-Stage 6: Interconnection  
-Stage 7: Legacy  
-Stage 8: Handoff  
-Stage 9: End of Life
+Stage 1: **Engagement**  
+Stage 2: **Quotes**  
+Stage 3: **Signing**  
+Stage 4: **Investment**  
+Stage 5: **Construction**  
+Stage 6: **Interconnection**  
+Stage 7: **Legacy**  
+Stage 8: **Handoff**  
+Stage 9: **End of Life**
 
-Each stage has a set of criteria \("Stage Data"\) that is required to be fulfilled before proceeding to the next, and this is defined in the smart contract. Some data like "Is the project installed at the location?" is determined by the appropriate entities \(Receivers, for the above example\) and they can take photos, have someone attest that the project was installed at the location, etc.
+Each stage transition is regulated by the smart contract.
 
 ### Smart Contract
 
-The opensolar smart contract runs on AWS due to Stellar's inavailability of on chain smart contracts. The smart contract contains the core functionality surrounding investments, payback whereas auxiliary features that handle transactions, asset creation are imported from sub-packages.
+The opensolar smart contract runs on AWS since Stellar does not provide on chain smart contracts. It contains the core functionality surrounding investments and payback whereas auxiliary features that handle transactions like asset creation are imported from sub-packages. The smart contract also allows for different investment models which can be defined in a relevant sub package.
 
 ### Stellar
 
-Opensolar's smart contract is designed to use the Stellar blockchain, a Proof of Stake blockchain \(based on the Stellar Consensus Protocol\) designed for fast settlements. Stellar follows an account based model in which balances are associated with a single public key \("account" or "address"\) on the blockchain, and subsequent operations increase the counter associated with an address. Stellar provides a small set of operations that can be performed globally to change the state of a set of addresses \([https://www.stellar.org/developers/guides/concepts/list-of-operations.html](https://www.stellar.org/developers/guides/concepts/list-of-operations.html)\). The list of operations used by the Opensolar platform are:
+Opensolar's smart contract is designed to use the Stellar blockchain, a Proof of Stake blockchain based on the Stellar Consensus Protocol. Stellar follows an account based model of accounting in which balances are associated with a public key \("account" or "address"\) on the blockchain, and subsequent operations increase the balance associated with the address. Stellar provides a set of operations that can be performed globally to change the state of a set of addresses \([https://www.stellar.org/developers/guides/concepts/list-of-operations.html](https://www.stellar.org/developers/guides/concepts/list-of-operations.html)\). The list of operations used by the Opensolar platform are:
 
-* Create Account: To create user accounts on the platform
-* Payment: To move funds between different accounts on the blockchain
-* Buy Offer: To exchange XLM with other currencies on the Stellar Decentralised Exchange \(DEX\) \(buy\)
-* Sell Offer: To exchange XLM and other currencies on the Stellar DEX \(sell\)
-* Set Options: Used to set thresholds for different signers associated with an account. Used for providing multisig and escrow functionality.
-* Change Trust: Used to change the trust associated with signers associated with an account. Used for providing multisig and escrow functionality.
+* **Create Account**: To create user accounts on the platform
+* **Payment**: To move funds between different accounts on the blockchain
+* **Buy Offer**: To exchange XLM with other currencies on the Stellar Decentralised Exchange \(DEX\) \(buy\)
+* **Sell Offer**: To exchange XLM and other currencies on the Stellar DEX \(sell\)
+* **Set Options**: Used to set thresholds for different signers associated with an account. Used for providing multisig and escrow functionality.
+* **Change Trust**: Used to change the trust associated with signers associated with an account. Used for providing multisig and escrow functionality.
 
-A primary feature of Stellar that is useful for replicating the function of a global state variable is the issuance of Assets \([https://www.stellar.org/developers/guides/concepts/assets.html](https://www.stellar.org/developers/guides/concepts/assets.html)\). Each asset has an issuer, who has the authority to issue a limited or unlimited amount of assets, and a receiver, who needs to trust the issuer to issue the specific assets. Assets are not trustless, and the receiver trusts the issuer for the asset they receive \(a common example is a bank - you trust a bank to not give fake currency when withdrawing funds\). A receiver also specifies a limit called the "Trust Limit", which is the amount upto which they trust the issuer to receive the asset in question \(You may trust your friend to lend 1000 but not 10000\).
+The issuance of assets is a feature that is useful to replicate the function of a global state variable \([https://www.stellar.org/developers/guides/concepts/assets.html](https://www.stellar.org/developers/guides/concepts/assets.html)\). Each asset has an issuer, who can issue a limited or unlimited amount of assets \(set by the "Set Options" operation noted above\), and a receiver who trusts the issuer for the specific asset\(s\).
 
-On opensolar, two assets are used to track the amount owed by the receiver and one asset used to track the amount of expected returns associated with an investor. The Investor asset \("INVAsset"\) denoted by a 12 letter code "INVAssetCode" is 1:1 with the amount they invest in the project \(ie if an investor invests $1000 in the platform, they get 1000 INVAssets\). This ratio scales with the risk and stage of investments \(for example, seed investors may get 1:1.3 for the additional risk they take in providing early capital\)
+Assets are not trustless, and the receiver trusts the issuer for the asset they receive \(an example is a bank - you trust a bank to not give fake currency when withdrawing cash\). A receiver also specifies a limit called the "Trust Limit", which is the maximum amount of assets they can receive from the issuer \(An example is a friend: you may trust your friend to lend 1000 but not 10000\).
 
-Receivers receive two types of assets - "DebtAsset" and "PaybackAsset". The Debt Asset is 1:1 with the total returns associated with the project, and each time a payment is made towards the borrowed capital, DebtAsset is transferred from the receiver to the platform's account. The PaybackAsset is used to track the months left to complete ownership of the installation \(in the case of a solar project, a "solar system"\). This PaybackAsset is updated with each successfully payment made toward borrowed capital.
+In opensolar, two kinds of assets are used. One is to track the amount owed by a receiver and another to track the amount of pending returns associated with an investor. The Investor asset \("INVAsset"\) denoted by a 12 letter code "INVAssetCode" is 1:1 with the amount they invest in the project \(ie if an investor invests $1000 in the platform, they get 1000 INVAssets\). This ratio scales with the risk and stage of investment \(for example, seed investors may get 1:1.3 for the additional risk they take in providing early capital\)
 
-The Opensolar platform also has its own account on the blockchain, and acts as a pre-escrow for projects listed on the platform. This means that if a project doesn't hit its targeted funding goal or is cancelled due to other reasons, the platform refunds the investors for the amount invested. This pre-escrow functionality can also act as an arbiter in case project terms change in the future without prior notification to or without approval of investors. The platform also acts as one of the signers of a multi-signature escrow account for projects that have been funded, and each time a receiver needs to withdraw funds \(for example, to pay contractors\), they need to get approval from the platform to do so. To prevent delays in withdrawals, the platform signs on all transactions by default but investors can raise a complaint and an admin can change this to arbitrate between the investors and recipients.
+Receivers receive two assets - "DebtAsset" and "PaybackAsset". The Debt Asset is 1:1 with the net returns associated with a project and each time a payment is made towards a project, DebtAssets are transferred from the receiver to the platform's address. The PaybackAsset is used to track the number of months to full ownership of an installed project. It is also transferred from the receiver to the platform's address with each successfully payment made.
+
+The Opensolar platform has its own account on the blockchain and acts as a pre-escrow for projects listed on the platform. When a project doesn't reach its targeted funding goal or is cancelled, the platform has refunds the investors for the amount invested since it acts as a pre-escrow. The platform can also act as an arbiter if project terms change without prior notification to or without approval of investors, and investors raise a claim with the platform.
+
+The platform also acts as one of the signers of a multi-signature escrow account for projects that have been funded, and each time a receiver needs to withdraw funds \(for example, to pay contractors\), they request approval from the platform. To prevent withdrawal delays, the platform signs all transactions by default. But investors can raise a complaint, and an admin can pause the platform's signing capabilities and arbitrate between investors and recipients.
 
 ### Teller
 
-The solar installation used a piece of software called the "Teller" to interface with the broader functions of the platform. The teller keeps track of how much energy is being generated by the system and generates a bill amount equivalent to the energy produced which the receiver pays back in bi-weekly or monthly payments. The teller also tracks the device's location, provides functions to view the balance associated with a receiver's address, and other augmented functions that can be used to query the status of the teller.
+Opensolar uses a piece of software called the "Teller" as an interface between the broader functions of the platform and the installed solar energy grid \(a "solar system"\) on site. The teller keeps track of the energy generated by the solar system and automatically pays the platform back each payment interval depending on the energy generated. The amount to be paid each month is evaluated based on standard tariff charged by energy utilities, and a receiver has the optikon of paying back in bi-weekly or monthly instalments.
 
-The teller communicates with the platform through RPC APIs. The receiver is required to put in their username and password in a config file stored locally, which the teller uses to authenticate with the platform. The teller on first initialization, passes the location of the device and assigns a unique device id to itself, and for every subsequent restart \(if one occurs\), stores the time of the restart. The teller also commits energy production data to ipfs locally, and this storage state is committed at regular intervals to the Stellar blockchain.
+The teller also performs auxiliary functions. It tracks the device's location, stores the solar system's state on IPFS in regular intervals, stores the associated IPFS hash on the blockchain at regular intervals, and provides functions for a receiver to view the balance and other data associated with a project locally.
+
+The teller communicates with the platform through JSON-RPC APIs. The receiver is required to store their username and password in a config file stored locally which the teller uses to authenticate with the platform. The teller on first initialization, communicates the location of the device to the platform, assigns and communicates a unique device id generated locally, and for every subsequent restart \(if one occurs\), stores its timestamp.
 
 ### AnchorUSD
 
-An investor on opensolar must load stablecoin using AnchorUSD, a USD equivalent provider on the Stellar blockchain. This process is external to the system, and a user is required to go through the AnchorUSD workflow before they can deal with payouts or investments on the platform. A receiver must load AnchorUSD funds on their account before they attempt to pay monthly bills. A receiver's account is automatically debited during each payment cycle and they are sent notifications in the event their balance is less than the monthly bill.
+An entity that wishes to transact in USD must load stablecoin on Stellar through AnchorUSD, a USD based stablecoin provider on the Stellar blockchain. A stablecoin is an asset on Stellar that is 1:1 with the USD \(or other assets, as specified by the issuer\). A stablecoin can be used as a replacement to the dollar on the Stellar blockchain, and can be freely transferred from one address to another like any other asset.
 
-AnchorUSD is currently limited to the United States, and as a result, receivers and investors are restricted to being in the United States.
+AnchorUSD has a set of rules in place for entities who want to transact in its asset. These rules include KYC and AML verification, along with a registration process listed on anchorusd.com.
+
+Both investors and receivers on Opensolar must purchase USD funds from AnchorUSD. A receiver must purchase USD to payback towards a project and an investor must purchase USD to invest in a project.
+
+Note: AnchorUSD is currently limited to the United States, and as a result, receivers and investor locations are restricted to the United States.
 
 ### Investments
 
-The opensolar smart contract can support a variety of investment models and uses a munibond model by default. Other models can be added in a modular way and plugged into the parent contract for it to use.
+The opensolar smart contract can support a variety of investment models and uses a munibond model by default. Other models can be framed as packages and imported into the smart contract.
 
-Investors are required to pass a series of checks before being allowed to invest in the system. These checks include KYC and AML checks, balance checks, and a ban check \(if the user has been banned on the platform\). Depending on the platform's need, these can be expanded to include more checks.
+Investors are required to pass a series of checks before being allowed to invest in projects. These checks include KYC and AML checks \(on the platform, not AnchorUSD\), balance checks, and a ban check to see if the user has been banned on the platform. If an investor fails to meet these criteria, they can not invest in projects on Opensolar.
 
 The platform is divided into two modes - Testnet and Mainnet. On testnet, the platform simulates a stablecoin called STABLEUSD on the Stellar Development Foundation's Test Network. This stablecoin acts as a bootstrap in place of AnchorUSD \(on mainnet\) in order to test and simulate stablecoin functions. Testnet also uses test lumens to facilitate payments and enable creation of assets. The asset codes on testnet and mainnet however, are the same.
 

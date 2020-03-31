@@ -72,7 +72,7 @@ Each stage transition is regulated by the smart contract.
 
 ### Smart Contract
 
-The opensolar smart contract runs on AWS since Stellar does not provide on chain smart contracts. It contains the core functionality surrounding investments and payback whereas auxiliary features that handle transactions like asset creation are imported from sub-packages. The smart contract also allows for different investment models which can be defined in a relevant sub package.
+The opensolar smart contract runs on AWS since Stellar does not support on chain smart contracts. It contains the core functionality surrounding investments and payback whereas auxiliary features that handle transactions like asset creation are imported from sub-packages. The smart contract also allows for different investment models which can be defined in a relevant sub package.
 
 ### Stellar
 
@@ -121,37 +121,38 @@ The opensolar smart contract can support a variety of investment models and uses
 
 Investors are required to pass a series of checks before being allowed to invest in projects. These checks include KYC and AML checks \(on the platform, not AnchorUSD\), balance checks, and a ban check to see if the user has been banned on the platform. If an investor fails to meet these criteria, they can not invest in projects on Opensolar.
 
-The platform is divided into two modes - Testnet and Mainnet. On testnet, the platform simulates a stablecoin called STABLEUSD on the Stellar Development Foundation's Test Network. This stablecoin acts as a bootstrap in place of AnchorUSD \(on mainnet\) in order to test and simulate stablecoin functions. Testnet also uses test lumens to facilitate payments and enable creation of assets. The asset codes on testnet and mainnet however, are the same.
+The platform has two modes - Testnet mode and Mainnet mode. On testnet, the platform simulates a stablecoin called STABLEUSD on the Stellar Development Foundation's Test Network. This stablecoin acts as a replacement for AnchorUSD on testnet to test and simulate stablecoin features. Testnet mode uses test lumens to facilitate payments and enable creation of assets. Test lumens are fetched from the Stellar Development Foundation's Testnet Faucet via the Horizon API.
 
-Opensolar also uses the Stellar DEX to enable easy exchange of assets \(example, XLM for USD\). This DEX can be used to provide functions like secondary asset markets where investors can trade INVAssets for USD or similar.
+Opensolar uses the Stellar DEX to enable exchange of assets \(example, XLM for USD\). This DEX can be used to provide functions like secondary asset markets where investors can trade INVAssets for USD or similar.
 
 ### Web Interface
 
-The web interface of opensolar is built using React.JS and contains a subset of the functions provided by the opensolar backend. It provides a set of projects that investor can invest in, and allows recipients to login and see their project status, and energy generation.
+The web interface of opensolar is built using React.JS and contains a subset of the functions provided by the opensolar backend. It currently provides user profiles, projects that investors can invest in, and dashboards for recipients, investors and developers.
 
 ### RPC API
 
-Opensolar performs all of its interactions with the web interface and teller through JSON-RPC APIs. Some endpoints are public and can be called by everyone without needing a token, and other endpoints are restricted, requiring an account on opensolar, and a token to call them.
+Opensolar performs all of its interactions with the web interface and teller through JSON-RPC APIs. Some endpoints are public and can be called by everyone without needing a token, and other endpoints are restricted, requiring an account on opensolar and a token to call them.
 
-The token can be fetched by POSTing to `/token` with the username and the 512 byte SHA3 hash of the password. This token is valid for a day but callers can ask for a new token even if the timeout interval hasn't been reached.
+The token can be fetched by POSTing to `/token` with the username and the 512 byte SHA3 hash of the password. This token is valid for 24 hours but callers can generate a new token even if the timeout interval hasn't been reached.
 
 ## Advantages of Stellar
 
 Stellar has the following advantages for opensolar:
 
-1. **Fast and cheap payments:** Stellar transactions are confirmed within 5s and the transaction cost is very low \(defaults to 0.00001 lumens or 100 stroops\). Transactions are final once they are in a block thanks to Stellar's Consensus algorithm, removing the need for handling re-orgs as would occur in a Proof of Work blockchain.
-2. **Easy asset creation:** Stellar makes it extremely easy to create new assets and transfer them around. This makes representing state variables easier and also enables the creation of secondary markets where users can transfer these assets around in exchange for money.
-3. **Horizon API:** Stellar's Horizon API makes it easy to query and post to instances that are full nodes. The API also gives a good interface to build transactions and do operations.
-4. **Testnet that mimics mainnet:** The Stellar Development Foundation mimics mainnet on a testnet that it runs, making it easy to test features before deploying to mainnet. They also maintain a testnet faucet to get test lumens from.
+1. **Fast and cheap payments:** Stellar transactions are confirmed within 5 seconds and the transaction cost is low \(defaults to 0.00001 lumens or 100 stroops per transaction\). Transactions are final once they are in a block thanks to Stellar's Consensus algorithm, removing the need for handling re-orgs as would occur in a Proof of Work blockchain.
+2. **Easy asset creation:** Stellar makes it extremely easy to create new assets and transfer them between addresses. This makes representing state variables easier and  enables the creation of secondary markets where users can exchange one asset for another.
+3. **Horizon API:** Stellar's Horizon API makes it easy to query and post to instances that are full nodes. The API also gives a good interface to build transactions and do operations that change the state of accounts on the blockchain.
+4. **Testnet that mimics mainnet:** The Stellar Development Foundation mimics mainnet on a testnet that it runs, making it very easy to test features before deploying to mainnet. It also maintain a testnet faucet to get test lumens from, making easier the process of creating new accounts.
 
 ## Alternatives to Stellar
 
-While Stellar is good in terms of what it offers, it carries a few disadvantages as well:
+While Stellar is good in terms of what it offers, it comes with a few disadvantages:
 
-1. **Limited opcode set:** Stellar's list of operations is extremely limited, possessing only those operations that are relevant in a payment/funds transfer setting.
-2. **Questionable Security:** Stellar's mainnet and testnet have been down for multiple hours, and Stellar's quorum based consensus algorithm has a side effect of nodes trusting the Stellar Development Foundation's nodes since its enabled by default.
-3. **Absence of verifiable on chain computation:** Stellar does not possess an on chain smart contract validation / transaction execution validation mechanism.
-4. **Limited ecosystem resources and lack of exchange liquidity:** Though Stellar was started in 2014, it has failed to gain traction in terms of Stablecoin adoption, Merchant adoption, etc. THe liquidity in terms of stablecoin availability is also low.
+1. **Limited opcode set:** Stellar's list of possible operations is extremely limited, possessing only those operations that are relevant in a payment/funds transfer setting. This makes development of verifiable contracts harder.
+2. **Questionable Security:** Stellar's mainnet and testnet have been down for multiple hours in the past, and Stellar's quorum based consensus algorithm has a side effect of nodes trusting the Stellar Development Foundation's nodes since its enabled by default. This increases dependency on the Stellar Development Foundation to not act maliciously, reducing security and decentralisation.
+3. **Small Number of Full Nodes:** The number of full nodes on the Stellar blockchain is limited \(~140\), making it easier for entities to collude and censor transactions.
+4. **Absence of verifiable on chain computation:** Stellar does not possess an on chain smart contract validation / transaction execution validation mechanism.
+5. **Limited ecosystem resources and lack of exchange liquidity:** Though Stellar was started in 2014, it has failed to gain traction in terms of Stablecoin adoption, Merchant adoption, and widespread adoption. The liquidity in popular markets for Stellar-native stablecoins is low, making large scale investments in projects \(&gt; $10000\) difficult.
 
 Given these disadavantages, it is useful to explore alternatives that may address some of these concerns.
 

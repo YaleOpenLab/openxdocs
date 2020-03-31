@@ -221,7 +221,7 @@ Get data associated with a specific stage
 {% endapi-method-summary %}
 
 {% api-method-description %}
-**curl -X GET "**http://api2.openx.solar/stages?index=1**"**
+curl -X GET "http://api2.openx.solar/stages?index=1"
 {% endapi-method-description %}
 
 {% api-method-spec %}

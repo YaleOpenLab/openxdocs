@@ -6,7 +6,7 @@ Get all recipients
 {% endapi-method-summary %}
 
 {% api-method-description %}
-**curl -X GET -H "Content-Type: application/x-www-form-urlencoded" -H "Origin: localhost" "**http://api2.openx.solar/recipient/all**"**
+**curl -X GET -H "Content-Type: application/x-www-form-urlencoded" -H "Origin: localhost" "**http://api2.openx.solar/recipient/all"
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -86,7 +86,7 @@ Validate Recipient
 {% endapi-method-summary %}
 
 {% api-method-description %}
-**curl -X GET "**http://api2.openx.solar/recipient/validate?username=martin&token=pmkjMEnyeUpdTyhdHElkBExEKeLIlYft**"**
+curl -X GET "http://api2.openx.solar/recipient/validate?username=martin&token=pmkjMEnyeUpdTyhdHElkBExEKeLIlYft"
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -294,7 +294,7 @@ Choose blind auction
 {% endapi-method-summary %}
 
 {% api-method-description %}
-**curl -X GET "**http://api2.openx.solar/recipient/auction/choose/blind?username=martin&token=pmkjMEnyeUpdTyhdHElkBExEKeLIlYft**"**
+curl -X GET "http://api2.openx.solar/recipient/auction/choose/blind?username=martin&token=pmkjMEnyeUpdTyhdHElkBExEKeLIlYft"
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -330,7 +330,7 @@ Choose vickrey auction
 {% endapi-method-summary %}
 
 {% api-method-description %}
-**curl -X GET "**http://api2.openx.solar/recipient/auction/choose/vickrey?username=martin&token=pmkjMEnyeUpdTyhdHElkBExEKeLIlYft**"**
+curl -X GET "http://api2.openx.solar/recipient/auction/choose/vickrey?username=martin&token=pmkjMEnyeUpdTyhdHElkBExEKeLIlYft"
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -366,7 +366,7 @@ Choose time auction
 {% endapi-method-summary %}
 
 {% api-method-description %}
-**curl -X GET "**http://api2.openx.solar/recipient/auction/choose/time?username=martin&token=pmkjMEnyeUpdTyhdHElkBExEKeLIlYft**"**
+curl -X GET "http://api2.openx.solar/recipient/auction/choose/time?username=martin&token=pmkjMEnyeUpdTyhdHElkBExEKeLIlYft"
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -566,7 +566,7 @@ Get Asset Trust Limit
 {% endapi-method-summary %}
 
 {% api-method-description %}
-**curl -X GET -H "Content-Type: application/x-www-form-urlencoded" -H "Origin: localhost" "**http://api2.openx.solar/user/increasetrustlimit?username=john&token=pmkjMEnyeUpdTyhdHElkBExEKeLIlYft&trust=10&seedpwd=x**"**
+**curl -X GET -H "Content-Type: application/x-www-form-urlencoded" -H "Origin: localhost" "**http://api2.openx.solar/user/increasetrustlimit?username=john&token=pmkjMEnyeUpdTyhdHElkBExEKeLIlYft&trust=10&seedpwd=x"
 {% endapi-method-description %}
 
 {% api-method-spec %}

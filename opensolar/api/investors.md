@@ -178,7 +178,120 @@ curl -X GET "https://api2.openx.solar/investor/validate?username=john&token=pmkj
 {% endapi-method-response-example-description %}
 
 ```text
-
+{
+    "U": {
+        "Index": 321,
+        "Name": "Test Video",
+        "Description": "",
+        "Image": "",
+        "FirstSignedUp": "Thursday, 26-Mar-20 04:11:58 UTC",
+        "Address": "Blah",
+        "City": "Blah",
+        "ZipCode": "222222",
+        "Country": "Blah",
+        "RecoveryPhone": "",
+        "Email": "varunramganesh@gmail.com",
+        "Notification": false,
+        "StellarWallet": {
+            "PublicKey": "GBX7J3XJZAOLXDSX6UXXJF64AAHKAS3ZR4O7FHDAUFQC5CSNYG67KSHD",
+            "EncryptedSeed": "bdAQVbMXCmtEhApzluK1bUtDypei6LDtUWVZsI/L8TUukeqUyLDcuNsKqVqDSAzgKJOVFw4pfFEHdsR7BQdPoQAcrNfqlAO7",
+            "SeedPwhash": ""
+        },
+        "AlgorandWallet": {
+            "WalletName": "",
+            "WalletID": ""
+        },
+        "Username": "testvid",
+        "Pwhash": "e9a75486736a550af4fea861e2378305c4a555a05094dee1dca2f68afea49cc3a50e8de6ea131ea521311f4d6fb054a146e8282f8e35ff2e6368c1a62e909716",
+        "Kyc": false,
+        "Admin": false,
+        "Inspector": false,
+        "Banned": false,
+        "Reputation": 0,
+        "LocalAssets": null,
+        "RecoveryShares": [
+            "0tfN50L80C36YKoXZouHvswj1wv21kr-Sw4lGHYQkEU=4zrF5C58ucQO_e9U_EkE0OEWjZq-OG3dAbyBKtumvsg=Q43Gz2wF-vKgWiLHnCbrDOhSjBynMLR5RR8K89fmw5E=7Y8yARgCVjrxdyHYAXZCByQ5GnTH7mR8gxQHlWMH1vQ=",
+            "S-zFGt3bAUOBkbTv0oaHzF1f1811Al9_BoWR2N_Piw8=lOaRHpYtunHIJ42emdUIs152ulsvoJ_BAqmi4kL62vI=Yq76SfpMHTq-4Q6v8nruWSYspNx8Upr8hN-6kyBiJug=46Yg0OXVi4_pDvK-sQgd_KVPL_tfGy2dDeOsTqkSFaQ=",
+            "evTw63X3UH_ldyKMjs5VeVDOqd4pCmiF7t6foJm7TWM=8kUWqJJyEsr5e62L45LPmhEFwSEeTzT32cWqAWj2oDM=gvGwVI39X2Ar-BJoJ6lJ94QvKs6VrPFTP4mp_GGub6c=WGeIZBDrezYSpFxoHz4sYvG5l4NJyQYsA_QHggtNrEo="
+        ],
+        "PwdResetCode": "",
+        "SecondaryWallet": {
+            "PublicKey": "GCVN5PEIV43IHOMI5ZNHOLYRESOMUSNT6JHW42B525ESUCA5DG5XZL4Z",
+            "EncryptedSeed": "CUjO9I2TlG5Ozesxke+B2Avq5dYcHdfVuFG/ERCdIGA0Oc/mrqqBhm7iLxbSyBV/X4hjoaAI0V0DK8aQtPVAtjEDESzJYxrO",
+            "SeedPwhash": ""
+        },
+        "EthereumWallet": {
+            "Address": "0x91cDa7c11dEa71eC607a7226d4fa8f138f0744a4",
+            "PublicKey": "4b973c8c57782e34197eb90450f16637dc9ddf0cc7216a306c393cf836fd60ec0206e9672e247f85a106862fb7e6ddb81e56e0511f77371ab21583e27f6678fa",
+            "PrivateKey": "db1a8f8cf2daea600625ce2876701aa9bb8a1d0eec75c87461fe6e5051bc797f"
+        },
+        "PendingDocuments": null,
+        "KYC": {
+            "PassportPhoto": "",
+            "IDCardPhoto": "",
+            "DriversLicense": "",
+            "PersonalPhoto": ""
+        },
+        "StarRating": null,
+        "GivenStarRating": null,
+        "TwoFASecret": "",
+        "AnchorKYC": {
+            "Name": "",
+            "Birthday": {
+                "Month": "",
+                "Day": "",
+                "Year": ""
+            },
+            "Tax": {
+                "Country": "",
+                "Id": ""
+            },
+            "Address": {
+                "Street": "",
+                "City": "",
+                "Postal": "",
+                "Region": "",
+                "Country": "",
+                "Phone": ""
+            },
+            "PrimaryPhone": "",
+            "Gender": "",
+            "DepositIdentifier": "336ed6296ff3210bd5ddbf15700a0f5f",
+            "WithdrawIdentifier": "01ce541b873e2f9697cfbd1c1b7096ce",
+            "Url": "https://sandbox.anchorusd.com/onboarding?account=GBX7J3XJZAOLXDSX6UXXJF64AAHKAS3ZR4O7FHDAUFQC5CSNYG67KSHD&type=withdraw&identifier=01ce541b873e2f9697cfbd1c1b7096ce",
+            "AccountId": ""
+        },
+        "AccessToken": "SRVDaOfeVoEacdYAwOpTPgbqnUrKmnhq",
+        "AccessTokenTimeout": 1585647490,
+        "Mailbox": null,
+        "Legal": false,
+        "ProfileProgress": 40
+    },
+    "C": {
+        "CompanyType": "For-Profit",
+        "Name": "testvid",
+        "LegalName": "Investor Legal",
+        "AdminEmail": "varunramganesh@gmail.com",
+        "PhoneNumber": "124123",
+        "Address": "Blah",
+        "Country": "Blah",
+        "City": "Blah",
+        "ZipCode": "222222",
+        "TaxIDNumber": "123123",
+        "Role": "ceo"
+    },
+    "Company": true,
+    "VotingBalance": 0,
+    "AmountInvested": 200,
+    "InvestedSolarProjects": [
+        "OXA23d809bb4"
+    ],
+    "InvestedSolarProjectsIndices": [
+        1
+    ],
+    "SeedInvestedSolarProjects": null,
+    "SeedInvestedSolarProjectsIndices": null
+}
 ```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
@@ -191,7 +304,7 @@ Get all Investors
 {% endapi-method-summary %}
 
 {% api-method-description %}
-curl -X GET -H "Content-Type: application/x-www-form-urlencoded" -H "Origin: localhost" "http://api2.openx.solar/investor/all"
+curl -X GET -H "Content-Type: application/x-www-form-urlencoded" -H "Origin: localhost" "https://api2.openx.solar/investor/all?username=admin&token=WORWLPOYeoqnxqQQItIvfGidOGEADrcT"
 {% endapi-method-description %}
 
 {% api-method-spec %}

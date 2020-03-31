@@ -10,25 +10,26 @@
 
 * [Architecture](openx/architecture.md)
 * [API](openx/api/README.md)
-  * [Users](api/openx/users.md)
+  * [Users](openx/api/users.md)
   * [Stablecoin](openx/api/stablecoin.md)
-  * [Platform](api/openx/platform.md)
-  * [Admin](api/openx/admin.md)
-  * [Public](api/openx/public.md)
+  * [Platform](openx/api/platform.md)
+  * [Admin](openx/api/admin.md)
+  * [Public](openx/api/public.md)
   * [Ping](openx/api/ping.md)
-  * [Errors](api/openx/errors.md)
+  * [Errors](openx/api/errors.md)
 * [FAQ](openx/faq.md)
 
 ## Opensolar docs <a id="opensolar"></a>
 
 * [Architecture](opensolar/architecture.md)
-* [API](api/README.md)
+* [API](opensolar/api/README.md)
   * [Investors](opensolar/api/investors.md)
   * [Recipients](opensolar/api/recipients.md)
   * [Projects](opensolar/api/untitled.md)
   * [Stages](opensolar/api/stages.md)
   * [Particle](opensolar/api/particleio.md)
-* [FAQ](faq.md)
+* [FAQ](opensolar/faq.md)
 * [Openx-Opensolar](opensolar/openx-opensolar.md)
+* [Opensolar on Stellar, and alternatives](opensolar/opensolar-on-stellar-and-alternatives.md)
 * [Frontend](opensolar/frontend.md)
 

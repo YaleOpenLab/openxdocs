@@ -6,8 +6,7 @@ Get all recipients
 {% endapi-method-summary %}
 
 {% api-method-description %}
-  
-**curl -X GET -H "Content-Type: application/x-www-form-urlencoded" -H "Origin: localhost" "http://api2.openx.solar/recipient/all"**
+**curl -X GET -H "Content-Type: application/x-www-form-urlencoded" -H "Origin: localhost" "**http://api2.openx.solar/recipient/all**"**
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -29,7 +28,7 @@ Get all recipients
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 
 ```
 {% endapi-method-response-example %}
@@ -73,7 +72,7 @@ Register Recipient
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 
 ```
 {% endapi-method-response-example %}
@@ -87,8 +86,7 @@ Validate Recipient
 {% endapi-method-summary %}
 
 {% api-method-description %}
-  
-**curl -X GET "http://api2.openx.solar/recipient/validate?username=martin&token=pmkjMEnyeUpdTyhdHElkBExEKeLIlYft"**
+**curl -X GET "**http://api2.openx.solar/recipient/validate?username=martin&token=pmkjMEnyeUpdTyhdHElkBExEKeLIlYft**"**
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -110,7 +108,7 @@ Validate Recipient
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 
 ```
 {% endapi-method-response-example %}
@@ -162,7 +160,7 @@ Payback Recipient
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 
 ```
 {% endapi-method-response-example %}
@@ -202,7 +200,7 @@ Store device ID
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 
 ```
 {% endapi-method-response-example %}
@@ -242,7 +240,7 @@ Store device start time
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 
 ```
 {% endapi-method-response-example %}
@@ -282,7 +280,7 @@ Store location of device
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 
 ```
 {% endapi-method-response-example %}
@@ -296,8 +294,7 @@ Choose blind auction
 {% endapi-method-summary %}
 
 {% api-method-description %}
-  
-**curl -X GET "http://api2.openx.solar/recipient/auction/choose/blind?username=martin&token=pmkjMEnyeUpdTyhdHElkBExEKeLIlYft"**
+**curl -X GET "**http://api2.openx.solar/recipient/auction/choose/blind?username=martin&token=pmkjMEnyeUpdTyhdHElkBExEKeLIlYft**"**
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -319,7 +316,7 @@ Choose blind auction
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 
 ```
 {% endapi-method-response-example %}
@@ -333,8 +330,7 @@ Choose vickrey auction
 {% endapi-method-summary %}
 
 {% api-method-description %}
-  
-**curl -X GET "http://api2.openx.solar/recipient/auction/choose/vickrey?username=martin&token=pmkjMEnyeUpdTyhdHElkBExEKeLIlYft"**
+**curl -X GET "**http://api2.openx.solar/recipient/auction/choose/vickrey?username=martin&token=pmkjMEnyeUpdTyhdHElkBExEKeLIlYft**"**
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -356,7 +352,7 @@ Choose vickrey auction
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 
 ```
 {% endapi-method-response-example %}
@@ -370,8 +366,7 @@ Choose time auction
 {% endapi-method-summary %}
 
 {% api-method-description %}
-  
-**curl -X GET "http://api2.openx.solar/recipient/auction/choose/time?username=martin&token=pmkjMEnyeUpdTyhdHElkBExEKeLIlYft"**
+**curl -X GET "**http://api2.openx.solar/recipient/auction/choose/time?username=martin&token=pmkjMEnyeUpdTyhdHElkBExEKeLIlYft**"**
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -393,7 +388,7 @@ Choose time auction
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 
 ```
 {% endapi-method-response-example %}
@@ -437,7 +432,7 @@ Unlock Project
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 
 ```
 {% endapi-method-response-example %}
@@ -477,7 +472,7 @@ Add Email
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 
 ```
 {% endapi-method-response-example %}
@@ -517,7 +512,7 @@ Finalize Project
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 
 ```
 {% endapi-method-response-example %}
@@ -557,7 +552,7 @@ Originate Project
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 
 ```
 {% endapi-method-response-example %}
@@ -571,8 +566,7 @@ Get Asset Trust Limit
 {% endapi-method-summary %}
 
 {% api-method-description %}
-  
-**curl -X GET -H "Content-Type: application/x-www-form-urlencoded" -H "Origin: localhost" "http://api2.openx.solar/user/increasetrustlimit?username=john&token=pmkjMEnyeUpdTyhdHElkBExEKeLIlYft&trust=10&seedpwd=x"**
+**curl -X GET -H "Content-Type: application/x-www-form-urlencoded" -H "Origin: localhost" "**http://api2.openx.solar/user/increasetrustlimit?username=john&token=pmkjMEnyeUpdTyhdHElkBExEKeLIlYft&trust=10&seedpwd=x**"**
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -598,7 +592,7 @@ Get Asset Trust Limit
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 
 ```
 {% endapi-method-response-example %}
@@ -638,7 +632,7 @@ Store State Hash Teller
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 
 ```
 {% endapi-method-response-example %}
@@ -682,7 +676,7 @@ One time unlock
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 
 ```
 {% endapi-method-response-example %}
@@ -726,7 +720,7 @@ Register Teller
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 
 ```
 {% endapi-method-response-example %}
@@ -762,7 +756,7 @@ Recipient Dashboard
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 
 ```
 {% endapi-method-response-example %}
@@ -798,7 +792,7 @@ Set Company Bool
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 
 ```
 {% endapi-method-response-example %}
@@ -866,7 +860,7 @@ Set company details
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 
 ```
 {% endapi-method-response-example %}
@@ -906,7 +900,7 @@ Store Teller Energy Value
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 
 ```
 {% endapi-method-response-example %}

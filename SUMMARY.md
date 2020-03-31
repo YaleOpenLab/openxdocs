@@ -29,7 +29,7 @@
   * [Stages](opensolar/api/stages.md)
   * [Particle](opensolar/api/particleio.md)
 * [FAQ](opensolar/faq.md)
-* [Openx-Opensolar](opensolar/openx-opensolar.md)
+* [Openx-Opensolar Communication](opensolar/openx-opensolar.md)
 * [Opensolar on Stellar, and alternatives](opensolar/opensolar-on-stellar-and-alternatives.md)
 * [Frontend](opensolar/frontend.md)
 

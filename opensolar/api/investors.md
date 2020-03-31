@@ -6,7 +6,9 @@ Register Investor
 {% endapi-method-summary %}
 
 {% api-method-description %}
-**curl -X POST -H "Content-Type: application/x-www-form-urlencoded" -H "Origin: localhost" -d 'username=vg&pwhash=e9a75486736a550af4fea861e2378305c4a555a05094dee1dca2f68afea49cc3a50e8de6ea131ea521311f4d6fb054a146e8282f8e35ff2e6368c1a62e909716&name=varunram&seedpwd=x&token=XEtmufgCPuKZGZkOUDUUEMBIqbuLIAwJ' "**http://api2.openx.solar/investor/register?username=vg&token=XEtmufgCPuKZGZkOUDUUEMBIqbuLIAwJ**"**
+  
+ **`asdasds`   
+curl -X POST -H "Content-Type: application/x-www-form-urlencoded" -H "Origin: localhost" -d 'username=vg&pwhash=e9a75486736a550af4fea861e2378305c4a555a05094dee1dca2f68afea49cc3a50e8de6ea131ea521311f4d6fb054a146e8282f8e35ff2e6368c1a62e909716&name=varunram&seedpwd=x&token=XEtmufgCPuKZGZkOUDUUEMBIqbuLIAwJ' "**http://api2.openx.solar/investor/register?username=vg&token=XEtmufgCPuKZGZkOUDUUEMBIqbuLIAwJ**"**
 {% endapi-method-description %}
 
 {% api-method-spec %}

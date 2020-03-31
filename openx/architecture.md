@@ -119,3 +119,5 @@ USDx is an "asset" on Stellar provided by AnchorUSD. If a user wishes to buy USD
 
 A basic CI that builds the openx and opensolar executables is available as part of openx. This can be modified to build any executable. There is also a frontend inspired by Go Downloads, which offers users a clickable interface to download the executables.
 
+For more information on how Stellar integrates with Opensolar, checkout the "Opensolar on Stellar" doc in the wiki.
+

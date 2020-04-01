@@ -393,49 +393,49 @@ The trust model for this involves trusting the openx shard and the platform shar
 
 ### DeFi and algorithmic stablecoins
 
-DeFi or decentralized finance is a new development which seeks to replicate existing financial technology use cases on top of Ethereum. Common examples are loans, lending, stablecoins, arbitrage, etc \(product examples are: sDAI, mDAI, Gitcoin, Liquidity protocol, Uniswap\).
+DeFi or decentralized finance seeks to replicate existing financial technology applications on top of Ethereum. Common applications are loans, lending, stablecoins, arbitrage, etc and product examples are sDAI, mDAI, Gitcoin, Liquidity protocol and Uniswap.
 
-A potential usecase is chaining together some of these applications and using the combination to invest on projects in the platform. As an example, an investor can use their ETH as collateral to obtain a USD loan to invest in the platform's projects. A recipient could advertise projects that deposit real world collateral in exchange for short-medium term loans for investments in their projects. Entities can also have their project listed as a Gitcoin proposal and ask for funding from the community, and investors can receive returns through the platform.
+A potential usecase is chaining these applications and using the combination to invest in projects on the platform. As an example, an investor can use ETH as collateral to obtain a USD loan to invest in projects. A recipient could advertise projects that deposit real world collateral in exchange for short to medium term loans. Recipients can list their projects on Gitcoin, and ask for funding from the Ethereum community, and investors in such projects can receive returns through the platform.
 
-This model would have to be supplemented by a base layer blockchain which handles the non payment part of the infrastructure. This could be Ethereum-L1 or other blockchains and openx would need to support various Ethereum operations in order to be compatible.
+This model would have to be supplemented by a base layer blockchain which handles non-financial infrastructure. This could be Ethereum-L1 or other blockchains and openx would need to support various Ethereum operations in order to be compatible.
 
-The trust model for this depends on the chain of applications \(for DAI, you trust the algorithm to keep the peg, for Gitcoin you assume there are no bots trying to game the system\).
+The trust model for this depends on the chain of applications \(eg. for DAI, you trust the algorithm to keep the peg, for Gitcoin you assume there are no bots trying to game the system\).
 
 ### Advantages
 
-1. Easy onboarding and big partner ecosystem: DeFi applications are available in a variety of countries and local onboarding might be easier.
-2. More financial functionality: Since there is more scope for moving assets around, there can be improvements on the financial side of the platform.
+1. **Easy onboarding and big partner ecosystem:** DeFi applications are available in a variety of countries and local onboarding is easier.
+2. **More financial functionality:** Since there is more scope for moving assets around, financial fnctionality of the platform can be enhanced.
 
 ### Disadvantages
 
-1. Hacks: Many DeFi applications are unaudited and as a result, are prone to hacks.
-2. Need to trust entities providing these applications: The Maker Foundation in the case of MakerDAO, different teams working on the smart contracts, etc.
+1. **Hacks:** Many DeFi applications are unaudited and as a result, are prone to hacks. One must carefully vet the smart contract of a DeFi application before putting it to use in a production setting.
+2. **Need to trust entities providing these applications:** Some DeFi applicaitons are governed by different foundations, and entities on the platform would have to trust these entities to not act maliciously, to not close the smart contract, etc. \(eg. The Maker Foundation in the case of MakerDAO\)
 
 ### Decentralised Autonomous Organisations
 
-A DAO is an organisation in which the participants have a say on decisions made by the DAO depending on the amount they have staked / invested in it. This enables decentralised applications of centralised systems like voting, community participation, etc with anonymity .
+A DAO is a decentralised organisation where the participants have a say on a list of proposals before the DAO depending on the amount they have staked in the DAO. This enables decentralised applications of centralised systems like voting and community participation to happen with anonymity and privacy.
 
-A DAO could be used by entities to vote on project timelines, to vote on whether they are satisfied with the project's deployment, what projects to list on the platform, and more. It could also be used when deciding on the timeline of the platform's development, who's responsible for developing the platform, etc.
+A DAO can be used by entities to vote on project timelines, to vote on whether they are satisfied with the project's deployment, to vote on what projects to include on the platform and more. It could also be used when deciding on the timeline of the platform's development, who's responsible for developing the platform, etc.
 
-This model would have to be supplemented by a base layer blockchain which handles the non governance part of the infrastructure. The base layer should be Ethereum-L1 since only then can people vote or stake on proposals with ETH.
+This model would have to be supplemented by a base layer blockchain which handles the non governance part of the infrastructure. The base layer should be Ethereum-L1 since only then can people vote or stake on proposals with ETH. Having a different base layer blockchain would mean that people deal with three types of currencies - a stablecoin, ETH and the base layer blockchain's native coin.
 
-The trust model is that one trusts the DAO \(the algorithm the DAO is based on\) to take actions based on the majority of votes cast for or against a proposal.
+The trust model is that one trusts the algorithm the DAO is based on to take actions based on the majority of votes cast for or against a proposal.
 
 ### Advantages
 
-1. More decentralised than Ethereum-L1: The barrier of entry to a DAO is low and as a result, people can easily participate in DAOs.
-2. More participation functionality: The platform could run its own DAO instance and by making the barrier to entry low or free, could invite community members to participate in governance.
+1. **More decentralised than Ethereum-L1**: The barrier of entry to a DAO is low and as a result, people can easily participate in DAOs. This means more people partake in governance resulting in a better platform.
+2. **More participation functionality:** Since a DAO enables new forms of participation, the platform could expand on governance related functions.
 
 ### Disadvantages
 
-1. Hacks: Like the famous case of TheDAO, DAOs are a double edged sowrd and must be relied on with caution.
-2. Over-application: In some cases, having a DAO slows the decision making process.
+1. **Hacks:** Like the famous case of TheDAO, DAOs are a double edged sword and must be carefully vetted before putting it to use in a production setting.
+2. **Over-application:** In some cases, having a DAO slows the decision making process. The desire to involve the community in everything must be intricately balanced with the need for a fast decision making process.
 
 ### Bridges
 
-Ethereum offers bridges to other cryptocurrencies like Bitcoin. These bridges could be used to construct a dual layer commitment system where proofs exist in two blockchains, choices between two chains depending on the fee, atomic swaps with other chains using the smart contract, etc.
+Ethereum offers bridges to other cryptocurrencies like Bitcoin. These bridges could be used to construct a dual layer commitment system where proofs exist in two blockchains. Bridges can also offer a choice between two chains depending on the fee, atomic swaps with other chains using the smart contract, and more.
 
-A bridge in essence is having two-L1 blockchains to commit to, and the trust model is dependent on the least secure of the two blockchains, along with the bridge's smart contract.
+In essence, a bridge is like having two-L1 blockchains to commit to and the trust model is dependent on the least secure of the two blockchains along with the bridge's smart contract.
 
 ### Advantages
 
@@ -449,23 +449,23 @@ A bridge in essence is having two-L1 blockchains to commit to, and the trust mod
 
 Ethereum's EVM offers a powerful on chain smart contracting interface. This can be used to offer verifiable contract execution on chain, global state variables, etc.
 
-The platform's contract could be deployed on chain and investors, receivers, etc would interact with the contract through standard tools available on Ethereum. Investment proofs, state variables are all stored on chain so there is minimal requirement for an in house database that serves these functions \(as is right now\).
+The platform's contract can be deployed on chain and entities would interact with the contract through standard tools available on Ethereum. Investment proofs, state variables are all stored on chain so there is minimal requirement for an in house database that serves these functions.
 
-Ethereum-L1 can also be used in parallel to another blockchain system. For example, payments can take place on Bitcoin, and state updates and storage can take place via Ethereum. This gives the dual benefit of low fees while still having auditable smart contracts on chain. This case is a slight twist to the bridge scenario described earlier.
+Ethereum-L1 can also be used in parallel with blockchain system. For example, payments can take place on Bitcoin, and state updates and storage can take place via Ethereum. This gives the dual benefit of low fees while still having auditable smart contracts on chain. This case is a slight variation of the bridge scenario described earlier.
 
 ### Advantages
 
-1. Better security and decentralisation: Due to Ethereum's PoW consensus model, it is extremely expensive for an attacker to attempt to censor or rewrite transactions.
-2. Big partner ecosystem: Ethereum has a lot of partner companies which are looking to improve different aspects of using and getting on to Ethereum.
-3. Improved functionality: Ethereum's EVM provides the ability to replicate any program on Ethereum
-4. Good Liquidity: Ethereum is the second most traded cryptocurrency asset, and liquidity on markets is not a problem.
-5. On chain verification: The EVM provides an easy mechanism to verify computation on chain.
+1. **Better security and decentralisation:** Due to Ethereum's PoW consensus model, it is extremely expensive for an attacker to attempt to censor or rewrite transactions.
+2. **Big partner ecosystem:** Ethereum has a large number of partner companies looking to improve different aspects of using and getting on to Ethereum.
+3. **Improved functionality:** Ethereum's EVM provides the ability to replicate any program on Ethereum thereby expanding the capabilities of the platform.
+4. **Good Liquidity:** Ethereum is the second most traded cryptocurrency asset. Hence liquidity on popular markets is not of concern.
+5. **On chain verification:** The EVM provides an easy mechanism to verify computation on chain.
 
 ### Disadvantages
 
-1. High Gas and Transaction Fees: Ethereum transaction fees depend on the gas market, which fluctuates depending on the usage of Ethereum.
-2. High Complexity: Due to the EVM's complexity, there are multiple avenues for unexpected results, hence a thorough audit is required.
-3. Uncertainty due to Proof of Stake shift: Since Ethereum is shifting to a PoS system in the near future, it is unclear if all the functionality of Ethereum-L1 will be preserved in the new chain.
+1. **High Gas and Transaction Fees:** Ethereum transaction fees depend on the gas market, which fluctuates depending on the usage of Ethereum. Frequent state updates on the contract are expensive, and commitments must be timed to reduce overall costs involved.
+2. **High Complexity:** Due to the EVM's complexity, there are multiple avenues for unexpected results, hence a thorough audit is required before using a contract in production.
+3. **Uncertainty due to Proof of Stake shift:** Since Ethereum is shifting to a PoS system in the near future, it is unclear if all the functionality of Ethereum-L1 will be preserved in the new chain. It is also unclear if new smart contracts need to be developed for the PoS chain, or whether the PoS chain will be backward compatible.
 
 ## Cosmos
 

@@ -234,7 +234,7 @@ The trust model in this scenario is that entities trust the platform to push fun
 1. **More Secure and Decentralised:** There are more people running Lightning nodes than Stellar nodes. Lightning relies on Bitcoin-L1 for security, ensuring a high safety margin for investments.
 2. **Faster payments:** Since Lightning transactions are settled immediately, this is faster than having to wait for a block. Lightning transactions can also be asynchronous since there are multiple channels open at the same time.
 3. **Good partner ecosystem:** Many partner companies are available in the Lightning ecosystem and it is easy to leverage their help to improve the functionality of Opensolar. Building on Lightning would also enable the possibility of lightning mobile apps - web platform cross integration, making it easier for receivers to pay back towards projects.
-4. **Good Functionality:** Lightning offers more functionality \(atomic swaps, state update proofs\) that Opensolar could expand on compared to Stellar, and Lightning core development is faster than Stellar.
+4. **Improved Functionality:** Lightning offers more functionality \(atomic swaps, state update proofs\) that Opensolar could expand on compared to Stellar, and Lightning core development is faster than Stellar.
 5. **Option to switch between Bitcoin-L1 and Lightning:** For high valued investments, it is easy to leverage Bitcoin-L1's security.
 
 ### Disadvantages
@@ -263,7 +263,7 @@ The trust model of this idea relies on the platform not grief attacking its user
 2. **Security and Decentralisation of Bitcoin-L1:** Due to Bitcoin's high PoW, a pre-signed transaction that is broadcast can almost never be reversed if the receiving entity waits for a given period of time.
 3. **No stablecoin:** This model does not involve a stablecoin, and people need not trust third party vendors.
 4. **Big partner ecosystem:** Bitcoin has a lot of partner companies which are looking to improve different aspects of using and getting on to Bitcoin. Since the model does not use a stablecoin, the platform can build more on core Bitcoin functionality without worrying about third party stablecoin providers
-5. **More functionality:** Bitcoin has more opcodes than Stellar, and can therefore the platform can look to implement more complex functionality.
+5. **Improved functionality:** Bitcoin has more opcodes than Stellar, and can therefore the platform can look to implement more complex functionality.
 
 ### Disadvantages
 
@@ -289,7 +289,7 @@ The trust model for this depends on the sidechain's construction - who can creat
 
 ### Advantages
 
-1. **More Functionality:** Sidechains offer a wide range of functionality like smart contracts, asset and confidential transactions which can be used to improve platform functionality.
+1. **Improved Functionality:** Sidechains offer a wide range of functionality like smart contracts, asset and confidential transactions which can be used to improve platform functionality.
 2. **Fast transactions:** Sidechain transactions are usually faster than Bitcoin-L1, and depending on construction, faster than Stellar.
 3. **Easy integration with Bitcoin-L1 and Lightning:** Sidechain pegs are easy to get in and out of. Onboarding is therefore easier since one can leverage the partner ecosystem of Bitcoin to get into a sidechain.
 4. **More secure decentralised than Stellar:** Sidechains usually have more running nodes than Stellar and therefore, it is less likely a transaction will be censored. Since sidechains are used in combination with Bitcoin-L1, sidechains borrow from Bitcoin-L1's security.
@@ -329,67 +329,67 @@ The trust model for this idea relies on the platform not acting maliciously or i
 
 1. **Less decentralised than Lightning:** Since the platform acts a a central coordinator for processing statechains, any of the previous owners of the utxo can collude with the platform to steal funds from a user. Such an attack will be public and does come at a reputational cost to the platform but the construction is more centralised than Lightning which does not have any such trust involved.
 2. **Absence of assets:** Since Bitcoin doesn't support assets, there is no ready solution to adopt which can replace assets on Stellar. An alternative is to get rid of assets and handle only proofs.
-3. **Slow confirmation times:** Bitcoin transactions are slower than comparable Stellar transactions, so the platform can not afford to make a lot of synchronous payment requests during the investment workflow. This is a concern only when entering and exiting the statechain since transactions within the statechain are instantaneous.
+3. **Slow confirmation times:** Bitcoin transactions are slower than Stellar transactions, so the platform can not afford to make a lot of synchronous payment requests during the investment workflow. This is a concern only when entering and exiting the statechain since transactions within the statechain are instantaneous.
 4. **High Fees and whole utxos:** Bitcoin transaction fees vary widely, and sometimes it can be expensive to spend Bitcoin. This would affect entities entering and exiting the statechain. Statechains also require complete utxos and splitting utxos should occur as a transaction on Bitcoin-L1, increasing fees and wait times involved.
 5. **Not time tested:** Statechains is a recent development, and hasn't been battle tested for security.
 
 ### Bitcoin L-1
 
-Similar to how things work on Stellar, the same transactions could be mirrored on Bitcoin.
+Similar to how things work on Stellar, the same transactions and workflow can be mirrored on Bitcoin.
 
 ### Advantages
 
-1. Best security and decentralisation: Due to Bitcoin's PoW consensus model, it is extremely expensive for an attacker to attempt to censor or rewrite transactions. Bitcoin also has a large number of nodes \(&gt;10000\) which greatly improves decentralization.
-2. Big partner ecosystem: Bitcoin has a lot of partner companies which are looking to improve different aspects of using and getting on to Bitcoin.
-3. More functionality: Bitcoin has more opcodes than Stellar, and can therefore the platform can look to implement more complex functionality.
-4. Best Liquidity: Bitcoin is the most traded cryptocurrency asset, and liquidity on markets is not a problem.
-5. On chain verification: Bitcoin Script is verified on chain, and the platform need not be trusted for performing computation correctly.
+1. **Good security and decentralisation:** Due to Bitcoin's PoW consensus model, it is extremely expensive for an attacker to attempt to censor or rewrite transactions. Bitcoin also has a large number of nodes \(&gt;10000\) which improves decentralisation.
+2. **Big partner ecosystem:** Bitcoin has a large number of partner companies looking to improve different aspects of using and getting on to Bitcoin.
+3. **Improved functionality:** Bitcoin has more opcodes than Stellar, and the platform can implement more complex functionality.
+4. **Good Liquidity:** Bitcoin is the most traded cryptocurrency asset. Hence liquidity on popular markets is not of concern.
+5. **On chain verification:** Bitcoin Script is verified on chain, and the platform need not be trusted for performing correct computation.
 
 ### Disadvantages
 
-1. Slow confirmation times: Bitcoin transactions are slower than comparable Stellar transactions, so the platform can not afford to make a lot of synchronous payment requests during the investment workflow.
-2. High Fees: Bitcoin transaction fees vary widely, and sometimes it can be expensive to spend Bitcoin.
-3. Absence of assets: Since Bitcoin doesn't support assets, there is no ready solution to adopt which can replace assets in Stellar. Bitcoin does have a number of alternatives but they haven't grained traction or adoption, so we would have to come up with a new solution.
+1. **Slow confirmation time:** Bitcoin transactions are slower than Stellar transactions, so the platform needs to wait for a given period of time before it can confirm an investment or withdrawal.
+2. **High Fees:** Bitcoin transaction fees vary widely, and sometimes it can be expensive to spend Bitcoin.
+3. **Absence of assets:** Since Bitcoin doesn't support assets, there is no ready solution to adopt which can replace assets on Stellar. An alternative is to get rid of assets and handle only proofs.
 
 ## Ethereum
 
-Ethereum uses an account based model, similar to Stellar. Changing to this model would involve major changes since Ethereum provides a Turing complete on chain smart contract abstraction \(called the Ethereum Virtual Machine or EVM\) which eliminates the need for assets, and global state variables. This would also mean the opensolar smart contract which runs on a server right now could migrate to the Ethereum blockchain.
+Ethereum uses an account based model similar to Stellar. Ethereum provides a Turing complete on chain smart contract abstraction \(called the Ethereum Virtual Machine or EVM\) and global state variables. This eliminates the need for assets on Ethereum. As a consequence, the opensolar smart contract which runs on AWS could migrate to the Ethereum blockchain.
 
-Ethereum provides a wide range of opcodes to work with, and functionality can be expanded arbitrarily. Ethereum charges a fixed "gas" for each common operation \(hashing, adding, multiplying, state updates, etc\) and a variable amount of gas for other operations. Transaction fee is denominated in gas, and the more operations a state update contains, the more gas it consumes. Gas and ETH are subject to their own fee markets.
+Ethereum provides a wide range of opcodes to work with, and arbitrary functionality can be implemented. Ethereum charges "gas" for each computation performed on chain. For common operations like hashing, adding, multiplying and state updates, Ethereum fixes the amount of gas that is charged. For other operations, a variable amount of gas is charged. Transaction fee is denominated in ETH. Gas and ETH are subject to their own fee markets.
 
-The EVM is a powerful abstraction for developers who want to run smart contracts on chain. Running these contracts on chain provides provable execution without having to provide proofs in between each computation. An on chain smart contract improves auditability of the contract, and one can easily check if the code on the repository is the same as the code deployed. This enables third party monitors to monitor updates / investments on the platform and alert users in case something fishy happens, and also for third party services to create their own web interfaces for Opensolar.
+The EVM is a powerful abstraction for developers developing on chain smart contracts. Running smart contracts on chain provides provable execution without having to provide commitment proofs for computation. An on chain smart contract also improves auditability of a contract since one can easily check if the code on the repository is the same as the code deployed on the blockchain. This enables third party monitors to monitor updates / investments on the platform. Third party services can also create their own web interface, and for the contract to create their own instance of Opensolar.
 
-Ethereum has a large developer ecosystem and lots of potential ideas and applications that can be used without much effort. These use cases can potentially augment the primary use case of the platform and enable the intersection of many ideas.
+Ethereum has a large developer ecosystem and lots of potential ideas and applications that can be used without much effort. These applications can augment the platform and enable the intersection multiple ideas.
 
-Ethereum has L2 solutions similar to Bitcoin \(eg. Plasma\). Ethereum is transitioning to a Proof of Stake system where miners stake ETH in the system instead of hashing. Ethereum also has provisions to incentivize developers to work on projects through decentralized crowdfunding ideas \(example Gitcoin\). This could be a mechanism to fund development on opensolar, and fund hackathons / bounty programs.
+Ethereum has L2 solutions similar to Bitcoin \(eg. Plasma\). Ethereum is transitioning to a Proof of Stake system where miners stake ETH to take part in consensus instead of hashing. Ethereum also has provisions to incentivize developers to work on projects through decentralized crowdfunding ideas \(example Gitcoin\). This could be a mechanism to fund development and bounty programs on opensolar.
 
 ### Sharding
 
-Sharding is a distributed systems concept where a single piece is split into multiple pieces and consistency of data is managed by an algorithm communicating with the different pieces. Splitting data reduces data storage requirements, increases local read/write speed, and efficiency of individual shards. Each shard ultimately communicates with the other shards either during a fixed time interval \(eg: once in 30 minutes\) or through a protocol.
+Sharding is a distributed systems idea where a single piece of data is split into multiple pieces and consistency is managed by an algorithm that communicates with the different pieces. Splitting data reduces data storage requirements, increases local read/write speed, and efficiency of individual shards. Each shard ultimately communicates with the other shards either during a fixed time interval \(eg: once in 30 seconds\) or through a protocol.
 
-In the context of Ethereum, Ethereum has a big archival storage requirement due to the requirement to store previous state updates of all deployed and inactive contracts. Sharding Ethereum's storage into multiple parts improves performance of local shards, and provides faster transaction confirmation. It also enables each shard to have its own set of rules locally, and these changes need not be reflected or stored on the parent Ethereum blockchain.
+Ethereum has a big archival storage requirement due to a need to store state updates of all deployed and inactive contracts. Sharding Ethereum's storage provides faster transaction confirmation, and reduces storage requirements for running an Ethereum node. It also enables a shard to have its own set of rules, and these rules need not be reflected or communicated to the parent Ethereum blockchain.
 
-In the context of opensolar, we could use a two layer shard system where each platform could live on its own shard with its own set of rules, and communicate with a bigger openx shard which commits to Ethereum blockchain. State updates can be fast, local and free, and different proofs can be given to different entities \(once the platform once the parent openx shard commits to the Ethereum blockchain, shard chain header, etc\).
+For opensolar, one could use a two layer shard architecture where each platform lives on its own shard with its own set of rules, and communicate with a bigger openx shard which commits to the Ethereum blockchain. State updates can be fast, local and free, and proofs can be given to different entities once the platform once the parent openx shard commits to the Ethereum blockchain.
 
-Like sidechains in Bitcoin, this requires a shard explorer in order to navigate through the different shards present in the system in order to find a given update. The shard explorer would contain normal details of a transaction or state update along with the block in which the openx shard committed the particular change.
+Like Bitcoin sidechains, this requires a shard explorer to navigate through the different shards. The shard explorer should contain details of a transaction or state update along with the block in which the openx shard committed the particular change to the parent Ethereum blockchain.
 
-Shards need not necessarily be Ethereum based, they could also be different blockchains whose headers commit to the parent openx shard. Some platforms may have an increased amount of trust placed in them, and they could choose to commit certain state changes to the shard living above them.
+Shards need not necessarily be Ethereum based, they could even be different blockchains whose headers commit to the parent openx shard and/or the Ethereum blockchain.
 
-The trust model for this involves trusting the openx shard and the platform shard. If a shard owner tries to cheat any given entity, they have proofs that they can show to ruin the platform's reputation.
+The trust model for this involves trusting the openx shard and the platform shard, along with the parent Ethereum blockchain. If a shard owner tries to cheat an entity, the entity can submit proofs to ruin the platform's reputation.
 
 ### Advantages
 
-1. Low Fees: Each shard can process transactions faster and more cheaper \(since the shards communicate with each other only at certain intervals\)
-2. Big partner ecosystem: Ethereum has a lot of partner companies which are looking to improve different aspects of using and getting on to Ethereum.
-3. More secure and decentralised than Stellar: Shards are easy to run, and the requirement to become a shard validator is not too high. The number of nodes running Ethereum full nodes is around 6000 and the number of shards will only be more, making it more decentralised than Stellar.
-4. More functionality: Since shards replicate the functionality of Ethereum-L1, the EVM and other features are available for the platform to use.
-5. Faster transactions compared to Ethereum-L1: Transaction processing is split into multiple shards and each shard can process the same amount of transactions faster \(since there are more processing units to process them\).
+1. **Low Fees:** Each shard can process transactions faster and cheaper since the shards communicate with each other only at certain intervals.
+2. **Big partner ecosystem:** Ethereum has a large number of partner companies looking to improve different aspects of using and getting on to Ethereum.
+3. **More secure and decentralised:** Shards are easy to run and the requirement to become a shard validator is not too high. The number of nodes running Ethereum full nodes is around 6000 and the number of shards will only be more, making it more decentralised than Stellar.
+4. **Improved functionality:** Since shards replicate the functionality of Ethereum-L1, the EVM and other features are available on any shard.
+5. **Faster transactions:** Transaction processing is split into multiple shards and each shard can process the same amount of transactions faster since there are more processing units to process them.
 
 ### Disadvantages
 
-1. Not time tested: Sharding is not a new idea but implementations of sharding in the blockchain space have not been tested.
-2. Need to handle shard commitments, updates and malicious behaviour: There is a possibility that a participant in the platform coordinates with shard validators to defraud the platform \(or the platform can coordinate with validators to defraud entities\). These scenarios need to be handled varefully within the platform.
-3. Compatibility with Beacon Chain unclear: It is unclear how compatible Sharding will be with the Ethereum PoS upgrade.
+1. **Not time tested:** Sharding is not a new idea but implementations of sharding in the blockchain space have not been tested for security and performance.
+2. **Need to handle shard commitments, updates and malicious behaviour:** There is a possibility that a participant in the platform coordinates with shard validators to defraud the platform or the platform can coordinate with validators to defraud entities. Attack scenarios need to be modelled and tested carefully before deployment.
+3. **Compatibility with Beacon Chain:** It is unclear how compatible Sharding will be with the Ethereum PoS upgrade.
 
 ### DeFi and algorithmic stablecoins
 
@@ -457,7 +457,7 @@ Ethereum-L1 can also be used in parallel to another blockchain system. For examp
 
 1. Better security and decentralisation: Due to Ethereum's PoW consensus model, it is extremely expensive for an attacker to attempt to censor or rewrite transactions.
 2. Big partner ecosystem: Ethereum has a lot of partner companies which are looking to improve different aspects of using and getting on to Ethereum.
-3. More functionality: Ethereum's EVM provides the ability to replicate any program on Ethereum
+3. Improved functionality: Ethereum's EVM provides the ability to replicate any program on Ethereum
 4. Good Liquidity: Ethereum is the second most traded cryptocurrency asset, and liquidity on markets is not a problem.
 5. On chain verification: The EVM provides an easy mechanism to verify computation on chain.
 

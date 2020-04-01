@@ -303,31 +303,35 @@ The trust model for this depends on the sidechain's construction - who can creat
 
 ### Statechains
 
-Statechains is an improvement on top of Sidechains which combines the Hub and Spoke model of LN with the semi trusted nature of Sidechains. Statechains requires a centralized coordinator which communicates with the others in the system, and stores an index mapping utxos to owners. Statechains as is can enable transfer of whole utxos \(without breaking\) from one entity to another with zero cost.
+Statechains is an improvement on top of Sidechains, combining the Hub and Spoke model of LN with the semi trusted nature of Sidechains. Statechains requires a centralized coordinator which communicates with the others in the system, and an internal index that maps utxos to owners.
 
-Each person who wants to enter the statechain can do so by creating a 2/2 Multisig address with the coordinator "C". If "A" would like to transfer to "B" an utxo "X", it passes the private key "x" to B through C \(which checks if A is indeed the owner of X, adds its signature and broadcasts it to the blockchain\), which updates its index that B is the owner of the marked utxo. A is required to delete the private key from its storage. Even if A maliciously stores the private key and attempts to spend it elsewhere, C refuses to sign because its record shows that A transferred ownership of X to B.
+An entity that wants to enter a statechain can do so by creating a 2/2 Multisig address with the central coordinator "C". If "A" would like to transfer to "B" an utxo "X", it passes the private key "x" to B through C. C checks if A is indeed the owner of X, adds its signature and broadcasts it to the blockchain, and updates its internal map to reflect that B is the new owner of the utxo. A is required to delete the private key from its storage. Even if A maliciously stores the private key and attempts to spend it elsewhere, C refuses to sign the mutlisig transaction because its internal map shows that A transferred ownership of X to B at a point in the past. It could also penalise A for attempting to spend such an utxo by removing it from the statechain.
 
-In the case of opensolar, the above is not an issue since utxos are never exposed to the user. The platform could act as a centralised coordinator and investors can transfer utxos to the platform conditional on the investment threshold being reached. In the event the threshold is not reached, the utxo's ownership will not change. Once the investment threshold is reached, the utxos are transferred to an intermediary, and spending from the intermediary requires the approval of both the platform and the receiver. When the receiver wants to pay certain entities, it requests the platform to sign the transaction, and the platform transfers ownership of the utxo to the other entity.
+In Opensolar, the above can be mitigated by not exposing individual utxos to users. The platform can act as the centralised coordinator and investors can transfer utxos to the platform conditional on the investment threshold being reached. In the event the threshold is not reached, the utxo's ownership and the platform's itnernal mapping will not change.
 
-Statechains can also support multiple currencies \(that follow an utxo model\), and users can choose to swap currencies within the statechain. This also gives flexibility to the receiver, who can pay entities in other currencies if the entity chooses so. Note that this requires Schnorr signatures as a minimum upgrade to the Bitcoin protocol. Statechains can also be used in combination with payment channels, and people can use these utxos to fund a channel between two peers.
+Once the investment threshold is reached, utxos are transferred to an intermediary, and spending from the intermediary requires coordination between the receiver and platform. When the receiver wants to pay certain entities, it requests the platform to sign the transaction, and the platform subsequently transfers ownership of the utxo to the other entity.
 
-The trust model for this idea again relies primarily on the platform not acting maliciously, or in collusion with one of the previous owners of the utxo. In the event this occurs however, proofs of ownership are easy to publish, and the platform's reputation will be ruined.
+Statechains can support multiple currencies that follow an utxo model, and users can choose to swap currencies within the statechain. This gives flexibility to the receiver, who can pay entities in other currencies.
+
+Statechains requires Schnorr signatures as a minimum upgrade to the Bitcoin protocol. Statechains can also be used in combination with payment channels, and people can use these utxos to fund a channel between two peers.
+
+The trust model for this idea relies on the platform not acting maliciously or in collusion with one of the previous owners of an utxo. In the event this occurs, proofs of ownership are easy to publish, and the platform's reputation will be at stake.
 
 ### Advantages
 
-1. Improved privacy: Statechains have improved privacy compared to pre-signed transactions since the platform signs every transaction change request. This interaction between entities and the platform can be made more private with Schnorr signatures.
-2. Support for altcoins: Statechain coordinators can offer support for altcoins, enabling easy exchange of altcoins, stablecoins and Bitcoin within the platform.
-3. Security and Partner Ecosystem of Bitcoin-L1: Statechains is an architectural expansion of Bitcoin-L1, and offers the complete security guarantees of Bitcoin-L1.
-4. No fees: There are no fees associated with the transfer of utxos within a statechain.
-5. Fast transactions: Transactions are almost instant on the statechain since there is no blockchain confirmation period involved.
+1. **Improved privacy:** Statechains have improved privacy compared to pre-signed transactions since the platform signs every transaction change request without discrimination. This interaction between entities and the platform can be made more private with Schnorr signatures.
+2. **Support for altcoins:** Statechain coordinators can offer support for altcoins, enabling easy exchange of altcoins, stablecoins and Bitcoin within the platform.
+3. **Security and Partner Ecosystem of Bitcoin-L1:** Statechains is an architectural expansion of Bitcoin-L1 and offers the complete security guarantees of Bitcoin-L1.
+4. **No fees:** There are no fees associated with the transfer of utxos within a statechain since there are no Bitcoin-L1 transactions made.
+5. **Fast transactions:** Transactions are almost instant on the statechain since there is no blockchain wait period involved.
 
 ### Disadvantages
 
-1. Less decentralised than Lightning: Since the platform acts a a central coordinator for processing statechains, any of the previous owners of the utxo could collude with the platform in order to steal funds from the user. Such an attack will be public and comes at a reputational cost to the platform but still is more centralised than Lightning which doesn't place any such requirements.
-2. Absence of assets: Since Bitcoin doesn't support assets, there is no ready solution to adopt which can replace assets in Stellar. Bitcoin does have a number of alternatives but they haven't grained traction or adoption, so we would have to come up with a new solution. An alternative is to get rid of assets altogether and handle only proofs.
-3. Slow confirmation times: Bitcoin transactions are slower than comparable Stellar transactions, so the platform can not afford to make a lot of synchronous payment requests during the investment workflow.
-4. High Fees and whole utxos: Bitcoin transaction fees vary widely, and sometimes it can be expensive to spend Bitcoin. Statechains also require complete utxos and splitting utxos should occur as a transaction on Bitcoin-L1.
-5. Not time tested: Statechains is a recent development, and hasn;t been battle tested for flaws
+1. **Less decentralised than Lightning:** Since the platform acts a a central coordinator for processing statechains, any of the previous owners of the utxo can collude with the platform to steal funds from a user. Such an attack will be public and does come at a reputational cost to the platform but the construction is more centralised than Lightning which does not have any such trust involved.
+2. **Absence of assets:** Since Bitcoin doesn't support assets, there is no ready solution to adopt which can replace assets on Stellar. An alternative is to get rid of assets and handle only proofs.
+3. **Slow confirmation times:** Bitcoin transactions are slower than comparable Stellar transactions, so the platform can not afford to make a lot of synchronous payment requests during the investment workflow. This is a concern only when entering and exiting the statechain since transactions within the statechain are instantaneous.
+4. **High Fees and whole utxos:** Bitcoin transaction fees vary widely, and sometimes it can be expensive to spend Bitcoin. This would affect entities entering and exiting the statechain. Statechains also require complete utxos and splitting utxos should occur as a transaction on Bitcoin-L1, increasing fees and wait times involved.
+5. **Not time tested:** Statechains is a recent development, and hasn't been battle tested for security.
 
 ### Bitcoin L-1
 

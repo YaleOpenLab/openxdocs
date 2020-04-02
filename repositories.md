@@ -12,7 +12,7 @@ description: A list of all the openx related repositories spread across Github.
 
 **API Docs**: [https://github.com/YaleOpenLab/openx-apidocs](https://github.com/YaleOpenLab/openx-apidocs)
 
-**Gitbook**: [https://github.com/YaleOpenLab/openxdocs](https://github.com/YaleOpenLab/openxdocs)
+**Gitbook \(this page\)**: [https://github.com/YaleOpenLab/openxdocs](https://github.com/YaleOpenLab/openxdocs)
 
 **Create-openx-app**:  [https://github.com/YaleOpenLab/create-openx-app](https://github.com/YaleOpenLab/create-openx-app/tree/master/.template)
 

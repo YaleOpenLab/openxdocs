@@ -4,3 +4,7 @@ description: The people and companies currently involved with the opensolar proj
 
 # People
 
+Varunram Ganesh - ganeshv@mit.edu
+
+Martin Wainstein - martin.wainstein@yale.edu
+

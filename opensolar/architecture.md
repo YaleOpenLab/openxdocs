@@ -87,9 +87,7 @@ The opensolar platform and the openx platform of platforms are hosted on separat
 
 ### Stablecoin
 
-Opensolar makes use of USDx, a digital representation of the US Dollar on Stellar provided by AnchorUSD. Procuring USDx requires one to undergo Know Your Customer \(KYC\) checks done by AnchorUSD. Once a user completes the checks required by AnchorUSD, they can invest in any project on the opensolar platform.
+Opensolar makes use of USDx, a representation of the US Dollar on the Stellar blockchain provided by AnchorUSD. Obtaining USDx requires an entity to undergo Know Your Customer \(KYC\) checks performed by AnchorUSD. Once a user completes the required checks, they can buy USDx and exchange USDx for USD on anchorusd.com. An alternate way of obtaining USDx is to use the Stellar DEX.
 
-USDx can also be procured on the Stellar DEX and used to invest on the platform.
-
-Recipients can purchase USDx through AnchorUSD's website, and are required to go through the same KYC process as required of investors. Once a recipient loads funds into their account and when there is sufficient balance to pay towards the bills generated, the smart contract triggers payments. If there is insufficient balance, the platform sends a reminder to the recipient to load funds into their account.
+Recipients are required to go through the same KYC process as required of investors. Once a recipient loads funds into their account and when there is sufficient balance, the smart contract triggers payments. If there is insufficient balance, the platform sends a reminder to the recipient to load funds into their account, and pulls funds form the guarantor if necessary.
 

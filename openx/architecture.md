@@ -1,5 +1,5 @@
 ---
-description: A thorough description of the openx/opensolar architecture
+description: A description of the openx/opensolar interaction and architecture
 ---
 
 # Architecture

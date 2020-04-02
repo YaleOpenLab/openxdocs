@@ -1,5 +1,5 @@
 ---
-description: A list of all the openx related repositories spread across Github.
+description: A list of all openx and opensolar related repositories on GitHub.
 ---
 
 # Repositories

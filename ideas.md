@@ -1,8 +1,8 @@
 ---
-description: Projects that are currently ongoing
+description: Ideas that are currently open for discussion and implementation
 ---
 
-# Projects
+# Ideas
 
 **Frontend Development:** The opensolar frontend is under development and there are multiple opportunities for collaboration and development:
 
@@ -14,6 +14,11 @@ description: Projects that are currently ongoing
   * Admin dashboard: Opensolar has an admin API interface through which admins can perform a variety of functions on the platform. These functions do not have pages on the frontend yet, and designing and developing such a page would be useful for all platform admins.
   * Teller dashboard: The teller works in conjunction with the platform, and there is no representation of the data that the teller communicates on the frontend. Designing such a page would be useful for developers and receivers to monitor progress on the teller, and view blockchain commitments and state updates that the teller commits.
 * Pausable smart contracts: The Opensolar smart contract deployed on AWS has multiple redundancy checks in place but in no event can a platform admin stop its execution once the project flow is in place. Having a pausable smart contract would help admins arbitrate better in case of conflict and pause contract exeution in the event there's a hack on the platform, etc. This also helps clear some uncertainties on the legal side since the contracts can now be paused and investors can be protected by the platform against massive losses.
-* * Migrating to a SQL based database: Opensolar right now uses boltDB - a key value pair database with limited room for scalability. Migrating to a SQL based database would better create relations between different entities on the platform, better design the database infrastructure, and be more scalable since SQL is designed to be used in production environments. postgreSQL or MySQL would be ideal options to look at for migration.
-* asd
+* Manually triggered smart contracts: Contrary to pausable smart contracts, a manually trigerred smart contract is when a platform admin can immediately move a project to stage 4 for investment, or to stage 5 after post-investment to start the teller workflow, etc. These are useful in cases when the automatic flow breaks down, or is insufficient to automatically upgrade project stages. For some stage transitions like stage 7-8, this is very useful since admins can review stage data and  transition stages.
+* Migrating to a SQL based database: Opensolar right now uses boltDB - a key value pair database with limited room for scalability. Migrating to a SQL based database would better create relations between different entities on the platform, better design the database infrastructure, and be more scalable since SQL is designed to be used in production environments. postgreSQL or MySQL would be ideal options to look at for migration.
+* Create a new project diagram: The project diagram on the opensolar readme is outdated and does not reflect many of the changes that have since taken place wrt  platform architecture. An updated diagram should also reflect the different entities on the platform, different stages associated, and more.
+* Create an end project state: Projects on Opensolar do not have an end state right now but it is important to retire projects once they reach stage 8/9 and display the relevant data to investors and recipients on their dashboards. This state also helps keep track of how many projects have reached completion, and this could be displayed in a separate screen similar to the Explore Tab.
+* Create your own smart contract function: Right now, the platform uses a predefined smart contract. Having a web based interface for originators and receivers to tweak parameters and create their own smart contract enables them to come up with new ideas that existing contract creators may not encounter. This also enables them to come up with conditions and parameters that may be relevant  only towards that project.
+* Data visualization on the frontend: Though multiple data points are available, data is still displayed in a text format on the frontend. Having interactive graphs and would enhance the visual feel of the platform, and reduces time for investors to comb through data displayed.
+* * asd
 

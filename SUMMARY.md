@@ -2,7 +2,7 @@
 
 * [Welcome](README.md)
 * [People](people.md)
-* [Projects](projects.md)
+* [Ideas](ideas.md)
 * [License](license.md)
 * [Repositories](repositories.md)
 

@@ -384,7 +384,7 @@ Send XLM to another user
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Sends XLM from one account to a destiantion address  
+Sends XLM from one account to a destinations address  
   
 **curl -X GET -H "Content-Type: application/x-www-form-urlencoded" -H "Origin: localhost" "http://localhost:8080/user/sendxlm?username=john&token=pmkjMEnyeUpdTyhdHElkBExEKeLIlYft&seedpwd=x&amount=1&destination=GCHKX52XNXJ4PWG4TJYR7SEHFBBVDJWRGA22ELSISYLMRCDRSBLSL3MH"**
 {% endapi-method-description %}
@@ -695,7 +695,7 @@ The file to be uploaded
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="token" type="string" required=true %}
-The authenticaion token belonging to the user
+The authentication token belonging to the user
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="username" type="string" required=true %}
@@ -1190,7 +1190,7 @@ Send Recovery Secrets
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Sends recovery secrets to the list of emails pased to the endpoint  
+Sends recovery secrets to the list of emails passed to the endpoint  
   
 **curl -X GET -H "Content-Type: application/x-www-form-urlencoded" -H "Origin: localhost" "http://localhost:8080/user/sendrecovery?username=samuel&token=pmkjMEnyeUpdTyhdHElkBExEKeLIlYft&email1=varunramganesh@gmail.com&email2=varunramganesh@gmail.com&email3=varunramganesh@gmail.com"**
 {% endapi-method-description %}

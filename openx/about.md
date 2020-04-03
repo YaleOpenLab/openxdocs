@@ -24,11 +24,11 @@ Openx uses boltDB, a key value pair database for its internal storage, in order 
 
 Openx also provides a CI-enabled build server that can be used to release platform builds for different platforms. This function is used by openx internally to provide pacakges for its own releases at builds.openx.solar.
 
-Openx also has a PPA to enable easy installation for linux users. This is easily configurable to use by other platforms as well.
+Openx also has a PPA to enable easy installation for linux users. This is easily configurable by other platforms as well.
 
 ### Stellar
 
-Openx primarily uses Stellar, a Proof of Stake blockchain based on the Stellar Consensus Protocol. Stellar follows an account based model of accounting in which balances are associated with a public key \("account" or "address"\) on the blockchain, and subsequent operations increase the balance associated with the address. Stellar provides a set of operations that can be performed globally to change the state of a set of addresses \([https://www.stellar.org/developers/guides/concepts/list-of-operations.html](https://www.stellar.org/developers/guides/concepts/list-of-operations.html)\)
+Openx uses Stellar, a Proof of Stake blockchain based on the Stellar Consensus Protocol. Stellar follows an account based model of accounting in which balances are associated with a public key \("account" or "address"\) on the blockchain, and subsequent operations increase the balance associated with the address. Stellar provides a set of operations that can be performed globally to change the state of a set of addresses \([https://www.stellar.org/developers/guides/concepts/list-of-operations.html](https://www.stellar.org/developers/guides/concepts/list-of-operations.html)\)
 
 Stellar's blockchain interface has two components:
 
@@ -55,32 +55,30 @@ More types can be defined in the future if required \(platforms can define more 
 
 ### Platforms
 
-Platforms in openx refer to platforms that build on top of openx that enable investments in a specific asset class. Opensolar is an example of a platform \(which enables investments in solar energy projects\). Platforms are separate entities in Openx, and do not affect the base openx platform in any way. Users that have an openx account can simultaneously invest in multiple platforms. Users on a platform can choose to be any entity as defined by the constructs of the platform. These roles are not reflected on openx.
+Platforms in openx refer to platforms that build on top of openx and enable investments in a specific asset class. Opensolar is an example of a platform \(Opensolar enables investments in solar energy projects\) built on openx.
 
-Platforms do not handle wallets and similar infrastructure. All wallet related code is handled by openx to provide safety and security. The smart contracts that power the platform can use the different functionalities offered by openx to do various functions. Platforms are not allowed to write their own wallet handling logic since they may create new bugs, making auditing difficult.
+Platforms are independent entities that do not affect the base openx platform. Users having an openx account can simultaneously invest in multiple platforms if they have funds in the required currencies. Users on a platform can choose to be any entity as defined by the constructs of the platform. These roles are not reflected on openx.
 
-Platforms need to be registered on openx and should obtain a unique code that enables them to user the platform-platform API. The API grants access to a privileged set of functions and allows other platforms to create new users, retrieve users, get openx constants and more.
+Platforms building on openx need to be registered and need to obtain a unique code that enables them to use the platform-platform openx API. This API grants access to a privileged set of endpoints and allows platforms to create new openx users, retrieve data related to openx users, get openx constants and more.
 
 ### Administrators
 
-Openx has support for platform administrators who can perform different functions like
+Openx has support for platform admins who can perform functions like
 
 * Seeing all users on the platform
 * Manually enabling KYC for a user
 * Banning a user
 * Sending emails to users
+* Create new platform registration codes
 
-Admins are trusted entities who ideally should be the same as those running the platform on the cloud instance. Admins however, do not have access to any user account and can not perform functions like resetting passwords or investing in projects.
+Openx Admins are trusted entities who are in charge of the openx project. Platform admins should be those having access to the server where the platform's contract is running. Admins do not have access to user accounts however, and can not perform functions like resetting passwords or investing in projects.
 
 ### Stablecoins
 
-Stablecoins are digital representations of fiat currencies. Common examples are Tether, USDCoin and more. Stablecoins are usually based off Bitcoin or Ethereum but since openx builds on top of Stellar, it uses a stablecoin called USDx, provided by AnchorUSD.
+Stablecoins are representations of fiat currencies on blockchains. Common examples are Tether, USDCoin and more. Stablecoins are usually based off Bitcoin or Ethereum but since openx uses Stellar, it uses a stablecoin called USDx, provided by AnchorUSD.
 
-USDx is an "asset" on Stellar provided by AnchorUSD. If a user wishes to buy USDx, they must undergo the checks required by AnchorUSD, transfer money to AnchorUSD, and receive USDx in their account. They can also purchase USDx using the Stellar DEX. USDx can be used to invest in projects that platforms advertise for funding, like opensolar.
+USDx is an "asset" on Stellar provided by AnchorUSD. If a user wishes to buy USDx, they must undergo KYC checks required by AnchorUSD, transfer money to AnchorUSD, and receive USDx in their account. They can also purchase USDx using the Stellar DEX. USDx can be used on platforms which use Stellar and advertise for investments in USD.
 
-### CI
+### Continuous Integration
 
-A basic CI that builds the openx and opensolar executables is available as part of openx. This can be modified to build any executable. There is also a frontend inspired by Go Downloads, which offers users a clickable interface to download the executables.
-
-For more information on how Stellar integrates with Opensolar, checkout the "Opensolar on Stellar" doc in the wiki.
-
+A basic CI that builds the openx and opensolar executables is available as part of openx. This can be modified to build any executable. There is a web interface for downloading these executables inspired by Go Downloads, providing users with a clickable interface.

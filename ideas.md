@@ -31,4 +31,6 @@ There are multiple ideas that seek to improve the functionality, security and us
 * Sidechain implementations on Stellar: There are ideas for Sidechain implementations in Stellar. Having sidechains would help offload some transactions and state updates to the sidechain and would be similar to Bitcoin sidechains described in the alternatives doc.
 * Desktop and Mobile Apps: The platform could have desktop and mobile apps that communicate with the backend and seek to serve critical functions \(like checking balance, monitoring payback, etc\). These apps reduce trust placed in the platform, since they are user run.
 * Run own stellar core and horizon instances: Opensolar right now uses services run by the Stellar Development Foundation for interacting with the blockchain. We must run our own nodes to simplify this process and make things easier.
+* Direct stablecoin investments: Currently, the platform can only do stablecoin investments in projects. Having XLM investments in projects is easy if the project's threshold is in XLM. Having investments in other assets on Stellar is also possible.
+* Pilots with other ideas: Currently, Opensolar is only targeted at solar energy projects. An alternate pilot with something like decentralized housing, or something similar would help expand the horizons of the platform.
 

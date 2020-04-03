@@ -6,82 +6,52 @@ description: A description of the openx/opensolar interaction and architecture
 
 #### Introduction
 
-Openx's \(and Opensolar's\) architecture is not dependent upon any single blockchain. It is designed to be used with any blockchain as long as there is a contract to interact with a blockchain. Openx right now supports only Stellar but adding support for new blockchains is easy, only requiring the addition of handlers that communicate with other openx fragments. A platform based on Openx has the following parts:
+Openx is a "platform of platforms" architecture for investments using blockchains. Openx is built using the Stellar blockchain but its modular architecture enables it to be used with any blockchain. Openx provides a set of functions for platforms that build on top of it, composed of the following parts:
 
 1. A Smart Contract that performs the core functions of the platform 
 2. A JSON-RPC interface through which the frontend and other pieces of software can interact with the backend.
 3. Auxiliary packages that handle functions like KYC, Stablecoins, different Investment models, etc
 
-The functionality associated with each package within the platform is exposed through a JSON-RPC API. This API follows a token based authentication scheme which callers can invoke.
+The functionality associated with each package within the platform is exposed through a JSON-RPC API. This API follows a token based authentication scheme which callers can invoke. Openx also provides auxiliary features through its API that platforms might find useful like Know Your Customer (KYC) functionality and AML screening powered by ComplyAdvantage.
 
-Openx provides a base set of JSON-RPC endpoints, a user structure for different users on the platform, optional Know Your Customer \(KYC\) functionality, and other features that are useful for constructing a skeletal platform. Openx platform skeletons can be easily created using the CLI based tool create-openx-app, or can be forked from the main opensolar repository.
+Openx platform skeletons can be easily created using the CLI based tool create-openx-app, or can be forked from the main opensolar repository. Platform skeletons are designed in the same fashion as openx, to be modular and scalable in its architecture.
 
-There is one entity on the openx platform that acts as a parent entity for all entities on other platforms - the "User" entity. This entity contains fields that are required for maintaining cross-compatibility with other openx based platforms. It also contains handlers for all cryptocurrencies supported by openx, and platforms are highly recommended to import this functionality from openx. The entity also contains other pieces relevant for a user such as KYC registration and stablecoin support.
+There is one entity on the openx platform that acts as a parent entity for entities on other platforms - the "User" entity. This entity contains fields that are required for maintaining cross-compatibility with other openx based platforms. It also contains handlers for all cryptocurrencies supported by openx, and platforms are highly recommended to import this functionality from openx.
 
-As a rule, cryptocurrency operations and handling must take place within the parent openx platform. If platforms would like to add support for other cryptocurrencies, such functionality must be added to the openx repository to enable cross openx platform investments.
+As a rule, cryptocurrency operations and handling must take place within the parent openx platform. If platforms would like to add support for other cryptocurrencies, such functionality must be added to the openx repository to enable cross openx platform investments. This is to ensure that users in openx based platforms do not worry about security of the platform, and can refer to openx's central contract audits to build confidence in the platform.
 
-Openx uses boltDB, a key value pair database for its internal storage, in order to store user credentials, encrypted user seed, and more.
+Openx uses boltDB, a key value pair database for its internal storage, in order to store user credentials, encrypted user seed, and more. It also uses IPFS to store bigger ceredentials that platforms might need.
 
-Openx provides a set of features for platforms that build on top of it:
+Openx also provides a CI-enabled build server that can be used to release platform builds for different platforms. This function is used by openx internally to provide pacakges for its own releases at builds.openx.solar.
 
-* Users
-  * Primary and Secondary Stellar Wallets
-  * Basic support for Algorand Wallets
-* Platforms
-* Stablecoins
-* KYC \(w/o identity verification\) suport using ComplyAdvantage
-* Configurable CI support using a build server
-
-The [create-openx-app](https://github.com/YaleOpenLab/create-openx-app) application provides this functionality out of the box and can be used to bootstrap platforms that wish to build on top of Stellar.
+Openx also has a PPA to enable easy installation for linux users. This is easily configurable to use by other platforms as well.
 
 ### Stellar
 
-Stellar is a blockchain focused on layer 1 global payments. Stellar provides a limited set of functonality that can be used to emulate various actors in the global financial space. Stellar follows an account based system similar to Ethereum. The list of operations that we use in openx/opensolar along with its use are listed below:
+Openx primarily uses Stellar, a Proof of Stake blockchain based on the Stellar Consensus Protocol. Stellar follows an account based model of accounting in which balances are associated with a public key \("account" or "address"\) on the blockchain, and subsequent operations increase the balance associated with the address. Stellar provides a set of operations that can be performed globally to change the state of a set of addresses \([https://www.stellar.org/developers/guides/concepts/list-of-operations.html](https://www.stellar.org/developers/guides/concepts/list-of-operations.html)\)
 
-* **Create Account**: To create user accounts on the platform
-* **Payment**: To move money between different accounts
-* **Buy Offer**: To exchange XLM and other currencies on the Stellar DEX \(buy\)
-* **Sell Offer**: To exchange XLM and other currencies on the Stellar DEX \(sell\)
-* **Set Options**: Multisig, Escrow accounts
-* **Change Trust**: Multisig, Escrow accounts
+Stellar's blockchain interface has two components:
 
-Stellar's blockchain client broadly has two parts:
+* [Stellar-core](https://github.com/stellar/stellar-core): Stellar core is the blockchain client that communicates with other nodes and takes part in the Stellar Consensus Protocol.
+* [Horizon](https://godoc.org/github.com/stellar/go/clients/horizon): Horizon is the API instance of stellar-core used to interact with the blockchain.
 
-* [Stellar-core](https://github.com/stellar/stellar-core): Stellar core is the blockchain client that communicates with other nodes on the platform and takes part in the Stellar consensus algorithm
-* [Horizon](https://godoc.org/github.com/stellar/go/clients/horizon): Horizon is the API instance that communicates with the Stellar core platform and can be used to query the status of the blockchain.
-
-Openx right now connects to the Stellar Development Foundation's Horizon nodes by default, although a platform can choose to run its own node and connect to it. This however, would not provide much additional censorship resistance since the [quorum that Stellar depends on consensus mostly rely on the Stellar Foundation's nodes.](https://godoc.org/github.com/stellar/go/clients/horizon)
-
-Stellar has a set of advantages and disadvantages associated with it, and we decided to experiment to evaluate the positives and negatives of using it for openx/solar.
+Openx right now connects to the Stellar Development Foundation's Horizon instances, although an openx platform can choose to run its own node or connect to other Horizon instances. This however, would not provide much additional censorship resistance since the quorum that the Stellar Consensus Protocol depends on for consensus relies by default on the SDF nodes.
 
 ### Users
 
-Users can take multiple roles in an openx-powered platform:
+Users can undertake multiple roles in an openx-powered platform:
 
 * Investors
-* Recipents
-* Developers
-* Contractors
-* Originators
-* Guarantors
+* Recipents,
 
-and more. Openx leaves the requirements for these roles to the builders of the platform but defines a base layer user structure that can be used by any platform. This structure contains details like 
+and more depending on a platform's utility. Openx leaves the requirements for these roles to the builders of a platform.
 
-* Name
-* Description
-* Address
-* Email
-* Stellar and Algorand Wallets
-* Local Assets
-
-and more. For platforms that want to perform AML/KYC screening, we provide API integration with [ComplyAdvantage](https://complyadvantage.com/) \(does not provide identity verification\).
-
-Users can be of two types:
+Users in openx can be of two types:
 
 * **Individual accounts:** Individual aaccounts are held and represented by one individual.
-* **Company accounts:** Company accounts are held by one individual but represent a company. KYC for a company differs from that of an individual.
+* **Company accounts:** Company accounts are held by one individual but the account represents a company. KYC requirements for a company account differs from that of an individual account.
 
-More types can be defined in the future as required \(and platforms can defined more types if they should so require\)
+More types can be defined in the future if required \(platforms can define more types as well\)
 
 ### Platforms
 
@@ -99,7 +69,6 @@ Openx has support for platform administrators who can perform different function
 * Manually enabling KYC for a user
 * Banning a user
 * Sending emails to users
-* FUTURE: manually triggering smart contracts
 
 Admins are trusted entities who ideally should be the same as those running the platform on the cloud instance. Admins however, do not have access to any user account and can not perform functions like resetting passwords or investing in projects.
 

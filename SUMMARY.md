@@ -2,7 +2,8 @@
 
 * [Welcome](README.md)
 * [People](people.md)
-* [Ideas](ideas.md)
+* [Stellar Ideas](ideas.md)
+* [Opensolar on Stellar, and alternatives](opensolar-on-stellar-and-alternatives.md)
 * [License](license.md)
 * [Repositories](repositories.md)
 
@@ -30,6 +31,5 @@
   * [Particle](opensolar/api/particleio.md)
 * [FAQ](opensolar/faq.md)
 * [Openx-Opensolar Communication](opensolar/openx-opensolar.md)
-* [Opensolar on Stellar, and alternatives](opensolar/opensolar-on-stellar-and-alternatives.md)
 * [Frontend](opensolar/frontend.md)
 

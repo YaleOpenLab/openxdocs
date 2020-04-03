@@ -2,7 +2,7 @@
 description: Ideas that are currently open for discussion and implementation
 ---
 
-# Ideas
+# Stellar Ideas
 
 There are multiple ideas that seek to improve the functionality, security and usability of the platform. This doc does not seek to offer alternatives to Stellar. Rather, this doc assumes that the base blockchain layer is the same and aims to suggest improvements on top.
 

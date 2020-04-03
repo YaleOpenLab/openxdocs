@@ -4,9 +4,9 @@ description: Ideas that are currently open for discussion and implementation
 
 # Ideas
 
-**Frontend Development:** The opensolar frontend is under development and there are multiple opportunities for collaboration and development:
+There are multiple ideas that seek to improve the functionality, security and usability of the platform. This doc does not seek to offer alternatives to Stellar. Rather, this doc assumes that the base blockchain layer is the same as is now, and seeks to suggest changes on top.
 
-* Implementing a Content Management system: Opensolar requires a content management system in order to manage the content on the frontend. The frontend content is divided into the following sub categories:
+* Implementing a Content Management System \(CMS\) on the frontend: Opensolar requires a content management system in order to manage the content on the frontend. The frontend content is divided into the following sub categories:
   * Project content: Project details and content need to be editable by originators and receivers. Currently, this is done by changing parameters through the backend but this needs to be moved to the frontend where people can change content as desired.
   * Developer engine: The developer engine is one of the core pieces of the Opensolar platform. The engine enables developers to specify project details, give proejct quotes and continuously manage infrastructure all from one place.
   * Investor dashboard: The fields that are displayed on the investor dashboard are fed from a rudimentary CMS fed from the backend. These fields must be editable on the frontend by an investor, and an investor must have the optino to add fields from the backend to their dashboards.
@@ -25,4 +25,10 @@ description: Ideas that are currently open for discussion and implementation
 * Emulator as a full fledged web interface replacement: The emulator emulates certain functionality of the platform but does not act as a complete replacement to the web interface. Functionality on the emulator should be expanded so users who don't wish to trust a web interface can still interact and perform functions wihtin the platform.
 * Alternate implementations on other blockchains: Opensolar is built on Stellar right now but there are proposals for building Opensolar on an alternate blockchain ecosystem. This can be done in parallel to Opensolar as is to compare both platforms simultaneously.
 * Other language ports: Opensolar and Openx are written in Go but it would be nice to have Javascript or Python ports so people can easily incorporate functionality into their applications.
+* Have two blockchain architectures in parallel: Along with Stellar, it would be nice to have another layer which supports on chain smart contracts and verification that can occur parallel to assets and financial payments on Stellar.
+* Add secondary market: The platform can make use of the Stellar DEX to offer a secondary market to investors who can exchange one type of project assets for the other. Recipients could also potentially transfer DebtAssets to other holders in exchange for short term collateral.
+* Private investments: Some investors might not want to reveal their investment amounts. . A potential mechanism to do this would be to transact multiple times between the investor and platform, and the net sum of all these transactions would be the investor's investment in the project. Private transactions could also happen on another chain, or potential layer 2 solutions.
+* Sidechain implementations on Stellar: There are ideas for Sidechain implementations in Stellar. Having sidechains would help offload some transactions and state updates to the sidechain and would be similar to Bitcoin sidechains described in the alternatives doc.
+* Desktop and Mobile Apps: The platform could have desktop and mobile apps that communicate with the backend and seek to serve critical functions \(like checking balance, monitoring payback, etc\). These apps reduce trust placed in the platform, since they are user run.
+* Run own stellar core and horizon instances: Opensolar right now uses services run by the Stellar Development Foundation for interacting with the blockchain. We must run our own nodes to simplify this process and make things easier.
 

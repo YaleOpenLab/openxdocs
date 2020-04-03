@@ -6,9 +6,23 @@ description: A description of the openx/opensolar interaction and architecture
 
 #### Introduction
 
-Openx is a "platform of platforms" architecture for enabling investments using blockchains. Openx is built using Stellar blockchain but is designed to be blockchain agnostic and can support multiple blockchain platforms.
+Openx's \(and Opensolar's\) architecture is not dependent upon any single blockchain. It is designed to be used with any blockchain as long as there is a contract to interact with a blockchain. Openx right now supports only Stellar but adding support for new blockchains is easy, only requiring the addition of handlers that communicate with other openx fragments. A platform based on Openx has the following parts:
 
-Openx provides a basic set of features for platforms that build on top of it:
+1. A Smart Contract that performs the core functions of the platform 
+2. A JSON-RPC interface through which the frontend and other pieces of software can interact with the backend.
+3. Auxiliary packages that handle functions like KYC, Stablecoins, different Investment models, etc
+
+The functionality associated with each package within the platform is exposed through a JSON-RPC API. This API follows a token based authentication scheme which callers can invoke.
+
+Openx provides a base set of JSON-RPC endpoints, a user structure for different users on the platform, optional Know Your Customer \(KYC\) functionality, and other features that are useful for constructing a skeletal platform. Openx platform skeletons can be easily created using the CLI based tool create-openx-app, or can be forked from the main opensolar repository.
+
+There is one entity on the openx platform that acts as a parent entity for all entities on other platforms - the "User" entity. This entity contains fields that are required for maintaining cross-compatibility with other openx based platforms. It also contains handlers for all cryptocurrencies supported by openx, and platforms are highly recommended to import this functionality from openx. The entity also contains other pieces relevant for a user such as KYC registration and stablecoin support.
+
+As a rule, cryptocurrency operations and handling must take place within the parent openx platform. If platforms would like to add support for other cryptocurrencies, such functionality must be added to the openx repository to enable cross openx platform investments.
+
+Openx uses boltDB, a key value pair database for its internal storage, in order to store user credentials, encrypted user seed, and more.
+
+Openx provides a set of features for platforms that build on top of it:
 
 * Users
   * Primary and Secondary Stellar Wallets
@@ -39,22 +53,6 @@ Stellar's blockchain client broadly has two parts:
 Openx right now connects to the Stellar Development Foundation's Horizon nodes by default, although a platform can choose to run its own node and connect to it. This however, would not provide much additional censorship resistance since the [quorum that Stellar depends on consensus mostly rely on the Stellar Foundation's nodes.](https://godoc.org/github.com/stellar/go/clients/horizon)
 
 Stellar has a set of advantages and disadvantages associated with it, and we decided to experiment to evaluate the positives and negatives of using it for openx/solar.
-
-#### Advantages:
-
-* **The Stellar SDK** is easy to use, moderately documented, making it easy to use it to interact with the blockchain. The current backend makes extensive use of the API in order to perform operations on transactions, accounts and similar. The Stellar Go SDK is also under active maintenance and it makes it easy to write security critical applications.
-* **Horizon API**
-* Having **easy P2P assets** allows the exploration of more functionality at little added cost.
-* **Easy primitive modelling**: Stellar makes it easy to construct primitives like escrow accounts, multisig, variable signer weight and more. This allows us to write bug free constructs without worrying about the security of the underlying contracts.
-
-**Disadvantages**
-
-* **Small developer and user ecosystem**: The Stellar ecosystem kickstarted in 2014 has a limited developer / partner ecosystem. As a result, finding partners who have similar goals as the platform \(eg. for providing onboarding services\) is difficult
-* **The lack of onboarding infrastructure**: Stellar's on and off ramp presence is restricted to two startups, [_AnchorUSD_](https://www.anchorusd.com) and [_StrongholdUSD_](https://stronghold.co). AnchorUSD is a startup out of YCombinator supported by grants from the Stellar foundation and Stronghold is a company funded by IBM. StrongholdUSD charges $10000/mo and AnchorUSD does not charge anything for using their services currently. AnchorUSD's APIs and infrastructure are limited, making UI and UX integrations with the frontend difficult. Alternatives to the above companies do not seem to exist nor do they seem to be in the works to gravitate towards.
-* **Lack of liquidity and absence of major infrastructure**: AnchorUSD is not listed on exchanges and liquidity for the USD/XLM pair on the Stellar DEX is low. The overall lack of infrastructure for buying XLM is a broader concern since only BTC/ETH/XRP seem to have readily usable onramps.
-* **Lack of developer support infrastructure**: When developing a platform, it is critical to be able to connect with other people working on similar platforms.
-* **Limited functionality**: Stellar has a limited set of functions, even smaller than Bitcoin. This makes designing complex primitives difficult.
-* **Security issues**: The Stellar blockchain halted for about 4 hours in May 2019 and was attributed to a crash in the SDF's nodes. Given a majority of the network uses default quorums which trust SDF nodes, this presents a problem for censorship resistance.
 
 ### Users
 

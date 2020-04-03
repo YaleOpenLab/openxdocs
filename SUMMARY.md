@@ -9,7 +9,7 @@
 
 ## Openx Docs <a id="openx"></a>
 
-* [Architecture](openx/architecture.md)
+* [About](openx/architecture.md)
 * [API](openx/api/README.md)
   * [Users](openx/api/users.md)
   * [Stablecoin](openx/api/stablecoin.md)
@@ -22,7 +22,7 @@
 
 ## Opensolar docs <a id="opensolar"></a>
 
-* [Architecture](opensolar/architecture.md)
+* [About](opensolar/architecture.md)
 * [API](opensolar/api/README.md)
   * [Investors](opensolar/api/investors.md)
   * [Recipients](opensolar/api/recipients.md)

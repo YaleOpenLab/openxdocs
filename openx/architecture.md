@@ -2,7 +2,7 @@
 description: A description of the openx/opensolar interaction and architecture
 ---
 
-# Architecture
+# About
 
 #### Introduction
 

@@ -1,4 +1,8 @@
-# Architecture
+---
+description: A section describing opensolar and its different components
+---
+
+# About
 
 ### Introduction
 

@@ -4,13 +4,13 @@ description: Frequently Asked Questions related to the opensolar project
 
 # FAQ
 
-## This is a sample question?
+## Why Stellar?
 
-Yes
+TODO
 
-## Are you sure the previous question is a sample question?
+## Are there plans to migrate away from Stellar?
 
-Yes
+TODO
 
 
 

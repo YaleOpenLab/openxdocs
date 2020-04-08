@@ -7,7 +7,7 @@
 * [License](license.md)
 * [Repositories](repositories.md)
 
-## Openx Docs <a id="openx"></a>
+## Openx
 
 * [About](openx/about.md)
 * [API](openx/api/README.md)
@@ -20,7 +20,7 @@
   * [Errors](openx/api/errors.md)
 * [FAQ](openx/faq.md)
 
-## Opensolar docs <a id="opensolar"></a>
+## Opensolar
 
 * [About](opensolar/about.md)
 * [API](opensolar/api/README.md)
@@ -33,9 +33,9 @@
 * [Openx-Opensolar Communication](opensolar/openx-opensolar.md)
 * [Frontend](opensolar/frontend.md)
 
-## Setting Up
+## Getting Started
 
-* [Openx](setting-up/openx.md)
-* [Opensolar](setting-up/opensolar.md)
-* [Teller](setting-up/teller.md)
+* [Openx](getting-started/openx.md)
+* [Opensolar](getting-started/opensolar.md)
+* [Teller](getting-started/teller.md)
 

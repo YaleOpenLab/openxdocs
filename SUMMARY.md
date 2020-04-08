@@ -9,8 +9,13 @@
 
 ## Openx
 
-* [About](openx/about.md)
-* [API](openx/api/README.md)
+* [Introduction](openx/intro.md)
+* [Users](openx/users.md)
+* [Administrators](openx/administrators.md)
+* [Platforms](openx/platforms.md)
+* [Stablecoins](openx/stablecoins.md)
+* [CI](openx/ci.md)
+* [API Endpoints](openx/api/README.md)
   * [Users](openx/api/users.md)
   * [Stablecoin](openx/api/stablecoin.md)
   * [Platform](openx/api/platform.md)

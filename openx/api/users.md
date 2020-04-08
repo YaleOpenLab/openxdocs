@@ -10,9 +10,7 @@ Get Access Token
 {% endapi-method-summary %}
 
 {% api-method-description %}
-This endpoint allows you to fetch a token that can be then used to access all endpoints  
-  
-**curl -X POST -H "Content-Type: application/x-www-form-urlencoded" -H "Origin: localhost" -d 'username=admin&pwhash=e9a75486736a550af4fea861e2378305c4a555a05094dee1dca2f68afea49cc3a50e8de6ea131ea521311f4d6fb054a146e8282f8e35ff2e6368c1a62e909716' "https://localhost:8081/token"**
+This endpoint allows you to fetch a token that can be then used to access all endpoints**curl -X POST -H "Content-Type: application/x-www-form-urlencoded" -H "Origin: localhost" -d 'username=admin&pwhash=e9a75486736a550af4fea861e2378305c4a555a05094dee1dca2f68afea49cc3a50e8de6ea131ea521311f4d6fb054a146e8282f8e35ff2e6368c1a62e909716' "**https://localhost:8081/token**"**
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -50,9 +48,7 @@ Validate User
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Validates a specific struct and returns it  
-  
-**curl -X GET -H "Content-Type: application/x-www-form-urlencoded" "http://localhost:8080/recipient/validateusername%3Dadmin%26token%3DIpJoKNsmnceWUZwqMKeAaKytGKgeWocf"**
+Validates a specific struct and returns it**curl -X GET -H "Content-Type: application/x-www-form-urlencoded" "**http://localhost:8080/recipient/validateusername%3Dadmin%26token%3DIpJoKNsmnceWUZwqMKeAaKytGKgeWocf**"**
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -174,9 +170,7 @@ Get User Balances
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Get user all user balances  
-  
-**curl -X GET -H "Content-Type: application/x-www-form-urlencoded" "http://localhost:8080/user/balances?username=admin&token=mpOZmBnheScFstJPRNnXAqKDoYgBkxHs"**
+Get user all user balances**curl -X GET -H "Content-Type: application/x-www-form-urlencoded" "**http://localhost:8080/user/balances?username=admin&token=mpOZmBnheScFstJPRNnXAqKDoYgBkxHs**"**
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -219,9 +213,7 @@ Get XLM Balance
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Get the XLM balance of hte user from the Stellar blockchain  
-  
-**curl -X GET -H "Content-Type: application/x-www-form-urlencoded" "http://localhost:8080/user/balance/xlm?username=admin&token=mpOZmBnheScFstJPRNnXAqKDoYgBkxHs"**
+Get the XLM balance of hte user from the Stellar blockchain**curl -X GET -H "Content-Type: application/x-www-form-urlencoded" "**http://localhost:8080/user/balance/xlm?username=admin&token=mpOZmBnheScFstJPRNnXAqKDoYgBkxHs**"**
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -257,9 +249,7 @@ Get Asset Balance
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Get the asset balance of a specific user  
-  
-**curl -X GET -H "Content-Type: application/x-www-form-urlencoded" -H "Origin: localhost" "http://localhost:8080/user/balance/asset?username=john&token=mpOZmBnheScFstJPRNnXAqKDoYgBkxHs&asset=STABLEUSD"**
+Get the asset balance of a specific user**curl -X GET -H "Content-Type: application/x-www-form-urlencoded" -H "Origin: localhost" "**http://localhost:8080/user/balance/asset?username=john&token=mpOZmBnheScFstJPRNnXAqKDoYgBkxHs&asset=STABLEUSD**"**
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -299,9 +289,7 @@ Get IPFS hash
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Get the data pertaining to a specific IPFS hash  
-  
-**curl -X GET -H "Content-Type: application/x-www-form-urlencoded" "http://localhost:8080/ipfs/getdata?hash=QmcLDXuVVsvXQwiX7QitsUzjyuuY72s2Aa9BWA34eXJyK6&username=admin&token=pmkjMEnyeUpdTyhdHElkBExEKeLIlYft"**
+Get the data pertaining to a specific IPFS hash**curl -X GET -H "Content-Type: application/x-www-form-urlencoded" "**http://localhost:8080/ipfs/getdata?hash=QmcLDXuVVsvXQwiX7QitsUzjyuuY72s2Aa9BWA34eXJyK6&username=admin&token=pmkjMEnyeUpdTyhdHElkBExEKeLIlYft**"**
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -384,9 +372,7 @@ Send XLM to another user
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Sends XLM from one account to a destinations address  
-  
-**curl -X GET -H "Content-Type: application/x-www-form-urlencoded" -H "Origin: localhost" "http://localhost:8080/user/sendxlm?username=john&token=pmkjMEnyeUpdTyhdHElkBExEKeLIlYft&seedpwd=x&amount=1&destination=GCHKX52XNXJ4PWG4TJYR7SEHFBBVDJWRGA22ELSISYLMRCDRSBLSL3MH"**
+Sends XLM from one account to a destinations address**curl -X GET -H "Content-Type: application/x-www-form-urlencoded" -H "Origin: localhost" "**http://localhost:8080/user/sendxlm?username=john&token=pmkjMEnyeUpdTyhdHElkBExEKeLIlYft&seedpwd=x&amount=1&destination=GCHKX52XNXJ4PWG4TJYR7SEHFBBVDJWRGA22ELSISYLMRCDRSBLSL3MH**"**
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -434,9 +420,7 @@ View all users without kyc
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Retrieves a list of all the users without KYC. Can only be called by admins and certain entities  
-  
-**curl -X GET -H "Content-Type: application/x-www-form-urlencoded" -H "Origin: localhost" "http://localhost:8080/user/notkycview?username=john&token=pmkjMEnyeUpdTyhdHElkBExEKeLIlYft"**
+Retrieves a list of all the users without KYC. Can only be called by admins and certain entities**curl -X GET -H "Content-Type: application/x-www-form-urlencoded" -H "Origin: localhost" "**http://localhost:8080/user/notkycview?username=john&token=pmkjMEnyeUpdTyhdHElkBExEKeLIlYft**"**
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -472,9 +456,7 @@ View all users with kyc
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Returns a list of all the users who have gone through KYC  
-  
-**curl -X GET -H "Content-Type: application/x-www-form-urlencoded" -H "Origin: localhost" "http://localhost:8080/user/kycview?username=john&token=pmkjMEnyeUpdTyhdHElkBExEKeLIlYft"**
+Returns a list of all the users who have gone through KYC**curl -X GET -H "Content-Type: application/x-www-form-urlencoded" -H "Origin: localhost" "**http://localhost:8080/user/kycview?username=john&token=pmkjMEnyeUpdTyhdHElkBExEKeLIlYft**"**
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -510,9 +492,7 @@ Get XLM from testnet faucet
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Gets testnet XLM from the Stellar Foudnation faucet.  
-  
-**curl -X GET -H "Content-Type: application/x-www-form-urlencoded" -H "Origin: localhost" "http://localhost:8080/user/askxlm?username=john&token=pmkjMEnyeUpdTyhdHElkBExEKeLIlYft"**
+Gets testnet XLM from the Stellar Foudnation faucet.**curl -X GET -H "Content-Type: application/x-www-form-urlencoded" -H "Origin: localhost" "**http://localhost:8080/user/askxlm?username=john&token=pmkjMEnyeUpdTyhdHElkBExEKeLIlYft**"**
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -548,9 +528,7 @@ Trust Asset
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Trust an issuer for a specific asset  
-  
-**curl -X GET -H "Content-Type: application/x-www-form-urlencoded" -H "Origin: localhost" "http://localhost:8080/user/trustasset?username=martin&token=pmkjMEnyeUpdTyhdHElkBExEKeLIlYft&assetCode=STABELUSD&assetIssuer=GCSMRNO2NBLVULZAIAHA7PAPMFXXLFMLMEAZ23XPNGWMNSY2RL6GJYZR&limit=100&seedpwd=x"**
+Trust an issuer for a specific asset**curl -X GET -H "Content-Type: application/x-www-form-urlencoded" -H "Origin: localhost" "**http://localhost:8080/user/trustasset?username=martin&token=pmkjMEnyeUpdTyhdHElkBExEKeLIlYft&assetCode=STABELUSD&assetIssuer=GCSMRNO2NBLVULZAIAHA7PAPMFXXLFMLMEAZ23XPNGWMNSY2RL6GJYZR&limit=100&seedpwd=x**"**
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -810,9 +788,7 @@ Get Platform Email
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Gets the email address associated with the platform  
-  
-**curl -X GET -H "Content-Type: application/x-www-form-urlencoded" -H "Origin: localhost" "http://localhost:8080/platformemail?username=martin&token=pmkjMEnyeUpdTyhdHElkBExEKeLIlYft"**
+Gets the email address associated with the platform**curl -X GET -H "Content-Type: application/x-www-form-urlencoded" -H "Origin: localhost" "**http://localhost:8080/platformemail?username=martin&token=pmkjMEnyeUpdTyhdHElkBExEKeLIlYft**"**
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -934,9 +910,7 @@ Ping the teller
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Pings the teller associated with the pilot and checks whether its up. Also available on the teller side.  
-  
-**curl -X GET -H "Content-Type: application/x-www-form-urlencoded" -H "Origin: localhost" "http://localhost:8080/tellerping?username=martin&token=pmkjMEnyeUpdTyhdHElkBExEKeLIlYft"**
+Pings the teller associated with the pilot and checks whether its up. Also available on the teller side.**curl -X GET -H "Content-Type: application/x-www-form-urlencoded" -H "Origin: localhost" "**http://localhost:8080/tellerping?username=martin&token=pmkjMEnyeUpdTyhdHElkBExEKeLIlYft**"**
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -1058,9 +1032,7 @@ Increase Trust Limit
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Increases the trust limit associated with a particular asset.  
-  
-**curl -X GET -H "Content-Type: application/x-www-form-urlencoded" -H "Origin: localhost" "http://localhost:8080/user/increasetrustlimit?username=john&token=pmkjMEnyeUpdTyhdHElkBExEKeLIlYft&trust=10&seedpwd=x"**
+Increases the trust limit associated with a particular asset.**curl -X GET -H "Content-Type: application/x-www-form-urlencoded" -H "Origin: localhost" "**http://localhost:8080/user/increasetrustlimit?username=john&token=pmkjMEnyeUpdTyhdHElkBExEKeLIlYft&trust=10&seedpwd=x**"**
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -1190,9 +1162,7 @@ Send Recovery Secrets
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Sends recovery secrets to the list of emails passed to the endpoint  
-  
-**curl -X GET -H "Content-Type: application/x-www-form-urlencoded" -H "Origin: localhost" "http://localhost:8080/user/sendrecovery?username=samuel&token=pmkjMEnyeUpdTyhdHElkBExEKeLIlYft&email1=varunramganesh@gmail.com&email2=varunramganesh@gmail.com&email3=varunramganesh@gmail.com"**
+Sends recovery secrets to the list of emails passed to the endpoint**curl -X GET -H "Content-Type: application/x-www-form-urlencoded" -H "Origin: localhost" "**http://localhost:8080/user/sendrecovery?username=samuel&token=pmkjMEnyeUpdTyhdHElkBExEKeLIlYft&email1=varunramganesh@gmail.com&email2=varunramganesh@gmail.com&email3=varunramganesh@gmail.com**"**
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -1326,9 +1296,7 @@ Recovery Seed from secrets
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Reconstructs the seed from two shares retrieved from entities.  
-  
-**curl -X GET -H "Content-Type: application/x-www-form-urlencoded" -H "Origin: localhost" "http://localhost:8080/user/seedrecovery?username=samuel&token=pmkjMEnyeUpdTyhdHElkBExEKeLIlYft&secret1=Z0Y8ojGOFs1hw\_yNjpbI2jARd1VXjxe9Z1ZjWVN5Li0&secret2=gVRQbkIv4bA6MyazZMpx8MzaijiaQuqPwX-yMU8Ztzw"**
+Reconstructs the seed from two shares retrieved from entities.**curl -X GET -H "Content-Type: application/x-www-form-urlencoded" -H "Origin: localhost" "**http://localhost:8080/user/seedrecovery?username=samuel&token=pmkjMEnyeUpdTyhdHElkBExEKeLIlYft&secret1=Z0Y8ojGOFs1hw\_yNjpbI2jARd1VXjxe9Z1ZjWVN5Li0&secret2=gVRQbkIv4bA6MyazZMpx8MzaijiaQuqPwX-yMU8Ztzw**"**
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -1458,9 +1426,7 @@ Generate New Secrets
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Generates a new set of shares to be distributed among the emails passed  
-  
-**curl -X GET -H "Content-Type: application/x-www-form-urlencoded" -H "Origin: localhost" "http://localhost:8080/user/newsecrets?username=samuel&token=pmkjMEnyeUpdTyhdHElkBExEKeLIlYft&email1=varunramganesh@gmail.com&email2=varunramganesh@gmail.com&email3=varunramganesh@gmail.com&seedpwd=x"**
+Generates a new set of shares to be distributed among the emails passed**curl -X GET -H "Content-Type: application/x-www-form-urlencoded" -H "Origin: localhost" "**http://localhost:8080/user/newsecrets?username=samuel&token=pmkjMEnyeUpdTyhdHElkBExEKeLIlYft&email1=varunramganesh@gmail.com&email2=varunramganesh@gmail.com&email3=varunramganesh@gmail.com&seedpwd=x**"**
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -1598,9 +1564,7 @@ Reset Password
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Create a request to reset the password used to logon to the openx platform.  
-  
-**curl -X GET -H "Content-Type: application/x-www-form-urlencoded" -H "Origin: localhost" "http://localhost:8080/user/resetpwd?email=varunramganesh@gmail.com&seedpwd=x"**
+Create a request to reset the password used to logon to the openx platform.**curl -X GET -H "Content-Type: application/x-www-form-urlencoded" -H "Origin: localhost" "**http://localhost:8080/user/resetpwd?email=varunramganesh@gmail.com&seedpwd=x**"**
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -1722,9 +1686,7 @@ Set New Password
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Sets a new password for the user. Requires the previous endpoint to be called before.  
-  
-**curl -X GET -H "Content-Type: application/x-www-form-urlencoded" -H "Origin: localhost" "http://localhost:8080/user/pwdreset?verificationCode=YYfyyffCmWxHjoEt&token=pmkjMEnyeUpdTyhdHElkBExEKeLIlYft&email=varunramganesh@gmail.com&seedpwd=x"**
+Sets a new password for the user. Requires the previous endpoint to be called before.**curl -X GET -H "Content-Type: application/x-www-form-urlencoded" -H "Origin: localhost" "**http://localhost:8080/user/pwdreset?verificationCode=YYfyyffCmWxHjoEt&token=pmkjMEnyeUpdTyhdHElkBExEKeLIlYft&email=varunramganesh@gmail.com&seedpwd=x**"**
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -1854,9 +1816,7 @@ Sweep XLM
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Sweeps XLM from one account to the other  
-  
-**curl -X GET -H "Content-Type: application/x-www-form-urlencoded" -H "Origin: localhost" "http://localhost:8080/user/sweep?username=john&token=pmkjMEnyeUpdTyhdHElkBExEKeLIlYft&seedpwd=x&destination=GC6NOHUN7FWCBPOLG7KNYUO6VKNJGCO5PQ5ZENG4L6FXIUTJ6VQ3C7NZ"**
+Sweeps XLM from one account to the other**curl -X GET -H "Content-Type: application/x-www-form-urlencoded" -H "Origin: localhost" "**http://localhost:8080/user/sweep?username=john&token=pmkjMEnyeUpdTyhdHElkBExEKeLIlYft&seedpwd=x&destination=GC6NOHUN7FWCBPOLG7KNYUO6VKNJGCO5PQ5ZENG4L6FXIUTJ6VQ3C7NZ**"**
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -1986,9 +1946,7 @@ Sweep Asset
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Sweeps a specific asset from one account to the other.  
-  
-**curl -X GET -H "Content-Type: application/x-www-form-urlencoded" -H "Origin: localhost" "http://localhost:8080/user/sweepasset?username=john&token=pmkjMEnyeUpdTyhdHElkBExEKeLIlYft&seedpwd=x&destination=GC6NOHUN7FWCBPOLG7KNYUO6VKNJGCO5PQ5ZENG4L6FXIUTJ6VQ3C7NZ&assetName=STABLEUSD&issuerPubkey=GCSMRNO2NBLVULZAIAHA7PAPMFXXLFMLMEAZ23XPNGWMNSY2RL6GJYZR"**
+Sweeps a specific asset from one account to the other.**curl -X GET -H "Content-Type: application/x-www-form-urlencoded" -H "Origin: localhost" "**http://localhost:8080/user/sweepasset?username=john&token=pmkjMEnyeUpdTyhdHElkBExEKeLIlYft&seedpwd=x&destination=GC6NOHUN7FWCBPOLG7KNYUO6VKNJGCO5PQ5ZENG4L6FXIUTJ6VQ3C7NZ&assetName=STABLEUSD&issuerPubkey=GCSMRNO2NBLVULZAIAHA7PAPMFXXLFMLMEAZ23XPNGWMNSY2RL6GJYZR**"**
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -3020,9 +2978,7 @@ IPFS Store Data
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Stores some data on ipfs  
-  
-**curl -X POST -H "Content-Type: application/x-www-form-urlencoded" -d 'username=admin&token=pmkjMEnyeUpdTyhdHElkBExEKeLIlYft&data=THIS is a CoOl MeSsAgE' "http://localhost:8080/ipfs/putdata"**
+Stores some data on ipfs**curl -X POST -H "Content-Type: application/x-www-form-urlencoded" -d 'username=admin&token=pmkjMEnyeUpdTyhdHElkBExEKeLIlYft&data=THIS is a CoOl MeSsAgE' "**http://localhost:8080/ipfs/putdata**"**
 {% endapi-method-description %}
 
 {% api-method-spec %}

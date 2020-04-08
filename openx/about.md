@@ -4,7 +4,7 @@ description: This section describes openx and how it functions
 
 # About
 
-#### Introduction
+### Introduction
 
 Openx is a "platform of platforms" architecture for investments using blockchains. Openx is built using the Stellar blockchain but its modular architecture enables it to be used in combination with any blockchain. Openx provides a set of functions for platforms that build on top of it composed of the following parts:
 
@@ -28,7 +28,7 @@ Openx also provides a CI-enabled build server that can be used to release platfo
 
 Openx also has a PPA to enable easy installation for linux users. This is easily configurable by other platforms as well.
 
-### Stellar
+## Stellar
 
 Openx uses Stellar, a Proof of Stake blockchain based on the Stellar Consensus Protocol. Stellar follows an account based model of accounting in which balances are associated with a public key \("account" or "address"\) on the blockchain, and subsequent operations increase the balance associated with the address. Stellar provides a set of operations that can be performed globally to change the state of a set of addresses \([https://www.stellar.org/developers/guides/concepts/list-of-operations.html](https://www.stellar.org/developers/guides/concepts/list-of-operations.html)\)
 
@@ -39,7 +39,7 @@ Stellar's blockchain interface has two components:
 
 Openx right now connects to the Stellar Development Foundation's Horizon instances, although an openx platform can choose to run its own node or connect to other Horizon instances. This however, would not provide much additional censorship resistance since the quorum that the Stellar Consensus Protocol depends on for consensus relies by default on the SDF nodes.
 
-### Users
+## Users
 
 Users can undertake multiple roles in an openx-powered platform:
 
@@ -55,7 +55,7 @@ Users in openx can be of two types:
 
 More types can be defined in the future if required \(platforms can define more types as well\)
 
-### Platforms
+## Platforms
 
 Platforms in openx refer to platforms that build on top of openx and enable investments in a specific asset class. Opensolar is an example of a platform \(Opensolar enables investments in solar energy projects\) built on openx.
 
@@ -63,7 +63,7 @@ Platforms are independent entities that do not affect the base openx platform. U
 
 Platforms building on openx need to be registered and need to obtain a unique code that enables them to use the platform-platform openx API. This API grants access to a privileged set of endpoints and allows platforms to create new openx users, retrieve data related to openx users, get openx constants and more.
 
-### Administrators
+## Administrators
 
 Openx has support for platform admins who can perform functions like
 
@@ -75,12 +75,13 @@ Openx has support for platform admins who can perform functions like
 
 Openx Admins are trusted entities who are in charge of the openx project. Platform admins should be those having access to the server where the platform's contract is running. Admins do not have access to user accounts however, and can not perform functions like resetting passwords or investing in projects.
 
-### Stablecoins
+## Stablecoins
 
 Stablecoins are representations of fiat currencies on blockchains. Common examples are Tether, USDCoin and more. Stablecoins are usually based off Bitcoin or Ethereum but since openx uses Stellar, it uses a stablecoin called USDx, provided by AnchorUSD.
 
 USDx is an "asset" on Stellar provided by AnchorUSD. If a user wishes to buy USDx, they must undergo KYC checks required by AnchorUSD, transfer money to AnchorUSD, and receive USDx in their account. They can also purchase USDx using the Stellar DEX. USDx can be used on platforms which use Stellar and advertise for investments in USD.
 
-### Continuous Integration
+## Continuous Integration
 
 A basic CI that builds the openx and opensolar executables is available as part of openx. This can be modified to build any executable. There is a web interface for downloading these executables inspired by Go Downloads, providing users with a clickable interface.
+

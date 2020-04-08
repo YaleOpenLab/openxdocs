@@ -4,7 +4,7 @@ description: A section describing opensolar and its different components
 
 # About
 
-### Introduction
+## Introduction
 
 Opensolar is a platform built using the Stellar blockchain that enables investments in solar infrastructure. Opensolar is built on openx, a broader "platform of platforms" architecture for investments in blockchains. Opensolar aims to automate the process of energy production, billing, and asset ownership for the recipient and the process of continual returns for the investor.
 
@@ -14,13 +14,13 @@ Opensolar has multiple entities, each performing its own role:
 
 * **Investors**: Investors invest in projects listed on the platform. Investors can vote on projects they like and on changes to be done after their investment is finalised.
 * **Recipients / Receivers**: Receivers with the help of originators list projects that need investment on the platform. Receivers are the beneficiaries of projects listed on Opensolar. Receivers of a project are the end-beneficiaries of a project. They are usually school co-op societies, agricultural co-ops, and so on. They are responsible for
-
-1. Creating a project with the help of Originators
-2. Receiving quotes for a project with the help of Contractors
-3. Installing the project with the help of Developers, and
-4. Paying back the Investors for their investment in the project.
+* Creating a project with the help of Originators
+* Receiving quotes for a project with the help of Contractors
+* Installing the project with the help of Developers, and
+* Paying back the Investors for their investment in the project.
 
 A recipient may be single person or a company in charge of a society.
+
 * **Originators**: Originators propose projects that might add value to receivers. They work with receivers to prepare a preliminary project plan that contractors can bid on.
 * **Contractors**: Contractors bid on projects within opensolar and give a quote based on the requirements specified by the receiver and originator.
 * **Developers**: Developers install and maintain projects for the receiver. Developers are paid according to their level of post installation support and the amount of time required to install a project.
@@ -41,7 +41,7 @@ Stage 7: **Legacy**
 Stage 8: **Handoff**  
 Stage 9: **End of Life**
 
-Each entity performs its role in a set of stages (eg the investor performs its role in stage 4, originators in stage 1). Data associated with a stage \("Stage Data"\) references associated entities' actions \(in the case of investors, the stage data is on the blockchain\). Stage progression is trigerred by a combination of manual and automatic events and the stage data is stored on IPFS \(Inter Planetary File System\). The IPFS reference hash is stored on the platform for future reference.
+Each entity performs its role in a set of stages \(eg the investor performs its role in stage 4, originators in stage 1\). Data associated with a stage \("Stage Data"\) references associated entities' actions \(in the case of investors, the stage data is on the blockchain\). Stage progression is trigerred by a combination of manual and automatic events and the stage data is stored on IPFS \(Inter Planetary File System\). The IPFS reference hash is stored on the platform for future reference.
 
 Some data is determined by the appropriate entities \(an example is receivers attesting that the project was installed by taking photos on location\) or by oracles who attest to statements \(an example is neighbours atteting that the energy rate charged for the month is the same as the receiver claims it is\). This data is combined with other data associated with stage and committed to IPFS.
 
@@ -51,11 +51,11 @@ The platform uses IoT devices for monitoring energy production and stores the da
 
 The platform's investment and payment workflow is regulated by a smart contract run on AWS. This smart contract interfaces with the blockchain, coordinates payments between the receiver and investors, and more.
 
-### Smart Contract
+## Smart Contract
 
-The smart contract runs on AWS since Stellar does not support on chain smart contracts. It contains  core functionality surrounding investments and payback whereas auxiliary features that handle transactions like asset creation are imported from sub-packages. The smart contract also allows for different investment models which can be defined in a relevant sub package. By default, it uses the munibond model for investments.
+The smart contract runs on AWS since Stellar does not support on chain smart contracts. It contains core functionality surrounding investments and payback whereas auxiliary features that handle transactions like asset creation are imported from sub-packages. The smart contract also allows for different investment models which can be defined in a relevant sub package. By default, it uses the munibond model for investments.
 
-### Stellar
+## Stellar
 
 Stellar is a Proof of Stake blockchain using the Stellar Consensus Protocol. Stellar follows an account based model of accounting in which balances are associated with a public key \("account" or "address"\) on the blockchain, and subsequent operations increase the balance associated with the address. Stellar provides a set of operations that can be performed globally to change the state of a set of addresses \([https://www.stellar.org/developers/guides/concepts/list-of-operations.html](https://www.stellar.org/developers/guides/concepts/list-of-operations.html)\). The list of operations used by the platform are:
 
@@ -78,7 +78,7 @@ The platform has its own account on the blockchain and acts as a pre-escrow for 
 
 The platform also acts as one of the signers of a multi-signature escrow account for projects that have been funded, and each time a receiver needs to withdraw funds \(for example, to pay contractors\), they request approval from the platform. To prevent withdrawal delays, the platform signs all transactions by default. But if investors raise a complaint, an admin can pause the platform's signing capabilities and arbitrate between investors and recipients.
 
-### Teller
+## Teller
 
 Opensolar uses a piece of software called the "Teller" as an interface between the platform and the installed solar energy grid on site. The teller keeps track of the energy generated by the solar grid and depending on the energy generated, automatically pays the platform at payment intervals. The amount to be paid each month is evaluated based on standard tariff charged by energy utilities, and a receiver has the option of paying bi-weekly or monthly.
 
@@ -86,7 +86,7 @@ The teller also performs auxiliary functions. It tracks the device's location, s
 
 The teller communicates with the platform through JSON-RPC APIs. The receiver is required to store their username and password in a local config file that the teller uses to authenticate with the platform. On first initialization, the teller communicates the location of the device to the platform, assigns and communicates a unique device id, and for every subsequent restart \(if one occurs\), communicates the timestamp.
 
-### AnchorUSD
+## AnchorUSD
 
 An entity that wishes to transact in USD must load stablecoin on Stellar through AnchorUSD, a USD based stablecoin provider on the Stellar blockchain. A stablecoin is an asset on Stellar that is 1:1 with the Dollar \(or other assets, as specified by the issuer\). A stablecoin can be used as a replacement for the Dollar on the Stellar blockchain, and can be freely transferred from one address to another like any other asset on Stellar.
 
@@ -96,34 +96,35 @@ Both investors and receivers on Opensolar must purchase USDx from AnchorUSD. A r
 
 Note: AnchorUSD is currently limited to the United States, and as a result, receivers and investors are restricted to the United States.
 
-### Investments
+## Investments
 
 Investors are required to pass a series of checks before being allowed to invest in projects. These checks include KYC and AML checks \(on the platform, not AnchorUSD\), balance checks, and a ban check to see if the user has been banned on the platform. If an investor fails to meet these criteria, they can not invest in projects on the platform.
 
 The platform has two modes - Testnet mode and Mainnet mode. On testnet, the platform simulates a stablecoin called STABLEUSD on the Stellar Development Foundation's Test Network. This stablecoin acts as a replacement for USDx on testnet and is used to test and simulate stablecoin features. Testnet mode uses test lumens to facilitate payments and enable creation of assets. Test lumens are fetched from the Stellar Development Foundation's Testnet Faucet via the Horizon API.
 
-### Web Interface
+## Web Interface
 
 The web interface of opensolar is built using React.JS and contains a subset of the functions enabled by the opensolar backend. It currently provides user profiles, projects that investors can invest in, and dashboards for recipients, investors and developers.
 
-### RPC API
+## RPC API
 
 Opensolar performs all of its interactions with the web interface and teller through JSON-RPC APIs. Some endpoints are public and can be called without a token. Other endpoints are restricted, requiring an account on opensolar and a token to call them.
 
 The token can be fetched by POSTing to `/token` with the username and the 512 byte SHA3 hash of the password. This token is valid for 24 hours but callers can generate a new token even if the timeout interval hasn't been reached.
 
-### Solar Infrastructure
+## Solar Infrastructure
 
 The solar infrastructure for Opensolar is composed of multiple parts - Solar Panels, IoT devices which report energy generated to an IoT Hub, and an IoT Hub which records the amount of energy generated during every interval of time defined. Opensolar interfaces with the IoT Hub to collect data on energy consumption and the IoT Hub triggers conditions defined by the smart contract. This is done by running a piece of software called the Teller on the IoT Hub.
 
-### Teller
+## Teller
 
 The teller is an executable that interfaces with the platform to constantly report progress, store energy data on the blockchain, and trigger payments every payment interval. The teller contains information about the recipient and draws funds from the recipient's account to pay back towards the smart contract. The teller also acts as a mini CLI emulator and can be used to query limited information like the amount of money left in the recipient's account and the latest state of the teller from the teller.
 
-### MQTT Broker
+## MQTT Broker
 
 The IoT devices linked to the solar panels transmit data using the MQTT protocol. The MQTT protocol requires a transmitter \(the IoT devices linked to the solar panel\), a broker to broadcast the messages received from the transmitter, and a receiver which connects to the broker and subscribes to messages from the transmitter. The broker can either be run alongside the platform or can be run on the IoT Hub depending on the energy specifications and capabilities of the IoT Hub. Opensolar runs an MQTT broker at mqtt.openx.solar which acts as the broker for projects on the platform.
 
-### Swytch.io
+## Swytch.io
 
 Swytch.io is a third party provider that generates Renewable Energy Certificates \(RECs\) for each Megawatt of energy generated. A copy of the data sent to mqtt.openx.solar is also sent to Swytch.io to mint RECs. These RECs can be sold by the recipient or investor on secondary markets as defined in the investment contract. Swytch also provides an interactive dashboard where recipients can visualize the amount of energy generated throughout the day and other statistics in graph form.
+

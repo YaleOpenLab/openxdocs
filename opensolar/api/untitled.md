@@ -48,7 +48,7 @@ Insert new project
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 
 ```
 {% endapi-method-response-example %}
@@ -62,8 +62,7 @@ Get all Projects
 {% endapi-method-summary %}
 
 {% api-method-description %}
-  
-**curl -X GET "https://api2.openx.solar/project/all?username=admin&token=pmkjMEnyeUpdTyhdHElkBExEKeLIlYft"**
+**curl -X GET "**https://api2.openx.solar/project/all?username=admin&token=pmkjMEnyeUpdTyhdHElkBExEKeLIlYft**"**
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -85,7 +84,7 @@ Get all Projects
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 [
   {
     "Index": 1,
@@ -209,8 +208,7 @@ Get Project
 {% endapi-method-summary %}
 
 {% api-method-description %}
-  
-**curl -X GET "https://api2.openx.solar/project/get?index=1&username=admin&token=pmkjMEnyeUpdTyhdHElkBExEKeLIlYft"**
+**curl -X GET "**https://api2.openx.solar/project/get?index=1&username=admin&token=pmkjMEnyeUpdTyhdHElkBExEKeLIlYft**"**
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -236,7 +234,7 @@ Get Project
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 {
   "Index": 1,
   "TotalValue": 4000,
@@ -358,8 +356,7 @@ Get Projects at stage
 {% endapi-method-summary %}
 
 {% api-method-description %}
-  
-**curl -X GET "https://api2.openx.solar/projects?stage=3&username=admin&token=pmkjMEnyeUpdTyhdHElkBExEKeLIlYft"**
+**curl -X GET "**https://api2.openx.solar/projects?stage=3&username=admin&token=pmkjMEnyeUpdTyhdHElkBExEKeLIlYft**"**
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -385,7 +382,7 @@ Get Projects at stage
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 [
   {
     "Index": 1,
@@ -543,7 +540,7 @@ Add Hash
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 
 ```
 {% endapi-method-response-example %}
@@ -595,7 +592,7 @@ Send Teller shutdown email
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 
 ```
 {% endapi-method-response-example %}
@@ -639,7 +636,7 @@ Send Teller Payback Email
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 
 ```
 {% endapi-method-response-example %}
@@ -679,7 +676,7 @@ Get Project Dashboard
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 
 ```
 {% endapi-method-response-example %}

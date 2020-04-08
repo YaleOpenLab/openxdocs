@@ -33,3 +33,8 @@
 * [Openx-Opensolar Communication](opensolar/openx-opensolar.md)
 * [Frontend](opensolar/frontend.md)
 
+## Setting Up
+
+* [Opensolar](setting-up/opensolar.md)
+* [Teller](setting-up/teller.md)
+

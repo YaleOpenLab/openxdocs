@@ -64,7 +64,7 @@ Each "peer" \(or "node"\) in Lightning is a user who either runs their own node 
 
 Payments are facilitated by peer to peer channels. Each peer has a balance associated with each of its channels, and the net balance of the channel is the sum of both peers' balances. Channels can be one or two way depending on the balance of each peer at each side of the channel. The ability of a given peer to pay another peer depends on the balances of peers in between, also referred to as the "liquidity" of a given route.
 
-The lightning network requires liquidity from both peers in order to be effective. For a given peer, there are two types of liquidity - inbound liquidity and outbound liquidity. 
+The lightning network requires liquidity from both peers in order to be effective. For a given peer, there are two types of liquidity - inbound liquidity and outbound liquidity.
 
 Inbound liquidity is the capacity with which a peer can be paid by other peers. The net inbound liquidity which is the sum of all individual inbound liquidities is the maximum amount a peer can be paid through lightning.
 
@@ -355,3 +355,4 @@ Hyperledger is an open sourced permission blockchain system. Hyperledger's permi
 ## Polkadot
 
 Polkadot is a spin-off from Ethereum's original Web3.0 ideas. Polkadot, similar to Cosmos, wants to enable bridges to other cryptocurrencies and serve as a connecting layer for blockchains.
+

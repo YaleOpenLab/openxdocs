@@ -36,6 +36,9 @@
 * [Stages](opensolar/stages.md)
 * [Entities](opensolar/entities.md)
 * [KYC](opensolar/kyc.md)
+* [AnchorUSD](opensolar/anchorusd.md)
+* [Blockchain](opensolar/blockchain.md)
+* [Modes](opensolar/modes.md)
 
 ## Getting Started
 

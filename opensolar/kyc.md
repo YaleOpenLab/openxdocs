@@ -7,5 +7,5 @@ Opensolar aims to be a regulated marketplaces in which entities can take part in
 3. Developers and Contractors need to perform KYC and store company credentials on the platform when they are approved to be part of a project
 4. Guarantors need to perform KYC and store details proving sufficient proof of funding to act as a project's guarantor.
 
-If KYC has been performed through AnchorUSD's systems, entities are not required to perform KYC on Opensolar. Entities have to perform KYC on anchorusd.com before they can deal with AnchorUSD's stablecoin USDx.
+If KYC has been performed through AnchorUSD's systems, entities are not required to perform KYC on Opensolar. Entities have to perform KYC on anchorusd.com before they can deal with AnchorUSD's stablecoin "USD" on the Stellar blockchain.
 

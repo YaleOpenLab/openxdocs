@@ -9,8 +9,9 @@ This doc assumes:
 1. You know how to use git
 2. You have the latest version of go installed locally
 3. You know how to run shell scripts
+4. A good understanding of what openx is
 
-If you do not know how to do these, please refer to the appropriate documentation before following the steps in this doc.
+If this is not you, please refer to the appropriate documentation before following the steps in this doc.
 
 Steps:
 

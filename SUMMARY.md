@@ -32,6 +32,7 @@
 * [FAQ](opensolar/faq.md)
 * [Openx-Opensolar Communication](opensolar/openx-opensolar.md)
 * [Frontend](opensolar/frontend.md)
+* [Teller](opensolar/teller.md)
 
 ## Getting Started
 

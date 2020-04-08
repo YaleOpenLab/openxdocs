@@ -10,8 +10,9 @@ This doc assumes:
 2. You have the latest version of go installed locally
 3. You know how to run shell scripts
 4. You have a project funded on Opensolar / your local instance of Opensolar
+5. A good understanding of what openx and opensolar is, and what role the teller plays in the system.
 
-If you do not know how to do these, please refer to the appropriate documentation before following the steps in this doc.
+If this is not you, please refer to the appropriate documentation before following the steps in this doc.
 
 Steps:
 

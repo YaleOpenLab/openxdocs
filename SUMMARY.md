@@ -35,6 +35,7 @@
 
 ## Setting Up
 
+* [Openx](setting-up/openx.md)
 * [Opensolar](setting-up/opensolar.md)
 * [Teller](setting-up/teller.md)
 

@@ -17,9 +17,9 @@ Steps:
 
 1. Clone the Opensolar repository from [https://github.com/YaleOpenLab/opensolar](https://github.com/YaleOpenLab/opensolar)
 2. `cd GOPATH/src/github.com/YaleOpenLab/opensolar/teller`
-3. `go build`
+3. `go get -v ./... ; go build`
 4. `mv dummyconfig.yaml config.yaml`
-5. Fill the config file with the appropriate values and run the teller
+5. Fill the config file with appropriate values and start teller
 
 Alternatively,
 

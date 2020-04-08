@@ -1,8 +1,8 @@
 ---
-description: How to setup Opensolar locally
+description: Setting openx up locally
 ---
 
-# Opensolar
+# Openx
 
 This doc assumes:
 
@@ -15,8 +15,8 @@ If you do not know how to do these, please refer to the appropriate documentatio
 Steps:
 
 1. Clone the Opensolar repository from [https://github.com/YaleOpenLab/opensolar](https://github.com/YaleOpenLab/opensolar)
-2. `cd GOPATH/src/github.com/YaleOpenLab/opensolar`
+2. `cd GOPATH/src/github.com/YaleOpenLab/openx`
 3. `go get -v ./... ; go build`
-
-You should be able to run opensolar locally if you have a local / remove openx configured.
+4. `mv dummyconfig.yaml config.yaml`
+5. Fill the config file with appropriate values and start openx
 

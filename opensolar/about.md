@@ -10,23 +10,6 @@ Opensolar is a platform built using the Stellar blockchain that enables investme
 
 Opensolar is designed to be modular and each module can be used in a different application. The core platform is built on top of openx, a broader "platform of platforms" architecture that can be used for a wide range of investment types.
 
-Opensolar has multiple entities, each performing its own role:
-
-* **Investors**: Investors invest in projects listed on the platform. Investors can vote on projects they like and on changes to be done after their investment is finalised.
-* **Recipients / Receivers**: Receivers with the help of originators list projects that need investment on the platform. Receivers are the beneficiaries of projects listed on Opensolar. Receivers of a project are the end-beneficiaries of a project. They are usually school co-op societies, agricultural co-ops, and so on. They are responsible for
-* Creating a project with the help of Originators
-* Receiving quotes for a project with the help of Contractors
-* Installing the project with the help of Developers, and
-* Paying back the Investors for their investment in the project.
-
-A recipient may be single person or a company in charge of a society.
-
-* **Originators**: Originators propose projects that might add value to receivers. They work with receivers to prepare a preliminary project plan that contractors can bid on.
-* **Contractors**: Contractors bid on projects within opensolar and give a quote based on the requirements specified by the receiver and originator.
-* **Developers**: Developers install and maintain projects for the receiver. Developers are paid according to their level of post installation support and the amount of time required to install a project.
-* **Guarantors**: Guarantors provide a failsafe guarantee for investors against receivers who default on payments.
-* **Platform Administrators**: Admins review listings made on the platform and act as arbiters in case of conflict.
-
 Investors and Receivers on the platform need to perform KYC to be able to invest and partake in projects listed on Opensolar. Developers and Contractors need to store details related to their company on the platform to get approval from investors and receivers. Guarantors need to store their details and provide sufficient proof of funding. If entities need to handle Stablecoin \(AnchorUSD\) on the platform, they must perform KYC on AnchorUSD's website.
 
 The platform maintains an internal database built on boltDB to keep track of entity details, project details and other details that are exclusive to it.

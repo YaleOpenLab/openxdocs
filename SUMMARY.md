@@ -34,6 +34,8 @@
 * [Frontend](opensolar/frontend.md)
 * [Teller](opensolar/teller.md)
 * [Stages](opensolar/stages.md)
+* [Entities](opensolar/entities.md)
+* [KYC](opensolar/kyc.md)
 
 ## Getting Started
 

@@ -5,7 +5,7 @@
 * [Stellar Ideas](ideas.md)
 * [Alternatives to Stellar](alternatives-to-stellar.md)
 * [License](license.md)
-* [Repositories](repositories.md)
+* [Links](links.md)
 
 ## Openx
 

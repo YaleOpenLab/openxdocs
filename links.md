@@ -2,7 +2,28 @@
 description: A list of all openx and opensolar related repositories on GitHub.
 ---
 
-# Repositories
+# Links
+
+## Websites
+
+Demo: www.openx.solar
+
+Openx API: api.openx.solar
+
+Opensolar API: api2.openx.solar
+
+API docs: apidocs.openx.solar
+
+Wiki: api.openx.solar
+
+Builds: builds.openx.solar
+
+MQTT broker: mqtt.openx.solar
+
+  
+All links are https
+
+## Repositories
 
 **Openx**: [https://github.com/YaleOpenLab/openx](https://github.com/YaleOpenLab/openx)
 
@@ -17,4 +38,6 @@ description: A list of all openx and opensolar related repositories on GitHub.
 **Create-openx-app**:  [https://github.com/YaleOpenLab/create-openx-app](https://github.com/YaleOpenLab/create-openx-app/tree/master/.template)
 
 **Openx-CLI**: [https://github.com/Varunram/openx-cli](https://github.com/Varunram/openx-cli)
+
+
 

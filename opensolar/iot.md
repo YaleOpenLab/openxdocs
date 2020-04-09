@@ -8,5 +8,5 @@ The IoT devices linked to the solar panels transmit data using the MQTT protocol
 
 The broker can either be run alongside the platform or can be run on the IoT Hub depending on the energy specifications and capabilities of the IoT Hub. Opensolar runs an MQTT broker at mqtt.openx.solar which acts as the default broker for all projects.  
   
-The platform also subscribes to teller broadcasts and accumulates data in order to display it on the recipient dashboard. Recipients can also download data from the recipient dashboard to view the teller's energy logs.
+The platform also subscribes to teller broadcasts and accumulates data in order to display it on the recipient dashboard. Recipients can also download data from the recipient dashboard to view the teller's logs.
 

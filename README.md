@@ -1,7 +1,3 @@
----
-description: Welcome to the Openx Wiki!
----
-
 # Welcome
 
 Welcome to the openx wiki. This wiki contains information related to openx and opensolar, hosted at the MIT Digital Currency Initiative and the Yale Open Innovation Lab.

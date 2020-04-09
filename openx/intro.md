@@ -14,7 +14,7 @@ Openx is a "platform of platforms" architecture for investments using blockchain
 
 The functionality associated with each package within the platform is exposed through a JSON-RPC API. This API follows a token based authentication scheme which callers can invoke. Openx also provides auxiliary features through its API that platforms might find useful like AML screening powered by ComplyAdvantage.
 
-Openx platform skeletons can be created using the CLI based tool create-openx-app, and a live platform can be forked from Opensolar. Platform skeletons are designed like openx to be modular and scalable.
+Openx platform skeletons can be created using the CLI based tool create-openx-app, and a live platform can be forked from Opensolar.
 
 There is one entity on openx that acts as a parent entity for entities on other platforms - the "User" entity. This entity contains fields that are required for maintaining cross-compatibility with other openx based platforms. It also contains handlers for all cryptocurrencies supported by openx, and platforms are highly recommended to import this functionality from openx.
 

@@ -3,7 +3,7 @@
 * [Welcome](README.md)
 * [People](people.md)
 * [Stellar Ideas](ideas.md)
-* [Opensolar on Stellar, and alternatives](opensolar-on-stellar-and-alternatives.md)
+* [Alternatives to Stellar](alternatives-to-stellar.md)
 * [License](license.md)
 * [Repositories](repositories.md)
 

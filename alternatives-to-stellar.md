@@ -4,7 +4,7 @@ description: >-
   suitable alternatives.
 ---
 
-# Opensolar on Stellar, and alternatives
+# Alternatives to Stellar
 
 Recommended previous reading: [https://gist.github.com/Varunram/b8c0da7b9d553fb0be233be1f99b0d29](https://gist.github.com/Varunram/b8c0da7b9d553fb0be233be1f99b0d29)
 

@@ -62,6 +62,5 @@
 * [Goals](pilot/goals.md)
 * [Details](pilot/details.md)
 * [Entities](pilot/entities.md)
-* [Construction](pilot/construction.md)
 * [Deployment](pilot/deployment.md)
 

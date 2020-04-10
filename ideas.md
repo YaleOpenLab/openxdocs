@@ -4,7 +4,7 @@ description: Ideas that are currently open for discussion and implementation
 
 # Stellar Ideas
 
-There are multiple ideas seeking to improve the functionality, security and usability of Opensolar. This doc does not seek to offer alternatives to Stellar. Rather, this doc aims to suggest improvements on top of Stellar and to other parts of Opensolar.
+There are multiple ideas seeking to improve the functionality, security and usability of Opensolar. This doc does not seek to offer alternatives to Stellar. Rather, this doc aims to suggest improvements on top of Stellar and to other parts of Opensolar. Proposed ideas for alternatives on Stellar can be found in the "Alternatives to Stellar" section.
 
 * **Implementing a Content Management System \(CMS\) on the frontend:** Opensolar requires a content management system in order to manage frontend content. Content is further divided into the following sub categories:
   * **Project content:** Project details and content needs to be editable by originators and receivers. Currently, this is done by changing parameters through the backend but this needs to be moved to the frontend where people can change content as desired. This would also be supplemented by a design for the editable interface which would allow users to easily change data and move things on the frontend.

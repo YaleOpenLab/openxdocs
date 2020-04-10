@@ -2,9 +2,9 @@
 
 * [Welcome](README.md)
 * [People](people.md)
-* [Stellar Ideas](ideas.md)
+* [Ideas on Stellar](ideas.md)
 * [Alternatives to Stellar](alternatives-to-stellar.md)
-* [License](license.md)
+* [Licenses](licenses.md)
 * [Links](links.md)
 
 ## Openx

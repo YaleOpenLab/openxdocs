@@ -1,2 +1,0 @@
-# Bitcoin Pre Signed Transactions
-

@@ -1,2 +1,0 @@
-# DeFi and Algorithmic Stablecoins
-

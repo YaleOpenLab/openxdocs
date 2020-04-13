@@ -1,2 +1,2 @@
-# Introduction
+# Bitcoin Lightning Network
 

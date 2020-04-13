@@ -66,7 +66,10 @@
 
 ## Alternate Ideas
 
-* [Bitcoin Lightning Network](alternate-ideas/bitcoin-lightning-network.md)
+* [Bitcoin Lightning Network](alternate-ideas/bitcoin-lightning-network/README.md)
+  * [Introduction](alternate-ideas/bitcoin-lightning-network/introduction.md)
+  * [Advantages](alternate-ideas/bitcoin-lightning-network/advantages.md)
+  * [Disadvantages](alternate-ideas/bitcoin-lightning-network/disadvantages.md)
 * [Bitcoin Pre Signed Transactions](alternate-ideas/bitcoin-pre-signed-transactions.md)
 * [Bitcoin Sidechains](alternate-ideas/bitcoin-sidechains.md)
 * [Bitcoin Statechains](alternate-ideas/bitcoin-statechains.md)

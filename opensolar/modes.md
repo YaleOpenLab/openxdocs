@@ -6,5 +6,5 @@ On testnet mode, the platform simulates a stablecoin called STABLEUSD on the Ste
 
 On mainnet, the platform uses AnchorUSD as the stablecoin provider. Entities are required to purchase lumens from an exchange and the stablecoin "USD" from AnchorUSD.  
   
-In both modes, the Stellar Development Foundation's Horizon API and stellar-core instances are used. Other nodes can also be used by calling the setter function.
+In both modes, the Stellar Development Foundation's Horizon API and stellar-core instances are used. Other nodes can also be used.
 

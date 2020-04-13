@@ -70,6 +70,7 @@
   * [Advantages](alternate-ideas/bitcoin-lightning-network/advantages.md)
   * [Disadvantages](alternate-ideas/bitcoin-lightning-network/disadvantages.md)
 * [Bitcoin Pre Signed Transactions](alternate-ideas/bitcoin-pre-signed-transactions/README.md)
+  * [Introduction](alternate-ideas/bitcoin-pre-signed-transactions/introduction.md)
   * [Disadvantages](alternate-ideas/bitcoin-pre-signed-transactions/disadvantages.md)
   * [Advantages](alternate-ideas/bitcoin-pre-signed-transactions/advantages.md)
 * [Bitcoin Sidechains](alternate-ideas/bitcoin-sidechains/README.md)

@@ -1,4 +1,4 @@
-# Bitcoin Pre Signed Transactions
+# Introduction
 
 A bitcoin transaction requires signatures from all private keys associated with input utxos. A transaction can be broadcast to the blockchain at any time provided the spending conditions and associated signatures are still valid at the time of broadcast. As a result, a transaction can be signed beforehand but broadcast when required. Such a transaction is referred to as a "pre-signed transaction". This transaction can have conditions associated to spending \(for example, invest 1000 in this project within 3 months, else refund money to this other address\) that refund to a user if not broadcast within a certain interval of time, can have locktimes that automatically render the spending conditions invalid, etc.
 
@@ -11,3 +11,4 @@ In the event the investment threshold is not reached, the investor should spend 
 This model would involve the construction of a secure way to store pre-signed transactions since any user in possession of them can broadcast the transaction, and gried users if they act maliciously. One time passcodes that are relayed on completion of certain events to encrypt the transactions are a potential solution to this problem.
 
 The trust model of this idea relies on the platform not grief attacking its users and not broadcasting funds. At most, the platform has the ability to selectively censor txs, prevent recipients from getting money, etc.
+

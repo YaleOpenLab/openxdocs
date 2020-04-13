@@ -64,3 +64,16 @@
 * [Entities](pilot/entities.md)
 * [Deployment](pilot/deployment.md)
 
+## Alternate Ideas
+
+* [Bitcoin Lightning Network](alternate-ideas/bitcoin-lightning-network.md)
+* [Bitcoin Pre Signed Transactions](alternate-ideas/bitcoin-pre-signed-transactions.md)
+* [Bitcoin Sidechains](alternate-ideas/bitcoin-sidechains.md)
+* [Bitcoin Statechains](alternate-ideas/bitcoin-statechains.md)
+* [Bitcoin](alternate-ideas/bitcoin.md)
+* [Ethereum Sharding](alternate-ideas/ethereum-sharding.md)
+* [DeFi and Algorithmic Stablecoins](alternate-ideas/defi-and-algorithmic-stablecoins.md)
+* [DAOs](alternate-ideas/daos.md)
+* [Cross Blockchain Bridges](alternate-ideas/cross-blockchain-bridges.md)
+* [Ethereum](alternate-ideas/ethereum.md)
+

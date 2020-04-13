@@ -1,4 +1,4 @@
-# DeFi and Algorithmic Stablecoins
+# Introduction
 
 DeFi or decentralized finance seeks to replicate existing financial technology applications on top of Ethereum. Common applications are loans, lending, stablecoins, arbitrage, etc and product examples are sDAI, mDAI, Gitcoin, Liquidity protocol and Uniswap.
 
@@ -7,3 +7,4 @@ A potential usecase is chaining these applications and using the combination to 
 This model would have to be supplemented by a base layer blockchain which handles non-financial infrastructure. This could be Ethereum-L1 or other blockchains and openx would need to support various Ethereum operations in order to be compatible.
 
 The trust model for this depends on the chain of applications \(eg. for DAI, you trust the algorithm to keep the peg, for Gitcoin you assume there are no bots trying to game the system\).
+

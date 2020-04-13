@@ -1,4 +1,4 @@
-# LN Hub and Spoke Model
+# Introduction
 
 In the Hub and Spoke model, the platform \("Hub"\) acts as a centralized hub with which all the entities \("Spokes"\) in the platform interact and have channels with. The hub provides outbound liquidity to all spokes, coordinates payments and handles state updates. The platform does not expose public keys and channel ids, and handles lightning channels and state updates internally. This reduces the possibility of attacks by entities since they don't have a copy of their state \(only the platform does\). This however, this increases trust and responsibility on the platform since the platform should maintain these states in a stable manner, ensuring that no entity defrauds the other. The platform could also hire a watchtower's services in order to provide guarantees on users' channels not closing due to internal platform errors.
 
@@ -27,3 +27,4 @@ Investors holding altcoins can use atomic swap services \(which could either be 
 The platform should take note of griefing attacks \(ie\) when users sign up as receivers or developers but don't use the account, effectively forcing the platform to lock funds for a pre-defined period of time. This can be avoided by only opening channels with entities that are already associated with a project, and by efficiently closing unused channels.
 
 The trust model in this scenario is that entities trust the platform to push funds to the developer, contractor, create multisig escrows, etc. The availability of proofs in the form of state update hashes and tx ids removes the need for state variables.
+

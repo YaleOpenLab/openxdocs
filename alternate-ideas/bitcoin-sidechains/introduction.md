@@ -1,4 +1,4 @@
-# Bitcoin Sidechains
+# Introduction
 
 Sidechains are similar in design to the Lightning Network and act as a parallel layer for settlement of transactions. They however, differ in architectural construction since they don't have channels or liquidity. Sidechains' design is the same as Bitcoin-L1 except that the block headers are committed at regular intervals to Bitcoin-L1 or their blocks merge-mined along with Bitcoin-L1 with smaller commitments being made in parallel on the sidechain. A sidechain when viewed from the outside looks no different than a standard blockchain., and a platform that adopts Bitcoin-L1 can readily migrate to a sidechain by naking minimal changes.
 
@@ -13,3 +13,4 @@ A sidechain explorer should contain the details of the tx \(like a normal blockc
 A sidechain could also be used in combination with another Bitcoin-L1 or another blockchain with each performing a subset of functions. The sidechain could be used as a layer for updating state and Bitcoin-L1 could be the layer where investments and payments happen.
 
 The trust model for this depends on the sidechain's construction - who can create blocks, who can post transactions, etc. Since opensolar's idea revolves around trusting the platform, the platform can be the entity that performs these functions. Existing sidechains like Liquid or merge mined coins like RSK can also be used in place of a custom sidechain. The trust model for the latter is that one should trust the entities controlling these sidechains along with the platform.
+

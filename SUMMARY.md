@@ -69,7 +69,7 @@
   * [Advantages](alternate-ideas/bitcoin-lightning-network/advantages.md)
   * [Disadvantages](alternate-ideas/bitcoin-lightning-network/disadvantages.md)
 * [Bitcoin Pre Signed Transactions](alternate-ideas/bitcoin-pre-signed-transactions/README.md)
-  * [Introduction](alternate-ideas/bitcoin-pre-signed-transactions/introduction.md)
+  * [Introduction](ideas/stellar/introduction.md)
   * [Disadvantages](alternate-ideas/bitcoin-pre-signed-transactions/disadvantages.md)
   * [Advantages](alternate-ideas/bitcoin-pre-signed-transactions/advantages.md)
 * [Bitcoin Sidechains](alternate-ideas/bitcoin-sidechains/README.md)
@@ -77,7 +77,7 @@
   * [Disadvantages](alternate-ideas/bitcoin-sidechains/disadvantages.md)
   * [Advantages](alternate-ideas/bitcoin-sidechains/advantages.md)
 * [Bitcoin Statechains](alternate-ideas/bitcoin-statechains/README.md)
-  * [Disadvantages](alternate-ideas/bitcoin-statechains/disadvantages.md)
+  * [Disadvantages](ideas/stellar/disadvantages.md)
   * [Advantages](alternate-ideas/bitcoin-statechains/advantages.md)
   * [Introduction](alternate-ideas/bitcoin-statechains/introduction.md)
 * [Bitcoin](alternate-ideas/bitcoin/README.md)
@@ -112,5 +112,4 @@
   * [Introduction](ideas/stellar/introduction.md)
   * [Advantages](ideas/stellar/advantages.md)
   * [Disadvantages](ideas/stellar/disadvantages.md)
-* [Stellar](ideas/stellar-1.md)
 

@@ -1,4 +1,4 @@
-# Bitcoin Statechains
+# Introduction
 
 Statechains is an improvement on top of Sidechains, combining the Hub and Spoke model of LN with the semi trusted nature of Sidechains. Statechains requires a centralized coordinator which communicates with the others in the system, and an internal index that maps utxos to owners.
 
@@ -13,3 +13,4 @@ Statechains can support multiple currencies that follow an utxo model, and users
 Statechains requires Schnorr signatures as a minimum upgrade to the Bitcoin protocol. Statechains can also be used in combination with payment channels, and people can use these utxos to fund a channel between two peers.
 
 The trust model for this idea relies on the platform not acting maliciously or in collusion with one of the previous owners of an utxo. In the event this occurs, proofs of ownership are easy to publish, and the platform's reputation will be at stake.
+

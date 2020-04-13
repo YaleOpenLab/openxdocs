@@ -5,3 +5,4 @@
 3. **No stablecoin:** This model does not involve a stablecoin, and people need not trust third party vendors.
 4. **Big partner ecosystem:** Bitcoin has a lot of partner companies which are looking to improve different aspects of using and getting on to Bitcoin. Since the model does not use a stablecoin, the platform can build more on core Bitcoin functionality without worrying about third party stablecoin providers
 5. **Improved functionality:** Bitcoin has more opcodes than Stellar, and can therefore the platform can look to implement more complex functionality.
+

@@ -1,5 +1,4 @@
-# Ethereum
-
+# Introduction
 
 Ethereum uses an account based model similar to Stellar. Ethereum provides a Turing complete on chain smart contract abstraction \(called the Ethereum Virtual Machine or EVM\) and global state variables. This eliminates the need for assets on Ethereum. As a consequence, the opensolar smart contract which runs on AWS could migrate to the Ethereum blockchain.
 
@@ -16,3 +15,4 @@ Ethereum's EVM offers a powerful on chain smart contracting interface. This can 
 The platform's contract can be deployed on chain and entities would interact with the contract through standard tools available on Ethereum. Investment proofs, state variables are all stored on chain so there is minimal requirement for an in house database that serves these functions.
 
 Ethereum-L1 can also be used in parallel with blockchain system. For example, payments can take place on Bitcoin, and state updates and storage can take place via Ethereum. This gives the dual benefit of low fees while still having auditable smart contracts on chain. This case is a slight variation of the bridge scenario described earlier.
+

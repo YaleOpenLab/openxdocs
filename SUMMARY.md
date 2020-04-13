@@ -65,6 +65,7 @@
 ## Alternate Ideas
 
 * [Bitcoin Lightning Network](alternate-ideas/bitcoin-lightning-network/README.md)
+  * [Layer 2](alternate-ideas/bitcoin-lightning-network/layer-2.md)
   * [Introduction](alternate-ideas/bitcoin-lightning-network/introduction.md)
   * [Advantages](alternate-ideas/bitcoin-lightning-network/advantages.md)
   * [Disadvantages](alternate-ideas/bitcoin-lightning-network/disadvantages.md)
@@ -77,7 +78,7 @@
   * [Disadvantages](alternate-ideas/bitcoin-sidechains/disadvantages.md)
   * [Advantages](alternate-ideas/bitcoin-sidechains/advantages.md)
 * [Bitcoin Statechains](alternate-ideas/bitcoin-statechains/README.md)
-  * [Disadvantages](ideas/stellar/disadvantages.md)
+  * [Disadvantages](alternate-ideas/bitcoin-statechains/disadvantages.md)
   * [Advantages](alternate-ideas/bitcoin-statechains/advantages.md)
   * [Introduction](alternate-ideas/bitcoin-statechains/introduction.md)
 * [Bitcoin](alternate-ideas/bitcoin/README.md)

@@ -111,4 +111,5 @@
 * [Stellar](ideas/stellar/README.md)
   * [Introduction](ideas/stellar/introduction.md)
   * [Advantages](ideas/stellar/advantages.md)
+  * [Disadvantages](ideas/stellar/disadvantages.md)
 

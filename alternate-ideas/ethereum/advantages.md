@@ -5,4 +5,3 @@
 3. **Improved functionality:** Ethereum's EVM provides the ability to replicate any program on Ethereum thereby expanding the capabilities of the platform.
 4. **Good Liquidity:** Ethereum is the second most traded cryptocurrency asset. Hence liquidity on popular markets is not of concern.
 5. **On chain verification:** The EVM provides an easy mechanism to verify computation on chain.
-

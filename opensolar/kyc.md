@@ -1,6 +1,6 @@
 # KYC
 
-Opensolar aims to be a regulated marketplace in which entities can take part in. In order to maintain compliance with the laws of the United States, Opensolar requires that entities taking part in the platform go through Know Your Customer \(or KYC\) regulations.
+Opensolar aims to be a regulated marketplace. In order to maintain compliance with the laws of the United States, Opensolar requires that entities taking part in the platform go through Know Your Customer \(or KYC\) regulations.
 
 1. Investors need to perform KYC before investing in a platform when procuring AnchorUSD to be able to invest in projects.
 2. Recipients need to perform KYC when advertising a project

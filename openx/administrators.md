@@ -12,7 +12,7 @@ Admins are central to the functioning of any platform. Openx has support for pla
 * Switch platform modes, and
 * Stop the platform immediately
 
-Openx admins are trusted entities in charge of the Openx project's design and development. Platform admins should be those having access to the server where the platform's contract runs. However, admins do not have access to user accounts and can not perform functions like resetting passwords or investing in projects.
+Openx admins are trusted entities in charge of the Openx project's design and development. Openx admins have access to the server on which the openx API is deployed. Platform admins should ideally include those having access to the server where the platform's contract runs since they can change the code running on the backend. However, admins do not have access to user accounts and can not perform functions like resetting passwords or investing in projects.
 
-Admin events are logged on the server for accountability and transparency to entities and platforms involved in Openx.
+Admin events are logged on the server for accountability and transparency.
 

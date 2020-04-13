@@ -1,6 +1,6 @@
 # Introduction
 
-Sharding is a distributed systems idea where a single piece of data is split into multiple pieces and consistency is managed by an algorithm that communicates with the different pieces. Splitting data reduces data storage requirements, increases local read/write speed, and efficiency of individual shards. Each shard ultimately communicates with the other shards either during a fixed time interval \(eg: once in 30 seconds\) or through a protocol.
+Sharding is a distributed systems idea where a single piece of data is split into multiple pieces and consistency is managed by an algorithm communicating with the different pieces. Splitting data reduces data storage requirements, increasing local read/write speed and efficiency of individual shards. Each shard ultimately communicates with the other shards either during a fixed time interval \(eg: once in 30 seconds\) or through a protocol.
 
 Ethereum has a big archival storage requirement due to a need to store state updates of all deployed and inactive contracts. Sharding Ethereum's storage provides faster transaction confirmation, and reduces storage requirements for running an Ethereum node. It also enables a shard to have its own set of rules, and these rules need not be reflected or communicated to the parent Ethereum blockchain.
 

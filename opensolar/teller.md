@@ -19,5 +19,5 @@ The teller requires two things apart from the source to start:
 
 On first initialisation, the teller generates and commuicates a unique device id to the platform along with its location, so the device can be tracked to see if its running properly. 
 
-All communication beween the teller and the platform occurs through JSON-RPC APIs.
+All communication between the teller and the platform occurs through JSON-RPC APIs.
 

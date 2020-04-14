@@ -8,7 +8,7 @@ description: This section describes openx and how it functions
 
 Openx is a "platform of platforms" architecture for investments using blockchains. Openx is built on the Stellar blockchain but its modular architecture enables it to be used in combination with any blockchain. Openx provides a set of functions for platforms that build on top of it composed of the following parts:
 
-1. A **User Entity** hadnling cryptocurrency operations
+1. A **User Entity** handling cryptocurrency operations
 2. A **JSON-RPC interface** through which the frontend and other pieces of software can interact with the backend.
 3. **Auxiliary packages** that handle functions like AML screening and stablecoin support.
 

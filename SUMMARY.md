@@ -12,6 +12,7 @@
 * [Administrators](openx/administrators.md)
 * [Platforms](openx/platforms.md)
 * [Stablecoins](openx/stablecoins.md)
+* [Modes](openx/modes.md)
 * [CI](openx/ci.md)
 * [API Endpoints](openx/api/README.md)
   * [Users](openx/api/users.md)

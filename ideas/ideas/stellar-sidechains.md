@@ -6,5 +6,5 @@ There are ideas for Sidechain implementations in Stellar based on ZkVM and other
 2. Helps improve performance
 3. Reduces fee impact of the platform
 
-This is similar to Bitcoin sidechains described in the "Alternative Ideas" section.
+This is similar to Bitcoin sidechains described in the "Alternate Ideas" section.
 

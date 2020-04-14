@@ -109,7 +109,8 @@
 
 ## Ideas
 
-* [Ideas](ideas/ideas.md)
+* [Ideas](ideas/ideas/README.md)
+  * [Content Management System](ideas/ideas/content-management-system.md)
 * [Stellar](ideas/stellar/README.md)
   * [Introduction](ideas/stellar/introduction.md)
   * [Advantages](ideas/stellar/advantages.md)

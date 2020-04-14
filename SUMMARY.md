@@ -73,7 +73,7 @@
   * [Project diagram](ideas/ideas/project-diagram.md)
   * [End project state](ideas/ideas/end-project-state.md)
   * [Create your own contract](ideas/ideas/create-your-own-contract.md)
-  * [Data visualization on the frontend](ideas/ideas/data-visualization-on-the-frontend.md)
+  * [Data visualization](ideas/ideas/data-visualization.md)
   * [Legal contract templates](ideas/ideas/legal-contract-templates.md)
   * [Integration tests](ideas/ideas/integration-tests.md)
   * [Emulator upgrades](ideas/ideas/emulator-upgrades.md)

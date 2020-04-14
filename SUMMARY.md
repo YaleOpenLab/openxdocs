@@ -136,4 +136,8 @@
   * [Introduction](alternate-ideas/ethereum/introduction.md)
   * [Advantages](alternate-ideas/ethereum/advantages.md)
   * [Disadvantages](alternate-ideas/ethereum/disadvantages.md)
+* [Others](alternate-ideas/others/README.md)
+  * [Cosmos](alternate-ideas/others/cosmos.md)
+  * [Hyperledger](alternate-ideas/others/hyperledger.md)
+  * [Polkadot](alternate-ideas/others/polkadot.md)
 

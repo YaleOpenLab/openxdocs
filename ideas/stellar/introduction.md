@@ -14,7 +14,7 @@ Opensolar is a platform for investments in solar energy projects. Opensolar's in
 The platform has a set of goals which can be used to compare different blockchain ecosystems:
 
 * **Trustless:** The platform must minimize trust in itself to avoid attack vectors centred around it.
-* **Secure and Decentralised:** The platform must be backed by a secure blockchain without the possibility of attacks either by a coordinated hash power or by a small group of attackers.
+* **Secure and Decentralised:** The platform must be backed by a secure blockchain without the possibility of attacks either by a coordinated hash power or by a small group of attackers. The platform should also have a reasonable level of decentralisation and nodes don't shouldn't soleley trust foundations to behave honestly.
 * **Robust in functions:** The platform must be able to perform its intended set of functions in an easy, fast and secure manner without compromising on provided functions.
 * **Good partner ecosystem:** Users must be able to get on the platform as easily as possible with minimal steps required.
 

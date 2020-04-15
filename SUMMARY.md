@@ -88,6 +88,8 @@
   * [Rescuer Web Interface](ideas/ideas/rescuer-web-interface.md)
   * [Using KMS](ideas/ideas/using-kms.md)
   * [Georestrictions](ideas/ideas/georestrictions.md)
+  * [Split JSON-RPC API](ideas/ideas/split-json-rpc-api.md)
+  * [Developer Engine](ideas/ideas/developer-engine.md)
   * [Run own stellar core and horizon instances](ideas/ideas/run-own-instances.md)
   * [Investments using other assets](ideas/ideas/investments-using-other-assets.md)
   * [Pilots with other ideas](ideas/ideas/pilots-with-other-ideas.md)

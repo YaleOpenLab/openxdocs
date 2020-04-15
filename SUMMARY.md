@@ -86,6 +86,7 @@
   * [Stellar sidechains](ideas/ideas/stellar-sidechains.md)
   * [Desktop and Mobile Apps](ideas/ideas/desktop-and-mobile-apps.md)
   * [Rescuer Web Interface](ideas/ideas/rescuer-web-interface.md)
+  * [Using KMS](ideas/ideas/using-kms.md)
   * [Run own stellar core and horizon instances](ideas/ideas/run-own-instances.md)
   * [Investments using other assets](ideas/ideas/investments-using-other-assets.md)
   * [Pilots with other ideas](ideas/ideas/pilots-with-other-ideas.md)

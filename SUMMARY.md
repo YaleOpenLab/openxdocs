@@ -93,6 +93,8 @@
   * [In Platform Notifications](ideas/ideas/in-platform-notifications.md)
   * [Messaging Service](ideas/ideas/messaging-service.md)
   * [Public Pages for Entities](ideas/ideas/public-pages-for-entities.md)
+  * [Featured Projects](ideas/ideas/featured-projects.md)
+  * [Platform Blog](ideas/ideas/platform-blog.md)
   * [Run own stellar core and horizon instances](ideas/ideas/run-own-instances.md)
   * [Investments using other assets](ideas/ideas/investments-using-other-assets.md)
   * [Pilots with other ideas](ideas/ideas/pilots-with-other-ideas.md)

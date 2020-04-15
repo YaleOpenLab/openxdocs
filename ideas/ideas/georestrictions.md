@@ -6,3 +6,5 @@ A dynamic geo-restriction policy would detect the source ip of the requester, an
 
 A static geo-restriction policy would add ip blocks to iptables in order to refuse traffic from the banned clusters. This would be hard since there are tons of ip blocks belonging to these banned regions, and we would need to add a rule for each one of them.
 
+Georestriction can also be done through the use of DNS middleware like Cloduflare which can automatically filter traffic based on source. Using these APIs however cedes DNS control to the middleware, reducing overall security.
+

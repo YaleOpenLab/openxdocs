@@ -4,3 +4,5 @@ Most platforms and websites today have something similar to Intercom which makes
 
 An improvement on top would be a live chat option where entities that are in the same project can talk to one another via the platform \(instead of sending emails through the platform\). This would be similar to AirBnB's in platform messaging service which enables parties to talk to one another. These messages can also be used in event of arbitration where the platform admin can cimply create a channel with all entities involved and communicate with them at once to resolve the issue.
 
+The messaging service could also provide features which enable messages in the project channel to be broadcast to stage data. This reduces interaction from the user, and enables easy verification of what's being stored in the stage data field.
+

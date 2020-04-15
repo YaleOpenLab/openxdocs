@@ -6,3 +6,5 @@ Public pages for entities can be thought of similar to Facebook's profile page w
 
 The public page could support a variety of features like adding images, videos, text descriptions ,etc. It is important to note that we don't want to enable social media features like likes since the public page is meant to be purely informative.
 
+Public pages can also be linked on other websites \(like facebook / twitter\) and clicking on these would redirect to the openx/solar profile of the entity. This feature could even be expanded to projects.
+

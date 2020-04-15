@@ -7,3 +7,5 @@ Currently, there is only one kind of project on the platform. There are two idea
 
 Featuring projects helps increase the amount of investment they receive and can generate more goodwill / advertisement for the project.
 
+Projects could further be split into other categories like Sponsored projects, Advertised projects, etc. These present interesting sources of revenue for the platform.
+

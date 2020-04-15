@@ -6,3 +6,5 @@ Using a KMS encrypts storage by default, so we don't have to worry about secrets
 
 A KMS is easy to implement if we move to a docker based architecture since the secrets can be served directly to the container / server instance through AWS IAM roles.
 
+We could also use hardware keys to act as a KMS, and configure the server to use the keys from the hardware device. This improves security since the keys don't reside in a "hot" interface. This however, is better implemented in a self hosted service \(ie a service where openx/solar runs its own hardware\) since configuring hardware keys with AWS or other hosting providers can prove to be tough.
+

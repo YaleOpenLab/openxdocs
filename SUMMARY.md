@@ -107,6 +107,8 @@
   * [Quadratic Funding](ideas/ideas/quadratic-funding.md)
   * [Comments section / Forum](ideas/ideas/comments-section-forum.md)
   * [Project Updates Section](ideas/ideas/project-updates-section.md)
+  * [Investing Recommendations](ideas/ideas/investing-recommendations.md)
+  * [Interactive Search](ideas/ideas/interactive-search.md)
 * [Stellar](ideas/stellar/README.md)
   * [Introduction](ideas/stellar/introduction.md)
   * [Advantages](ideas/stellar/advantages.md)

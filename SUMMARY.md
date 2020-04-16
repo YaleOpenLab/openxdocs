@@ -99,6 +99,8 @@
   * [Investments using other assets](ideas/ideas/investments-using-other-assets.md)
   * [Pilots with other ideas](ideas/ideas/pilots-with-other-ideas.md)
   * [Docker Images](ideas/ideas/docker-images.md)
+  * [Platform Help Bot](ideas/ideas/platform-help-bot.md)
+  * [One Click Invest](ideas/ideas/one-click-invest.md)
 * [Stellar](ideas/stellar/README.md)
   * [Introduction](ideas/stellar/introduction.md)
   * [Advantages](ideas/stellar/advantages.md)

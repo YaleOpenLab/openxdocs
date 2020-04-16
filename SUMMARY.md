@@ -101,6 +101,8 @@
   * [Docker Images](ideas/ideas/docker-images.md)
   * [Platform Help Bot](ideas/ideas/platform-help-bot.md)
   * [One Click Invest](ideas/ideas/one-click-invest.md)
+  * [Kubernetes Platform Cluster](ideas/ideas/kubernetes-platform-cluster.md)
+  * [Goal based funding](ideas/ideas/goal-based-funding.md)
 * [Stellar](ideas/stellar/README.md)
   * [Introduction](ideas/stellar/introduction.md)
   * [Advantages](ideas/stellar/advantages.md)

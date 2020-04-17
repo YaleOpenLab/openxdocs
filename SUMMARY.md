@@ -113,6 +113,8 @@
   * [Entity Leaderboard](ideas/ideas/entity-leaderboard.md)
   * [Project Map](ideas/ideas/untitled.md)
   * [Filter System](ideas/ideas/filter-system.md)
+  * [VR/AR Model](ideas/ideas/vr-ar-model.md)
+  * [Promotional Offers](ideas/ideas/promotional-offers.md)
 * [Stellar](ideas/stellar/README.md)
   * [Introduction](ideas/stellar/introduction.md)
   * [Advantages](ideas/stellar/advantages.md)

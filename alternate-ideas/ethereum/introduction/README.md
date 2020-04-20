@@ -1,4 +1,4 @@
-# Introduction
+# Ethereum-L1
 
 Ethereum uses an account based model similar to Stellar. Ethereum provides a Turing complete on chain smart contract abstraction \(called the Ethereum Virtual Machine or EVM\) and global state variables. This eliminates the need for assets on Ethereum. As a consequence, the opensolar smart contract which runs on AWS could migrate to the Ethereum blockchain.
 

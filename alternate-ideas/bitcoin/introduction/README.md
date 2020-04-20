@@ -1,4 +1,4 @@
-# Introduction
+# Bitcoin-L1
 
 Bitcoin is the oldest cryptocurrency and is powered by a Proof of Work consensus mechanism. Bitcoin uses an unspent transaction output \(utxo\) model and individual utxos are transferred between multiple addresses. Bitcoin possesses a native scripting language called Bitcoin Script which can be used to model different functions on Bitcoin.
 

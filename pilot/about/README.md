@@ -1,4 +1,4 @@
-# About
+# Puerto Rico
 
 The pilot project entails the installation of a 5kW system with InverSol’s Lumen battery and inverter unit. Solar will power critical loads in the building including emergency lights, a telecommunication system, and main manufacturing equipment.
 

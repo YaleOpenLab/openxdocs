@@ -1,9 +1,14 @@
 # Table of contents
 
 * [Welcome](README.md)
-* [People](people.md)
-* [Licenses](licenses.md)
-* [Links](links.md)
+* [About](about/README.md)
+  * [People](about/people.md)
+  * [Licenses](about/licenses.md)
+  * [Links](about/links.md)
+* [Getting Started](getting-started/README.md)
+  * [Openx](getting-started/openx.md)
+  * [Opensolar](getting-started/opensolar.md)
+  * [Teller](getting-started/teller.md)
 
 ## Openx
 
@@ -50,19 +55,13 @@
 * [Swytch.io](opensolar/swytch.io.md)
 * [Web Interface](opensolar/web-interface.md)
 
-## Getting Started
-
-* [Openx](getting-started/openx.md)
-* [Opensolar](getting-started/opensolar.md)
-* [Teller](getting-started/teller.md)
-
 ## Pilot
 
-* [About](pilot/about.md)
-* [Goals](pilot/goals.md)
-* [Details](pilot/details.md)
-* [Entities](pilot/entities.md)
-* [Deployment](pilot/deployment.md)
+* [Puerto Rico](pilot/about/README.md)
+  * [Goals](pilot/about/goals.md)
+  * [Details](pilot/about/details.md)
+  * [Entities](pilot/about/entities.md)
+  * [Deployment](pilot/about/deployment.md)
 
 ## Ideas
 

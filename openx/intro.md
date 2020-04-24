@@ -6,6 +6,8 @@ description: This section describes openx and how it functions
 
 ### Introduction
 
+![Openx climate finance marketplace](../.gitbook/assets/screenshot-2020-04-24-at-2.38.36-pm.png)
+
 Openx is a "platform of platforms" architecture for investments using blockchains. Openx is built on the Stellar blockchain but its modular architecture enables it to be used in combination with any blockchain. Openx provides a set of functions for platforms composed of the following parts:
 
 1. A **User Entity** handling cryptocurrency operations

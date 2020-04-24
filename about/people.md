@@ -18,3 +18,5 @@ Inversol: Developer and Sponsor of Aibonito Pilot Test Unit
 
 AnchorUSD: Stablecoin provider on the Stellar Blockchain
 
+![Openx Partners](../.gitbook/assets/screenshot-2020-04-24-at-2.36.57-pm.png)
+

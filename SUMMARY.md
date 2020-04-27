@@ -3,6 +3,7 @@
 * [Welcome](README.md)
 * [About](about/README.md)
   * [People](about/people.md)
+  * [Why blockchain](about/why-blockchain.md)
   * [Licenses](about/licenses.md)
   * [Links](about/links.md)
 * [Getting Started](getting-started/README.md)

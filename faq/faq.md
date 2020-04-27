@@ -2,7 +2,7 @@
 description: Frequently Asked Questions related to the opensolar project
 ---
 
-# FAQ
+# Opensolar FAQ
 
 ## Why Stellar?
 

@@ -1,8 +1,12 @@
 # Puerto Rico
 
-![](../../.gitbook/assets/screenshot-2020-04-24-at-2.36.29-pm.png)
+![Solar Installation - Platform Interaction](../../.gitbook/assets/screenshot-2020-04-24-at-2.36.29-pm.png)
 
-![](../../.gitbook/assets/screenshot-2020-04-24-at-2.43.37-pm.png)
+![The opportunity for climate finance in Puerto Rico](../../.gitbook/assets/screenshot-2020-04-24-at-2.43.37-pm.png)
+
+One year after hurricane Maria hit the island, schools and first responders are still exposed to a centralized and high-carbon energy system vulnerable to climate impacts. At the same time, schools are becoming grass roots community centers facilitating discussions of concerned parents on how to increase climate & social resilience in the whole community.
+
+An informal solar energy economy has developed across the island due to the need to backup energy and avoid increasing energy costs imposed by PREPA \(Puerto Rico’s electricity tariff is one of the highest in the US at $0.25/kWh\). Large solar players still offer the outdated 20 year PPA contract but Puerto Ricans resist being tied to long-term agreements without ownership. This provides for a prime opportunity for piloting a platform which can both offer investments without having to deal with extensize bureaucracy and provide ownership of the system for Puerto Ricans, leading to a local push towards green energy.
 
 The pilot project entails the installation of a 5kW system with InverSol’s Lumen battery and inverter unit. Solar will power critical loads in the building including emergency lights, a telecommunication system, and main manufacturing equipment.
 

@@ -30,3 +30,18 @@ Openx also provides a CI-enabled build server that can be used to release platfo
 
 Openx also has a PPA to enable easy installation for linux users. This is easily configurable by other platforms as well.
 
+Opensolar is an instance of openx targeted towards solar energy projects. Other platform applications include:
+
+* **Decentralised community infrastructure**
+  * Water
+  * Housing
+  * Transport
+  * Power
+  * Waste
+* **Climate Finance**
+  * Forest-based project
+  * Regenerative agriculture
+  * Energy efficiency programs 
+  * Adaptation infrastructure 
+  * Biogas
+

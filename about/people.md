@@ -1,24 +1,24 @@
 ---
-description: The people and companies currently involved with the opensolar project.
+description: People and partners currently involved with the opensolar project.
 ---
 
 # People
 
 ## People
 
-Varunram Ganesh - ganeshv@mit.edu
+Martin E. Wainstein, PhD - Founder and Lead Scientist, Yale Openlab ; Resident and fellow, Center for Business & the Environment at Yale. Email: martin.wainstein@yale.edu
 
-Martin Wainstein - martin.wainstein@yale.edu
+Varunram Ganesh - Blockchain developer, MIT Digital Currency Initiative. Email: ganeshv@mit.edu
 
-## Companies
+### Advisors
 
-Swytch.io: Renewable Energy Certificates \(RECs\) provider
+Neha Narula, PhD - Director, MIT Digital Currency Initiative
 
-Inversol: Developer and Sponsor of Aibonito Pilot Test Unit
+Michael Casey - Senior Advisor, MIT Digital Currency Initiative
 
-AnchorUSD: Stablecoin provider on the Stellar Blockchain
+## Partner Network
 
-### Partners
+The open solar project has developed a large network of collaborators that have participated in the project throughout the last two years. These include MIT and Yale students \(ongoing and alumni\), Yale and MIT professors, as well as a growing network of startups, large companies and grassroots community in Puerto Rico that actively supports and participates in the project.
 
 ![Openx Partners](../.gitbook/assets/screenshot-2020-04-24-at-2.36.57-pm.png)
 

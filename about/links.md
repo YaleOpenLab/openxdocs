@@ -20,6 +20,8 @@ Builds: builds.openx.solar
 
 MQTT broker: mqtt.openx.solar
 
+Pilot Dashboard: dashboard.openx.solar
+
   
 All links are https
 

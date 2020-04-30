@@ -1,6 +1,6 @@
 # Blockchain
 
-![](../../.gitbook/assets/screenshot-2020-04-24-at-2.50.45-pm.png)
+![High level blockchain workflow](../../.gitbook/assets/screenshot-2020-04-24-at-2.50.45-pm.png)
 
 Opensolar \(like openx\) uses Stellar, a Proof of Stake blockchain based on the Stellar Consensus Protocol. Stellar follows an account based model of accounting in which balances are associated with a public key \("account" or "address"\) on the blockchain, and subsequent operations increase the balance associated with the address. Stellar provides a set of operations that can be performed globally to change the state of a set of addresses \([https://www.stellar.org/developers/guides/concepts/list-of-operations.html](https://www.stellar.org/developers/guides/concepts/list-of-operations.html)\)
 

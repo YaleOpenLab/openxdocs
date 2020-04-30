@@ -1,5 +1,7 @@
 # Goals
 
+The pilot has been designed with the following goals in mind:
+
 1. Demonstrate contractual automation and disintermediation of renewable energy project finance using blockchain-based smart contracts
 2. Demonstrate alternative finance schemes with pay-to-own models for community ownership of solar assets.
 3. Demonstrate the integration between data from internet-of-things \(IoT\) devices into payment schemes and climate asset tokenisation \(Renewable Energy Certificates\).

@@ -99,6 +99,7 @@
     * [Alternate blockchains](ideas/ideas/blockchain/alternate-blockchains.md)
     * [Manual smart contracts](ideas/ideas/blockchain/manual-contracts.md)
     * [Pausable Smart Contracts](ideas/ideas/blockchain/pausable-smart-contracts.md)
+    * [Scheduled Investments](ideas/ideas/blockchain/scheduled-investments.md)
   * [Design](ideas/ideas/design/README.md)
     * [Project diagram](ideas/ideas/design/project-diagram.md)
   * [Backend](ideas/ideas/backend/README.md)

@@ -146,6 +146,8 @@
     * [Database Mode](ideas/ideas/backend/database-mode.md)
     * [No Javascript mode](ideas/ideas/backend/no-javascript-mode.md)
     * [Real Time Oracles](ideas/ideas/backend/real-time-oracles.md)
+    * [Virtual dev sandbox](ideas/ideas/backend/virtual-dev-sandbox.md)
+    * [Changing User-Entity Architecture](ideas/ideas/backend/changing-user-entity-architecture.md)
 * [Stellar](ideas/stellar/README.md)
   * [Introduction](ideas/stellar/introduction.md)
   * [Advantages](ideas/stellar/advantages.md)

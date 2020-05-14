@@ -97,6 +97,7 @@
     * [Improved Company Account Handling](ideas/ideas/frontend/improved-company-account-handling.md)
     * [Auction Dashboard](ideas/ideas/frontend/auction-dashboard.md)
     * [Compiled investment statistics](ideas/ideas/frontend/compiled-investment-statistics.md)
+    * [Common Dictionary](ideas/ideas/frontend/common-dictionary.md)
   * [Blockchain](ideas/ideas/blockchain/README.md)
     * [Investments using other assets](ideas/ideas/blockchain/investments-using-other-assets.md)
     * [Run own stellar core and horizon instances](ideas/ideas/blockchain/run-own-instances.md)

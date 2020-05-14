@@ -148,6 +148,8 @@
     * [Real Time Oracles](ideas/ideas/backend/real-time-oracles.md)
     * [Virtual dev sandbox](ideas/ideas/backend/virtual-dev-sandbox.md)
     * [Changing User-Entity Architecture](ideas/ideas/backend/changing-user-entity-architecture.md)
+    * [Dynamic Stage definitions](ideas/ideas/backend/dynamic-stage-definitions.md)
+    * [Common logout](ideas/ideas/backend/common-logout.md)
 * [Stellar](ideas/stellar/README.md)
   * [Introduction](ideas/stellar/introduction.md)
   * [Advantages](ideas/stellar/advantages.md)

@@ -111,8 +111,6 @@
     * [Scheduled Investments](ideas/ideas/blockchain/scheduled-investments.md)
     * [P2P Matching Engine](ideas/ideas/blockchain/p2p-matching-engine.md)
     * [Hardware Wallet Support](ideas/ideas/blockchain/hardware-wallet-support.md)
-  * [Design](ideas/ideas/design/README.md)
-    * [Project diagram](ideas/ideas/design/project-diagram.md)
   * [Backend](ideas/ideas/backend/README.md)
     * [Investment Tiers](ideas/ideas/backend/investment-tiers.md)
     * [OAuth for Openx](ideas/ideas/backend/oauth-for-openx.md)

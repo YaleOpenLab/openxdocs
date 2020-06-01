@@ -10,3 +10,5 @@ Kubernetes enables easy maintenance of individual components through the creatio
 
 Each cluster can be created and deployed through config files, and these config files can be made open source so others can easily replicate this functionality.
 
+Update \(6/1/20\): Kubernetes configs have been added to both openx and opensolar. Deployment along with required pieces is still pending, which should ideally be left to devops.
+

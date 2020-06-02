@@ -8,7 +8,7 @@ description: A section describing opensolar and its different components
 
 ![Opensolar high level architecture diagram](../.gitbook/assets/screenshot-2020-04-24-at-2.35.09-pm.png)
 
-Opensolar is a platform built using the Stellar blockchain that enables investments in solar infrastructure. Opensolar is built on openx, a broader "platform of platforms" architecture for investments in blockchains. Opensolar aims to automate the process of energy production, billing, and asset ownership for the recipient and the process of continual returns for the investor.
+Opensolar is an open source platform built using the Stellar blockchain that enables investments in solar infrastructure. Opensolar is built on openx, a broader "platform of platforms" architecture for investments in blockchains. Opensolar aims to automate the process of energy production, billing, and asset ownership for the recipient and the process of continual returns for the investor.
 
 Opensolar is designed to be modular and each module can be used in a different application. 
 

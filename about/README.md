@@ -16,5 +16,5 @@ Furthermore, the industry lacks a common platform and standard to seamlessly int
 
 To the energy finance world, "there is more money available than there are projects." This is in part due to the cumbersome legal pipeline that developers must navigate from project inception to capitalization. The result leave the needed decentralized community projects will little access to capital.
 
-These are the problem Opensolar aims to solve, by providing a platform for community owned solar projects that leverages distributed ledger technology and IoT driven smart contracts for contractual automation in financial processes.
+These are the problems Opensolar aims to solve, by providing a platform for community owned solar projects that leverages distributed ledger technology and IoT driven smart contracts for contractual automation in financial processes.
 

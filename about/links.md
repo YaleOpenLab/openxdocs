@@ -14,7 +14,7 @@ Opensolar API: api2.openx.solar
 
 API docs: apidocs.openx.solar
 
-Wiki: api.openx.solar
+Wiki: docs.openx.solar
 
 Builds: builds.openx.solar
 
@@ -35,7 +35,7 @@ All links are https
 
 **API Docs**: [https://github.com/YaleOpenLab/openx-apidocs](https://github.com/YaleOpenLab/openx-apidocs)
 
-**Gitbook \(this page\)**: [https://github.com/YaleOpenLab/openxdocs](https://github.com/YaleOpenLab/openxdocs)
+**Wiki**: [https://github.com/YaleOpenLab/openxdocs](https://github.com/YaleOpenLab/openxdocs)
 
 **Create-openx-app**:  [https://github.com/YaleOpenLab/create-openx-app](https://github.com/YaleOpenLab/create-openx-app/tree/master/.template)
 

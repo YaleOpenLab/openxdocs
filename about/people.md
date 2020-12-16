@@ -6,7 +6,7 @@ description: People and partners currently involved with the opensolar project.
 
 ## People
 
-Martin E. Wainstein, PhD - Founder and Lead Scientist, Yale Openlab ; Resident and fellow, Center for Business & the Environment at Yale. Email: martin.wainstein@yale.edu
+Martin E. Wainstein, PhD - Founder and Executive Director, Open Earth Foundaiton. Founder and Lead Scientist, Yale Openlab ; Resident and fellow, Center for Business & the Environment at Yale. Email: martin.wainstein@yale.edu
 
 Varunram Ganesh - Blockchain developer, MIT Digital Currency Initiative. Email: ganeshv@mit.edu
 

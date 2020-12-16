@@ -1,10 +1,10 @@
-# Backend
+# Frontend
 
 ## Changing User-Entity Architecture
 
 Currently in Opensolar, the user entity is the base class that other entities on the platform build on top. This however, has a disadvantage since it means different entities have the same publickey. To avoid this, a potential construction is to make create new users for each entity and somehow have something on the importing platform's end to identify that they all are indeed the same user.
 
-This could also be done on openx's side by introducing a new base class called the "entity" which allows for supporting an array of public keys and encrypted seed passwords. The base user class' publickey  variable could also be converted into an array and new publickeys can be added whenever the user desires so.
+This could also be done on openx's side by introducing a new base class called the "entity" which allows for supporting an array of public keys and encrypted seed passwords. The base user class' publickey variable could also be converted into an array and new publickeys can be added whenever the user desires so.
 
 ## Collective Investment
 
@@ -22,15 +22,13 @@ Right now, the platform uses a predefined smart contract with the project thresh
 
 This greatly aids the expansion from solar energy projects to other types of investments since people can define their own conditions. It also gives entities flexibility while designing various parts of the contract like payback period, investment models and more. Some part of the contract however would be fixed and editable only on the backend or by project admins.
 
-An advanced feature would occur when receivers would like to incorporate higher level of detail within their contracts. Such receivers would have to make a Pull Request to the  platform's repository and upon approval and deployment, can incorporate the new contract for their project. The review process should ensure there are no bugs that would cause users to lose funds, enable certain enttieis to defraud other users, etc.
+An advanced feature would occur when receivers would like to incorporate higher level of detail within their contracts. Such receivers would have to make a Pull Request to the platform's repository and upon approval and deployment, can incorporate the new contract for their project. The review process should ensure there are no bugs that would cause users to lose funds, enable certain enttieis to defraud other users, etc.
 
 ## Database Mode
 
 SEC and other regulatory agencies are wary of the terms "blockchain" and "cryptocurrencies". Having a blockchain free mode which is powered by a raw database can help platform founders navigate this territory. This mode would be totally similar to something like Kickstarter, except that it open source and still connected to the overall openx architecture.
 
----
-description: Developer oriented subdomain
----
+## description: Developer oriented subdomain
 
 ## developers.openx.solar
 
@@ -166,7 +164,7 @@ Having other language ports also makes a potential transition away from Go easie
 
 Currently, Opensolar is targeted at solar energy projects but an alternate implementation with fractional housing, or peer to peer loans helps expand the horizons of openx, and helps tests the utility openx provides for next generation investments. Opensolar used to house a fractional owenrship Proof of Concept in the repo before but that has now been abandoned due to a lack of progress. Potential applications that could be run as pilots include:
 
-##### Decentralised community infrastructure
+### Decentralised community infrastructure
 
 1. Water
 2. Housing
@@ -174,7 +172,7 @@ Currently, Opensolar is targeted at solar energy projects but an alternate imple
 4. Power
 5. Waste
 
-##### Climate finance
+### Climate finance
 
 1. Forest-based project
 2. Regenerative agriculture
@@ -221,7 +219,7 @@ Currently, we make use of a static oracle that fetches the price of elctricity i
 
 ## Replace MQTT with TLS
 
-MQTT is a lightweight protocol that is useful for IoT devices to communicate with each other but TLS is a more robust solution that can be used for a variety of applications.  We should simultaneously have MQTT support for IoT devices and TLS support for more complex devices.
+MQTT is a lightweight protocol that is useful for IoT devices to communicate with each other but TLS is a more robust solution that can be used for a variety of applications. We should simultaneously have MQTT support for IoT devices and TLS support for more complex devices.
 
 ## Secondary markets
 
@@ -261,7 +259,7 @@ The tipping bot could theoretically accept investments in any currency with a mi
 
 Currently, the platform seed is encrpyted but the platform seed password is sdtored in the config file used to start openx/opensolar. The platform seed could instead be transferred to a Key Management Service and we can call the platform seed by calling the KMS API.
 
-Using a KMS encrypts storage by default, so we don't have to worry about secrets being  leaked. A KMS also provides high security guarantees and uptime, so the platform seed will not be lost if the server doesnt' work.
+Using a KMS encrypts storage by default, so we don't have to worry about secrets being leaked. A KMS also provides high security guarantees and uptime, so the platform seed will not be lost if the server doesnt' work.
 
 A KMS is easy to implement if we move to a docker based architecture since the secrets can be served directly to the container / server instance through AWS IAM roles.
 
@@ -271,12 +269,12 @@ We could also use hardware keys to act as a KMS, and configure the server to use
 
 Verified accounts \(similar to "blue check accounts" on twitter\) are accounts whose credentials are verified and they are presented with a badge that shows that their account has been verified. This helps prevent bots, spam users, etc whoi might impersonate others and try to steal money from entities on the platform.
 
-Verified accounts  can also be used in the context of companies whose KYC information has been verified \(eg. Coca Cola could have a tick if their company's representative uploaded the necessary docs to prove that they really are from Coca Cola\).
+Verified accounts can also be used in the context of companies whose KYC information has been verified \(eg. Coca Cola could have a tick if their company's representative uploaded the necessary docs to prove that they really are from Coca Cola\).
 
 ## Virtual dev sandbox
 
-Currently, we have a sandbox on the backend that can be customised and run be people who want to test and run Openx/solar.   Having a virtual sandbox \(similar to some courses where there's a terminal on the right and there's text on the left\) would be immsenself useful for people to easily visualise  how openx and opensolar interact, and also enable people to readily test out features that they wish to implement.  
-  
+Currently, we have a sandbox on the backend that can be customised and run be people who want to test and run Openx/solar. Having a virtual sandbox \(similar to some courses where there's a terminal on the right and there's text on the left\) would be immsenself useful for people to easily visualise how openx and opensolar interact, and also enable people to readily test out features that they wish to implement.
+
 This would ideally require that a client side terminal be run on the website somehow. Katakoda \([https://kubernetes.io/docs/tutorials/kubernetes-basics/update/update-interactive/](https://kubernetes.io/docs/tutorials/kubernetes-basics/update/update-interactive/)\) is a good example and can be imported for what we seek to accomplish.
 
 ## Web SSH for admins
@@ -294,3 +292,4 @@ An example of this can be viewed in the Lightning Network Protocol where peers t
 ## Yubikey / U2F support
 
 U2F is a secure 2FA Authentication protocol used by hardware devices to generate 2FA codes. Yubikey and U2F support could be added in for 2FA login so people can use secure hardware based 2FA tokens.
+

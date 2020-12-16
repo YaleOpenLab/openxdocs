@@ -36,7 +36,7 @@ Along with Stellar, it would be nice to have a layer that exists in parallel to 
 
 ## Pausable Smart Contracts
 
-The Opensolar smart contract on AWS has multiple redundancy checks in place but in no event can a platform admin stop its execution once the project flow is in place. This presents problems for debugging because once a project's payback loop is stopped, it can only be started through the backend. As a result, arbitration is harder, and solving critical bugs in production becomes more difficult. A side consequence is that this presents problems from a legal perspective because the platform's execution can never be stopped, and this causes issues when getting legal approval for the platform. 
+The Opensolar smart contract on AWS has multiple redundancy checks in place but in no event can a platform admin stop its execution once the project flow is in place. This presents problems for debugging because once a project's payback loop is stopped, it can only be started through the backend. As a result, arbitration is harder, and solving critical bugs in production becomes more difficult. A side consequence is that this presents problems from a legal perspective because the platform's execution can never be stopped, and this causes issues when getting legal approval for the platform.
 
 If the contract can be paused \(and not stopped\), it gives additional confidence to investors that the platform can step in if something goes awry and protect investors. This can also protect recipients and developers against malicious entities. A pausable contract also enables payment loops \(and the contract itself\) to be restarted while the contract is paused if a bug stops the contract's execution.
 
@@ -54,7 +54,7 @@ Companies would be required to specify a list of characteristics based on which 
 
 ## Stellar sidechains
 
-There are ideas for Sidechain implementations in Stellar based on ZkVM and other architectures. Having sidechains 
+There are ideas for Sidechain implementations in Stellar based on ZkVM and other architectures. Having sidechains
 
 1. Helps offload transactions and state updates to the sidechain
 2. Helps improve performance

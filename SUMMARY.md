@@ -70,10 +70,10 @@
 
 ## Ideas
 
-* [Ideas](ideas/README.md)
-  * [Blockchain](ideas/blockchain.md)
-  * [Backend](ideas/backend.md)
-  * [Frontend](ideas/backend.md)
+* [Ideas](ideas/ideas/README.md)
+  * [Blockchain](ideas/ideas/blockchain.md)
+  * [Backend](ideas/ideas/backend.md)
+  * [Frontend](ideas/ideas/backend-1.md)
 * [Stellar](ideas/stellar/README.md)
   * [Introduction](ideas/stellar/introduction.md)
   * [Advantages](ideas/stellar/advantages.md)

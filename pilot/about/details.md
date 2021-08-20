@@ -14,3 +14,7 @@ This is a model installation where the solar panels and battery support a subpan
 
 Main power data readings will come directly from the Lumen unit via the MQTT protocol. A second revenue-grade meter with IoT pre-pay functionality will be added for further integration testing. IoT readings from the Lumen system will be used with a smart contract oracle to verify & validate readings for payment and REC generation. A whole building non-invasive powermeter is also contemplated for future installation.
 
+### Initial Setup - Interaction Diagram
+
+![](../../.gitbook/assets/opensolar-pr-pilot-1.jpg)
+
